@@ -2,9 +2,9 @@
 
 WordPress para Protectoras de Animales es un proyecto do_action de la Comunidad WordPress de Granada (España).
 
-## Euqipo de organización
+## Equipo de organización
 
-El equpo de organización estará formado por entre 2 y 6 organizadores.
+El equipo de organización estará formado por entre 2 y 6 organizadores.
 
 - Guillermo García (lead)
 - Javier Casares @javiercasares
@@ -47,14 +47,14 @@ Existen una serie de campos que estarán disponibles en cualquier tipo de animal
 - Tiene vacunas (S/N/?)
 - Estado (Perdido / En Adopción)
 
-### Taxonomía: Raza / Tipo / Especie (Perro / Gato / Ave / Pez / Reptil / Anfibio)
+#### Taxonomía: Raza / Tipo / Especie (Perro / Gato / Ave / Pez / Reptil / Anfibio)
 
 - Nombre
 - Snippet
 - Descripción
 - Slug
 
-### Taxonomía: Localización (Provincia / País)
+#### Taxonomía: Localización (Provincia / País)
 
 Se puede plantear una base de datos general y traducida basada en [Geonames](https://www.geonames.org/)
 
@@ -62,20 +62,53 @@ Se puede plantear una base de datos general y traducida basada en [Geonames](htt
 - Región
 - País
 
-### Taxonomía: Talla
+#### Taxonomía: Talla
 
 Normalmente es una lista breve: mini, pequeño, mediano, grande...
 
-### Taxonomía: Color
+#### Taxonomía: Color
 
 Se debería poder elegir una selección de colores básicos. Máximo 3 colores.
 
-### Taxonomía: Energía
+#### Taxonomía: Energía
 
 Normalmente es una lista breve: tranquilo, mucha energía...
 
-### Taxonomía: Estado
+#### Taxonomía: Estado
 
 Normalmente es una lista concisa: En Adopción, Perdido / Encontrado
 
+### Registro de Usuario
 
+El registro de usuario debe permitir añadir elementos muy básicos y mínimos:
+- Nombre
+- Correo electrónico (validado)
+- Teléfono (opcional)
+- Localización (opcional)
+
+Un usuario registrado puede suscribirse a varias listas de correo:
+- Automática, instantánea (cada vez que se añada un animal, se le manda un correo)
+- Automática, resumen (cada dia, se le manda un correo)
+- Manual, puede marcar como favorito un animal y cada día recibir un mensaje de resumen de sus cambios.
+
+### Adopción
+
+Cada uno de los elementos que exista en el Custom Post Type, deberá permitir el acceso a solicitar información.
+
+El usuario puede estar registrado o no estar registrado.
+
+Si está registrado (y validado) podrá rellenar un formulario de contacto (pre rellenado) para saber más sobre el animal, pidiendo de forma obligatoria el Nombre, correo electrónico y teléfonod e contacto (si no está en el perfil) además de la localización.
+
+Si no está registrado, se le solicitará el registro para evitar Spam (indicar claramente que se hace por esa razón).
+
+### Voluntariado
+
+Un usuario registrado puede rellenar un formulario mostrando el interés de ser voluntario en la organización.
+
+### Donaciones
+
+Se podrán realizar donaciones mediante distintos métodos de pago, recurrentes o puntuales:
+- Stripe
+- Redsys?
+- Paypal
+- Transferencia bancaria
