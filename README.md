@@ -1,4 +1,4 @@
-# Animal Shelter (protectora de Snimales)
+# Animal Shelter (Protectora de Animales)
 
 WordPress para Protectoras de Animales es un proyecto do_action de la Comunidad WordPress de Granada (España).
 
