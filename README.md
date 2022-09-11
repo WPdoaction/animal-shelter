@@ -76,7 +76,7 @@ Normalmente es una lista breve: tranquilo, mucha energía...
 
 #### Taxonomía: Estado
 
-Normalmente es una lista concisa: En Adopción, Perdido / Encontrado
+Normalmente es una lista concisa: En Adopción, Perdido / Encontrado, Acogida
 
 ### Registro de Usuario
 
