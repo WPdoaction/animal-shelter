@@ -4,11 +4,7 @@ WordPress para Protectoras de Animales es un proyecto _do_action_ de la [Comunid
 
 ## Equipo de organización
 
-El equipo de organización estará formado por entre 2 y 6 organizadores.
-
-- [Guillermo García](https://github.com/Flewps) - Lead organizar
 - [Javier Casares](https://github.com/javiercasares) - Organizer
-- [David Pérez](https://github.com/davidperezgar) - Organizer
 
 ## Equipos de trabajo
 
