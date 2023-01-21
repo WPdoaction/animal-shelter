@@ -141,3 +141,9 @@ Se han tenido en cuenta distintas asociaciones y organizaciones que están en la
 - [The internet's biggest collection of open source dog pictures](https://dog.ceo/dog-api/) de [Dog CEO Zine](https://dog.ceo/)
 - [get cute dogs as placeholders](https://place.dog/)
 - [placekitten](https://placekitten.com/)
+
+### Plugins
+- [Pets](https://wordpress.org/plugins/pets/)ç
+- [PetPress](https://wordpress.org/plugins/petpress/)
+- [Pet Adoption Listings](https://wordpress.org/plugins/pet-adoption-listings/)
+- [Pet Manager](https://wordpress.org/plugins/pet-manager/)
