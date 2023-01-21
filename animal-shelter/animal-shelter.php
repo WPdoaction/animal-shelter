@@ -16,4 +16,9 @@ Text Domain: animal-shelter
 */
 defined( 'ABSPATH' ) or die( 'Bye bye!' );
 
-require_once( './custom-post-type/dog.php' );
+function wpvul_plugin_init() {
+	load_plugin_textdomain( 'animal-shelter', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+
+require_once( plugin_dir_path( __FILE__ ) . '/custom-post-type/dog.php' );
+require_once( plugin_dir_path( __FILE__ ) . '/custom-post-type/cat.php' );
