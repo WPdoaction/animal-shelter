@@ -1,0 +1,306 @@
+# Copyright (C) 2023 WordPress Granada Community
+# This file is distributed under the EUPL 1.2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Animal Shelter 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/animal-shelter\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-02-05T18:18:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: animal-shelter\n"
+
+#. Plugin Name of the plugin
+msgid "Animal Shelter"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/WPdoaction/animal-shelter/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Animal Shelter plugin for WordPress"
+msgstr ""
+
+#. Author of the plugin
+msgid "WordPress Granada Community"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpgranada.es/"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:9
+#: admin/class-animalshelter-admin-cpt-cat.php:24
+msgid "Cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:10
+msgid "Animal: Cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:21
+msgctxt "Post Type General Name"
+msgid "Cats"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:22
+msgctxt "Post Type Singular Name"
+msgid "Cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:23
+msgid "Cats"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:25
+msgid "Cat archives"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:26
+msgid "Cat attributes"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:27
+msgid "Parent cat:"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:28
+msgid "All cats"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:29
+msgid "Add new cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:30
+#: admin/class-animalshelter-admin-cpt-dog.php:30
+msgid "Add new"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:31
+msgid "New cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:32
+msgid "Edit cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:33
+msgid "Update cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:34
+msgid "View cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:35
+msgid "View cats"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:36
+msgid "Search cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:37
+#: admin/class-animalshelter-admin-cpt-dog.php:37
+msgid "Not found"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:38
+#: admin/class-animalshelter-admin-cpt-dog.php:38
+msgid "Not found in trash"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:39
+msgid "Insert into cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:40
+msgid "Uploaded to this cat"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:41
+msgid "Cats list"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:42
+msgid "Cats list navigation"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-cat.php:43
+msgid "Filter cats list"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:9
+#: admin/class-animalshelter-admin-cpt-dog.php:24
+msgid "Dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:10
+msgid "Animal: Dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:21
+msgctxt "Post Type General Name"
+msgid "Dogs"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:22
+msgctxt "Post Type Singular Name"
+msgid "Dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:23
+msgid "Dogs"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:25
+msgid "Dog archives"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:26
+msgid "Dog attributes"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:27
+msgid "Parent dog:"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:28
+msgid "All dogs"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:29
+msgid "Add new dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:31
+msgid "New dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:32
+msgid "Edit dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:33
+msgid "Update dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:34
+msgid "View dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:35
+msgid "View dogs"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:36
+msgid "Search dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:39
+msgid "Insert into dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:40
+msgid "Uploaded to this dog"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:41
+msgid "Dogs list"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:42
+msgid "Dogs list navigation"
+msgstr ""
+
+#: admin/class-animalshelter-admin-cpt-dog.php:43
+msgid "Filter dogs list"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:18
+msgctxt "Taxonomy General Name"
+msgid "Breeds"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:19
+msgctxt "Taxonomy Singular Name"
+msgid "Breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:20
+msgid "Breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:21
+msgid "All breeds"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:22
+msgid "Parent breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:23
+msgid "Parent breed:"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:24
+msgid "New breed bame"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:25
+msgid "Add new breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:26
+msgid "Edit breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:27
+msgid "Update breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:28
+msgid "View breed"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:29
+msgid "Separate breeds with commas"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:30
+msgid "Add or remove breeds"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:31
+msgid "Choose from the most used"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:32
+msgid "Popular breeds"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:33
+msgid "Search breeds"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:34
+msgid "Not Found"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:35
+msgid "No breeds"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:36
+msgid "Breeds list"
+msgstr ""
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:37
+msgid "Breeds list navigation"
+msgstr ""
