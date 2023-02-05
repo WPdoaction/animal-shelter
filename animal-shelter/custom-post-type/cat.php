@@ -6,14 +6,14 @@
  * @since 1.0.0
  */
  
-if ( ! function_exists('cat_cpt') ) {
+if ( ! function_exists('animalshelter_cat_cpt') ) {
 
 	/**
 	 * Registers the Cat Custom Post Type
 	 *
 	 * @return void
 	 */
-	function cat_cpt() {
+	function animalshelter_cat_cpt() {
 
 		$labels = array(
 			'name'                  => _x( 'Cats', 'Post Type General Name', 'animal-shelter' ),
@@ -70,9 +70,9 @@ if ( ! function_exists('cat_cpt') ) {
 			'capability_type'       => 'page',
 			'show_in_rest'          => true,
 		);
-		register_post_type( 'cat_pt', $args );
+		register_post_type( 'animalshelter_cat_pt', $args );
 
 	}
-	add_action( 'init', 'cat_cpt', 0 );
+	add_action( 'init', 'animalshelter_cat_cpt', 0 );
 
 }

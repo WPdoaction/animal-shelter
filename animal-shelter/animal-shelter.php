@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) or die( 'Bye bye!' );
  *
  * @since 1.0.0
  */
-function wpvul_plugin_init() {
+function animalshelter_plugin_init() {
 	load_plugin_textdomain( 'animal-shelter', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
