@@ -47,7 +47,6 @@ composer.lock
 # Gulp #
 ########
 package-lock.json
-node_modules/
 
 # Bower #
 #########
