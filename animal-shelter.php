@@ -30,6 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 if ( ! defined( 'ANIMALSHELTER_VERSION' ) ) {
 	define( 'ANIMALSHELTER_VERSION', '1.0.0' );
 }
+animalshelter_constants();
 
 if ( ! class_exists( 'Animalshelter' ) ) {
 	final class Animalshelter {
@@ -39,7 +40,6 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 
 		public function load(): void {
 			//Load constants
-			$this->pluginConstants();
 			$this->contentConstants();
 
 			//Init environment
@@ -47,61 +47,8 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 			add_action( 'plugins_loaded', array( $this, 'languages' ) );
 
 			//Load and execute
-			// TODO
-			// $this->includes();
-			// add_action( 'plugins_loaded', array( $this, 'run' ) );
-		}
-
-		private function pluginConstants(): void {
-			// Plugin prefix
-			if ( ! defined( 'ANIMALSHELTER_PREFIX' ) ) {
-				define( 'ANIMALSHELTER_PREFIX', 'animalshelter' );
-			}
-
-			// Plugin Folder Path
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_DIR' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-			}
-
-			// Plugin Admin Path
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_ADMIN_DIR' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_ADMIN_DIR', ANIMALSHELTER_PLUGIN_DIR . 'admin/' );
-			}
-
-			// Plugin Public Path
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_PUBLIC_DIR' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_PUBLIC_DIR', ANIMALSHELTER_PLUGIN_DIR . 'public/' );
-			}
-
-			// Plugin Includes Path
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_INCLUDES_DIR' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_INCLUDES_DIR', ANIMALSHELTER_PLUGIN_DIR . 'includes/' );
-			}
-
-			// Plugin Languages Path
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_LANGUAGES_DIR' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_LANGUAGES_DIR', ANIMALSHELTER_PLUGIN_DIR . 'languages/' );
-			}
-
-			// Plugin Folder URL
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_URL' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-			}
-
-			// Plugin Admin URL
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_ADMIN_URL' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_ADMIN_URL', ANIMALSHELTER_PLUGIN_URL . 'admin/' );
-			}
-
-			// Plugin Public URL
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_PUBLIC_URL' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_PUBLIC_URL', ANIMALSHELTER_PLUGIN_URL . 'public/' );
-			}
-
-			// Plugin Root File
-			if ( ! defined( 'ANIMALSHELTER_PLUGIN_FILE' ) ) {
-				define( 'ANIMALSHELTER_PLUGIN_FILE', __FILE__ );
-			}
+			$this->includes();
+			add_action( 'plugins_loaded', array( $this, 'init' ) );
 		}
 
 		public function contentConstants(): void {
@@ -111,6 +58,10 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 
 			if ( ! defined( 'ANIMALSHELTER_CPT_CAT' ) ) {
 				define( 'ANIMALSHELTER_CPT_CAT', 'as_cat' ); //20 characters max.
+			}
+
+			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_BREED' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_BREED', 'as_breed' ); //20 characters max.
 			}
 		}
 
@@ -134,10 +85,10 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 
 		private function includes(): void {
 			require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin.php';
-			include_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-public.php';
+			require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-public.php';
 		}
 
-		public function run(): void {
+		public function init(): void {
 			$animalshelter_admin = new Animalshelter_Admin();
 			$animalshelter_admin->load();
 
@@ -167,3 +118,56 @@ function animalshelter_deactivate() {
 	Animalshelter_Deactivator::deactivate();
 }
 register_deactivation_hook( __FILE__, 'animalshelter_deactivate' );
+
+
+function animalshelter_constants(): void {
+	// Plugin prefix
+	if ( ! defined( 'ANIMALSHELTER_PREFIX' ) ) {
+		define( 'ANIMALSHELTER_PREFIX', 'animalshelter' );
+	}
+
+	// Plugin Folder Path
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_DIR' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+	}
+
+	// Plugin Admin Path
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_ADMIN_DIR' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_ADMIN_DIR', ANIMALSHELTER_PLUGIN_DIR . 'admin/' );
+	}
+
+	// Plugin Public Path
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_PUBLIC_DIR' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_PUBLIC_DIR', ANIMALSHELTER_PLUGIN_DIR . 'public/' );
+	}
+
+	// Plugin Includes Path
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_INCLUDES_DIR' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_INCLUDES_DIR', ANIMALSHELTER_PLUGIN_DIR . 'includes/' );
+	}
+
+	// Plugin Languages Path
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_LANGUAGES_DIR' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_LANGUAGES_DIR', ANIMALSHELTER_PLUGIN_DIR . 'languages/' );
+	}
+
+	// Plugin Folder URL
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_URL' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+	}
+
+	// Plugin Admin URL
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_ADMIN_URL' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_ADMIN_URL', ANIMALSHELTER_PLUGIN_URL . 'admin/' );
+	}
+
+	// Plugin Public URL
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_PUBLIC_URL' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_PUBLIC_URL', ANIMALSHELTER_PLUGIN_URL . 'public/' );
+	}
+
+	// Plugin Root File
+	if ( ! defined( 'ANIMALSHELTER_PLUGIN_FILE' ) ) {
+		define( 'ANIMALSHELTER_PLUGIN_FILE', __FILE__ );
+	}
+}

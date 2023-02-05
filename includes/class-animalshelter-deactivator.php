@@ -27,8 +27,9 @@ class Animalshelter_Deactivator {
 	 *
 	 * @since    1.0.0
 	 */
-	public static function deactivate() {
-
+	public static function deactivate(): void {
+		//TODO Flush rewrite
+		//flush_rewrite_rules();
 	}
 
 }
