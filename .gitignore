@@ -1,0 +1,68 @@
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.tar.gz
+*.zip
+*.tgz
+*.map
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+#######################
+*.un~
+
+# SASS #
+########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+*.scssc
+config.rb
+
+# Composer #
+############
+!src/js/vendor/
+yarn.lock
+composer.lock
+
+# Gulp #
+########
+package-lock.json
+node_modules/
+
+# Bower #
+#########
+assets/components/
+
+# Codekit #
+###########
+/codekit-config.json
+*.codekit
+**.codekit-cache/*
+
+# IDE #
+###########
+.idea
+
+# NPM #
+#######
+node_modules
