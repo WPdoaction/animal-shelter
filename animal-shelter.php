@@ -76,7 +76,7 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 				// Upgrade code
 			}
 
-			update_option( 'ANIMALSHELTER_version', ANIMALSHELTER_VERSION );
+			update_option( 'ANIMALSHELTER_version', ANIMALSHELTER_VERSION, true );
 		}
 
 		public function languages(): void {
