@@ -2,12 +2,13 @@
 
 class Animalshelter_Admin_Cpt_Dog extends Animalshelter_Admin_Cpt {
 
-	function __construct() {
+	public function __construct() {
 		parent::__construct();
-		$this->cpt = ANIMALSHELTER_CPT_DOG;
-		$this->rewrite = 'dog';
-		$this->label = __( 'Dog', 'animal-shelter' );
+		$this->cpt         = ANIMALSHELTER_CPT_DOG;
+		$this->rewrite     = 'dog';
+		$this->label       = __( 'Dog', 'animal-shelter' );
 		$this->description = __( 'Animal: Dog', 'animal-shelter' );
+		$this->menu_icon   = 'dashicons-portfolio';
 	}
 
 	public function initCPT() {
@@ -15,8 +16,8 @@ class Animalshelter_Admin_Cpt_Dog extends Animalshelter_Admin_Cpt {
 		add_action( 'init', array( $this, 'add_cpt_metaboxes' ) );
 	}
 
-	function cpt_register() {
-		$args = $this->cpt_register_default_args();
+	public function cpt_register() {
+		$args           = $this->cpt_register_public_default_args();
 		$args['labels'] = array(
 			'name'                  => _x( 'Dogs', 'Post Type General Name', 'animal-shelter' ),
 			'singular_name'         => _x( 'Dog', 'Post Type Singular Name', 'animal-shelter' ),
@@ -45,7 +46,7 @@ class Animalshelter_Admin_Cpt_Dog extends Animalshelter_Admin_Cpt {
 		register_post_type( $this->cpt, $args );
 	}
 
-	function add_cpt_metaboxes() {
+	public function add_cpt_metaboxes() {
 
 	}
 
