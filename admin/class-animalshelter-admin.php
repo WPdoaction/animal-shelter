@@ -37,13 +37,13 @@ class Animalshelter_Admin {
 		$taxonomy_breed->initTaxonomy();
 	}
 
-	function register_css( $hook ) {
-		wp_register_style( $this->class_prefix . '-admin', plugins_url( '/css/admin.css', __FILE__ ), array(), ANIMALSHELTER_VERSION, 'all' );
-		wp_enqueue_style( $this->class_prefix . '-admin' );
+	public function register_css( $hook ): void {
+		wp_register_style( $this->prefix . '-admin', plugins_url( '/css/admin.css', __FILE__ ), array(), ANIMALSHELTER_VERSION, 'all' );
+		wp_enqueue_style( $this->prefix . '-admin' );
 	}
 
-	function register_js( $hook ) {
-		wp_register_script( $this->class_prefix . '-admin', plugins_url( '/js/admin.js', __FILE__ ), array(), ANIMALSHELTER_VERSION, true );
-		wp_enqueue_script( $this->class_prefix . '-admin' );
+	public function register_js( $hook ): void {
+		wp_register_script( $this->prefix . '-admin', plugins_url( '/js/admin.js', __FILE__ ), array(), ANIMALSHELTER_VERSION, true );
+		wp_enqueue_script( $this->prefix . '-admin' );
 	}
 }

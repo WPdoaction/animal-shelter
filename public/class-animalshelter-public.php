@@ -29,12 +29,12 @@ class Animalshelter_Public {
 		//add_action( 'wp_enqueue_scripts', array( $this, 'register_js' ) );
 	}
 
-	function register_css( $hook ) {
+	public function register_css( $hook ): void {
 		wp_register_style( $this->prefix . '-public', plugins_url( '/css/public.css', __FILE__ ), array(), ANIMALSHELTER_VERSION, 'all' );
 		wp_enqueue_style( $this->prefix . '-public' );
 	}
 
-	function register_js( $hook ) {
+	public function register_js( $hook ): void {
 		wp_register_script( $this->prefix . '-public', plugins_url( '/js/public.js', __FILE__ ), array(), ANIMALSHELTER_VERSION, true );
 		wp_enqueue_script( $this->prefix . '-public' );
 	}
