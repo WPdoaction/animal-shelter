@@ -1,6 +1,6 @@
 <?php
 
-class Animalshelter_Admin_Cpt {
+class Animalshelter_Cpt {
 	public string $class_prefix = ANIMALSHELTER_PREFIX;
 	public string $cpt;
 	public string $rewrite;

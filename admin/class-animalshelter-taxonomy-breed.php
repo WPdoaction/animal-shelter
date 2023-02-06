@@ -1,6 +1,6 @@
 <?php
 
-class Animalshelter_Admin_Taxonomy_Breed extends Animalshelter_Admin_Taxonomy {
+class Animalshelter_Taxonomy_Breed extends Animalshelter_Taxonomy {
 	public function __construct() {
 		parent::__construct();
 		$this->taxonomy         = ANIMALSHELTER_TAXONOMY_BREED;

@@ -15,25 +15,25 @@ class Animalshelter_Admin {
 
 	private function includes(): void {
 		//CPTs register, and their configuration.
-		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin-cpt.php';
-		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin-cpt-dog.php';
-		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin-cpt-cat.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-cpt.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-cpt-dog.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-cpt-cat.php';
 
 		//Taxonomies register, and their configuration.
-		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin-taxonomy.php';
-		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin-taxonomy-breed.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed.php';
 	}
 
 	private function inits(): void {
 		//add_action( 'admin_enqueue_scripts', array( $this, 'register_css' ) );
 		//add_action( 'admin_enqueue_scripts', array( $this, 'register_js' ) );
 
-		$cpt_dog = new Animalshelter_Admin_Cpt_Dog();
+		$cpt_dog = new Animalshelter_Cpt_Dog();
 		$cpt_dog->initCPT();
-		$cpt_cat = new Animalshelter_Admin_Cpt_Cat();
+		$cpt_cat = new Animalshelter_Cpt_Cat();
 		$cpt_cat->initCPT();
 
-		$taxonomy_breed = new Animalshelter_Admin_Taxonomy_Breed();
+		$taxonomy_breed = new Animalshelter_Taxonomy_Breed();
 		$taxonomy_breed->initTaxonomy();
 	}
 

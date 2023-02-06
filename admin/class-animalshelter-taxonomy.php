@@ -1,6 +1,6 @@
 <?php
 
-class Animalshelter_Admin_Taxonomy {
+class Animalshelter_Taxonomy {
 	public string $taxonomy;
 	public string $taxonomy_rewrite;
 

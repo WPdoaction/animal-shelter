@@ -1,6 +1,6 @@
 <?php
 
-class Animalshelter_Admin_Cpt_Dog extends Animalshelter_Admin_Cpt {
+class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 
 	public function __construct() {
 		parent::__construct();
