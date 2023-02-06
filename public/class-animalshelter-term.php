@@ -2,9 +2,19 @@
 
 class Animalshelter_Term {
 	public string $prefix = ANIMALSHELTER_PREFIX;
+	public int $id;
+	public string $name;
+	public string $slug;
+	public string $taxonomy;
+	public string $description;
+	/**
+	 * @var array|mixed|WP_Error|WP_Term|null
+	 */
+	public mixed $term;
+
 	public string $cpt_dog = ANIMALSHELTER_CPT_DOG;
 	public string $cpt_cat = ANIMALSHELTER_CPT_CAT;
-	public string $taxonomy;
+
 
 	public function __construct( $term ) {
 		if ( is_int( $term ) ) {
@@ -21,28 +31,28 @@ class Animalshelter_Term {
 		}
 	}
 
-	function getTitle() {
+	public function get_title(): string {
 		return $this->name;
 	}
 
-	function getURI() {
+	public function get_URI(): WP_Term|WP_Error|bool|array|int|string|null {
 		return get_term_link( $this->id, $this->taxonomy );
 	}
 
-	function getLink( $title = '', $classes = [] ) {
+	public function get_link( $title = '', $classes = array() ): string {
 		if ( empty( $title ) ) {
-			$title = $this->getTitle();
+			$title = $this->get_title();
 		}
 		$class = '';
 		if ( ! empty( $classes ) && is_array( $classes ) ) {
 			$class = ' class="' . implode( ' ', $classes ) . '"';
 		}
 
-		return '<a href="' . esc_url( $this->getURI() ) . '"' . $class . '>' . esc_html( $title ) . '</a>';
+		return '<a href="' . esc_url( $this->get_URI() ) . '"' . $class . '>' . esc_html( $title ) . '</a>';
 	}
 
-	/* Meta */
-	function getValue( $key, $array = false ) {
+	// Meta
+	public function get_value( $key, $array = false ) {
 		$values = '';
 		$single = true;
 		if ( $array ) {
