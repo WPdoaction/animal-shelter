@@ -1,7 +1,7 @@
 <?php
 
 class Animalshelter_Admin_Taxonomy_Breed extends Animalshelter_Admin_Taxonomy {
-	function __construct() {
+	public function __construct() {
 		parent::__construct();
 		$this->taxonomy         = ANIMALSHELTER_TAXONOMY_BREED;
 		$this->taxonomy_rewrite = 'breed';
@@ -9,11 +9,11 @@ class Animalshelter_Admin_Taxonomy_Breed extends Animalshelter_Admin_Taxonomy {
 
 	public function initTaxonomy() {
 		add_action( 'init', array( $this, 'taxonomy_register' ) );
-		add_action( 'init', array( $this, 'add_taxonomy_metaboxes' ) );
+		//add_action( 'init', array( $this, 'add_taxonomy_metaboxes' ) );
 	}
 
-	function taxonomy_register() {
-		$args = $this->taxonomy_register_default_args();
+	public function taxonomy_register() {
+		$args           = $this->taxonomy_register_public_default_args();
 		$args['labels'] = array(
 			'name'                       => _x( 'Breeds', 'Taxonomy General Name', 'animal-shelter' ),
 			'singular_name'              => _x( 'Breed', 'Taxonomy Singular Name', 'animal-shelter' ),
@@ -36,10 +36,10 @@ class Animalshelter_Admin_Taxonomy_Breed extends Animalshelter_Admin_Taxonomy {
 			'items_list'                 => __( 'Breeds list', 'animal-shelter' ),
 			'items_list_navigation'      => __( 'Breeds list navigation', 'animal-shelter' ),
 		);
-		register_taxonomy( $this->taxonomy, [$this->cpt_dog, $this->cpt_cat] , $args );
+		register_taxonomy( $this->taxonomy, array( $this->cpt_dog, $this->cpt_cat ), $args );
 	}
 
-	function add_taxonomy_metaboxes() {
+	public function add_taxonomy_metaboxes() {
 
 	}
 

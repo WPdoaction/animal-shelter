@@ -13,7 +13,7 @@ class Animalshelter_Admin_Cpt_Dog extends Animalshelter_Admin_Cpt {
 
 	public function initCPT() {
 		add_action( 'init', array( $this, 'cpt_register' ) );
-		add_action( 'init', array( $this, 'add_cpt_metaboxes' ) );
+		//add_action( 'init', array( $this, 'add_cpt_metaboxes' ) );
 	}
 
 	public function cpt_register() {
