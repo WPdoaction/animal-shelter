@@ -14,14 +14,14 @@ Para cada uno de los proyectos será necesario contar con varios equipos de trab
 - Diseño: Diseñadores y maquetadores de temas WordPress.
 - Contenidos: Fotógrafos, copywriters y maquetadores.
 - Social: Gestores de redes sociales, tanto para el mismo día del evento, como para apoyar a las organizaciones.
-- Calidad / Test: Resposnables de revisar que todo lo que se publica es correcto y pasa unos mínimos de calidad.
-- Training: Responsables de la formacióna a las organizaciones del funcionamiento de WordPress y de los componentes que se creen.
+- Calidad / Test: Responsables de revisar que todo lo que se publica es correcto y pasa unos mínimos de calidad.
+- Training: Responsables de la formación a las organizaciones del funcionamiento de WordPress y de los componentes que se creen.
 
 ## Proyectos
 
 ### Custom Post Type: Perro / Gato / Ave / Pez / Reptil / Anfibio
 
-Se deberán crear varios Custom post Type para la gestiónd e los distintos tipos de animales que se planteen añadir a la plataforma. Inicialmente perros y gatos, aunque con esta base se podría crear cualquier tipo de animal.
+Se deberán crear varios Custom post Type para la gestión de los distintos tipos de animales que se planteen añadir a la plataforma. Inicialmente perros y gatos, aunque con esta base se podría crear cualquier tipo de animal.
 
 Existen una serie de campos que estarán disponibles en cualquier tipo de animal:
 
