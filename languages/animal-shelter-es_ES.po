@@ -280,6 +280,7 @@ msgstr "Añadir o eliminar razas"
 
 #: admin/class-animalshelter-taxonomy.php:29
 #: admin/class-animalshelter-taxonomy.php:54
+#: admin/class-animalshelter-taxonomy.php:79
 msgid "Choose from the most used"
 msgstr "Elija entre los más utilizados"
 
@@ -293,6 +294,7 @@ msgstr "Buscar razas"
 
 #: admin/class-animalshelter-taxonomy.php:32
 #: admin/class-animalshelter-taxonomy.php:57
+#: admin/class-animalshelter-taxonomy.php:82
 msgid "Not Found"
 msgstr "No encontrado"
 
@@ -403,6 +405,7 @@ msgstr ""
 msgid "Birthday"
 msgstr ""
 
+#: admin/class-animalshelter-taxonomy.php:68
 #: admin/fields-general.php:25
 msgid "Size"
 msgstr ""
@@ -2266,4 +2269,74 @@ msgstr ""
 
 #: includes/breed/class-animalshelter-breed-dog.php:403
 msgid "Yorkshire Terrier"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:66
+msgctxt "Taxonomy General Name"
+msgid "Sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:67
+msgctxt "Taxonomy Singular Name"
+msgid "Size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:69
+msgid "All sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:70
+msgid "Parent size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:71
+msgid "Parent size:"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:72
+msgid "New size bame"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:73
+msgid "Add new size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:74
+msgid "Edit size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:75
+msgid "Update size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:76
+msgid "View size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:77
+msgid "Separate sizes with commas"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:78
+msgid "Add or remove sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:80
+msgid "Popular sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:81
+msgid "Search sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:83
+msgid "No sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:84
+msgid "Sizes list"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:85
+msgid "Sizes list navigation"
 msgstr ""

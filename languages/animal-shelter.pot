@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-02-11T15:59:42+00:00\n"
+"POT-Creation-Date: 2023-02-11T16:36:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: animal-shelter\n"
@@ -288,6 +288,7 @@ msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:29
 #: admin/class-animalshelter-taxonomy.php:54
+#: admin/class-animalshelter-taxonomy.php:79
 msgid "Choose from the most used"
 msgstr ""
 
@@ -301,6 +302,7 @@ msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:32
 #: admin/class-animalshelter-taxonomy.php:57
+#: admin/class-animalshelter-taxonomy.php:82
 msgid "Not Found"
 msgstr ""
 
@@ -391,6 +393,81 @@ msgstr ""
 msgid "Status list navigation"
 msgstr ""
 
+#: admin/class-animalshelter-taxonomy.php:66
+msgctxt "Taxonomy General Name"
+msgid "Sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:67
+msgctxt "Taxonomy Singular Name"
+msgid "Size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:68
+#: admin/fields-general.php:25
+msgid "Size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:69
+msgid "All sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:70
+msgid "Parent size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:71
+msgid "Parent size:"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:72
+msgid "New size bame"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:73
+msgid "Add new size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:74
+msgid "Edit size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:75
+msgid "Update size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:76
+msgid "View size"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:77
+msgid "Separate sizes with commas"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:78
+msgid "Add or remove sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:80
+msgid "Popular sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:81
+msgid "Search sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:83
+msgid "No sizes"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:84
+msgid "Sizes list"
+msgstr ""
+
+#: admin/class-animalshelter-taxonomy.php:85
+msgid "Sizes list navigation"
+msgstr ""
+
 #: admin/fields-general.php:10
 msgid "Excerpt"
 msgstr ""
@@ -401,10 +478,6 @@ msgstr ""
 
 #: admin/fields-general.php:20
 msgid "Birthday"
-msgstr ""
-
-#: admin/fields-general.php:25
-msgid "Size"
 msgstr ""
 
 #: admin/fields-general.php:30
