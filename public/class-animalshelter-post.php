@@ -65,8 +65,8 @@ class Animalshelter_Post {
 		return false;
 	}
 
-	public function get_publication_date( $dateFormat = 'U' ): int {
-		return (int)get_the_time( $dateFormat, $this->id );
+	public function get_publication_date( $dateFormat = 'U' ): string {
+		return (string)get_the_time( $dateFormat, $this->id );
 	}
 
 	public function get_modification_date( $dateFormat = 'U' ): string {
