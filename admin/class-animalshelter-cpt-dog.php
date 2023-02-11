@@ -16,8 +16,8 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 	}
 
 	public function cpt_register() {
-		$args           = $this->cpt_register_public_default_args();
-		$args['labels'] = array(
+		$args             = $this->cpt_register_public_default_args();
+		$args['labels']   = array(
 			'name'                  => _x( 'Dogs', 'Post Type General Name', 'animal-shelter' ),
 			'singular_name'         => _x( 'Dog', 'Post Type Singular Name', 'animal-shelter' ),
 			'menu_name'             => __( 'Dogs', 'animal-shelter' ),
