@@ -119,54 +119,58 @@ function animalshelter_deactivate() {
 }
 register_deactivation_hook( __FILE__, 'animalshelter_deactivate' );
 
-
+/**
+ * Defines constants for use throughout the plugin.
+ *
+ * @return void
+ */
 function animalshelter_constants(): void {
-	// Plugin prefix
+	// Plugin prefix.
 	if ( ! defined( 'ANIMALSHELTER_PREFIX' ) ) {
 		define( 'ANIMALSHELTER_PREFIX', 'animalshelter' );
 	}
 
-	// Plugin Folder Path
+	// Plugin Folder Path.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_DIR' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 	}
 
-	// Plugin Admin Path
+	// Plugin Admin Path.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_ADMIN_DIR' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_ADMIN_DIR', ANIMALSHELTER_PLUGIN_DIR . 'admin/' );
 	}
 
-	// Plugin Public Path
+	// Plugin Public Path.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_PUBLIC_DIR' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_PUBLIC_DIR', ANIMALSHELTER_PLUGIN_DIR . 'public/' );
 	}
 
-	// Plugin Includes Path
+	// Plugin Includes Path.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_INCLUDES_DIR' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_INCLUDES_DIR', ANIMALSHELTER_PLUGIN_DIR . 'includes/' );
 	}
 
-	// Plugin Languages Path
+	// Plugin Languages Path.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_LANGUAGES_DIR' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_LANGUAGES_DIR', ANIMALSHELTER_PLUGIN_DIR . 'languages/' );
 	}
 
-	// Plugin Folder URL
+	// Plugin Folder URL.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_URL' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 	}
 
-	// Plugin Admin URL
+	// Plugin Admin URL.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_ADMIN_URL' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_ADMIN_URL', ANIMALSHELTER_PLUGIN_URL . 'admin/' );
 	}
 
-	// Plugin Public URL
+	// Plugin Public URL.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_PUBLIC_URL' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_PUBLIC_URL', ANIMALSHELTER_PLUGIN_URL . 'public/' );
 	}
 
-	// Plugin Root File
+	// Plugin Root File.
 	if ( ! defined( 'ANIMALSHELTER_PLUGIN_FILE' ) ) {
 		define( 'ANIMALSHELTER_PLUGIN_FILE', __FILE__ );
 	}
