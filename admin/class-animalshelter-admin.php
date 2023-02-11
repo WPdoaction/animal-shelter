@@ -40,6 +40,10 @@ class Animalshelter_Admin {
 
 		$taxonomy_breed = new Animalshelter_Taxonomy_Breed();
 		$taxonomy_breed->initTaxonomy();
+
+		// Flush rewrite rules in init, after CPTs and Taxonomies are registered
+		add_action( 'init', array( $this, 'flush_rewrite_rules' ), 999 );
+
 	}
 
 	public function register_css( $hook ): void {
@@ -51,4 +55,16 @@ class Animalshelter_Admin {
 		wp_register_script( $this->prefix . '-admin', plugins_url( '/js/admin.js', __FILE__ ), array(), ANIMALSHELTER_VERSION, true );
 		wp_enqueue_script( $this->prefix . '-admin' );
 	}
+
+	public function flush_rewrite_rules() {
+
+		// When flag is not set, flush rewrite rules
+		if ( get_option( 'ANIMALSHELTER_flush_rewrite_rules_flag' ) === false ) {
+
+			update_option( 'ANIMALSHELTER_flush_rewrite_rules_flag', 'no', true );
+
+			flush_rewrite_rules();
+		}
+	}
+
 }
