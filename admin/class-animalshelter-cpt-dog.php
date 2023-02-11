@@ -13,7 +13,6 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 
 	public function initCPT() {
 		add_action( 'init', array( $this, 'cpt_register' ) );
-		//add_action( 'init', array( $this, 'add_cpt_metaboxes' ) );
 	}
 
 	public function cpt_register() {
@@ -43,12 +42,34 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 			'items_list_navigation' => __( 'Dogs list navigation', 'animal-shelter' ),
 			'filter_items_list'     => __( 'Filter dogs list', 'animal-shelter' ),
 		);
+		$args['template'] = array(
+			array(
+				'core/columns',
+				array(),
+				array(
+					array(
+						'core/column',
+						array(),
+						array(
+							array(
+								'core/image',
+								array(),
+							),
+						)
+					),
+					array(
+						'core/column',
+						array(),
+						array(
+							array(
+								'animal-shelter/meta-dogs',
+								array(),
+							),
+						),
+					),
+				),
+			),
+		);
 		register_post_type( $this->cpt, $args );
 	}
-
-	public function add_cpt_metaboxes() {
-
-	}
-
-
 }
