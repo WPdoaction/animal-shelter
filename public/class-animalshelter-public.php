@@ -21,7 +21,8 @@ class Animalshelter_Public {
 
 		//Terms.
 		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term.php';
-		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-breed.php';
+		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-breed-dog.php';
+		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-breed-cat.php';
 	}
 
 	private function inits(): void {

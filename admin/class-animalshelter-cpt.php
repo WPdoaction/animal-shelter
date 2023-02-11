@@ -8,7 +8,7 @@ class Animalshelter_Cpt {
 	public string $description;
 	public string $menu_icon;
 
-	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED;
+	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED_DOG;
 
 	public function __construct() {
 
