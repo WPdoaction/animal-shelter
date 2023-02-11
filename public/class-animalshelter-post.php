@@ -5,7 +5,8 @@ class Animalshelter_Post {
 	public string $cpt;
 	public int $id;
 
-	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED_DOG;
+	public string $taxonomy_breed_dog = ANIMALSHELTER_TAXONOMY_BREED_DOG;
+	public string $taxonomy_breed_cat = ANIMALSHELTER_TAXONOMY_BREED_CAT;
 
 	public function __construct( $id = 0 ) {
 		if ( empty( $id ) ) {
@@ -88,8 +89,18 @@ class Animalshelter_Post {
 	}
 
 	// Taxonomy
-	public function get_Breed(): array {
-		$terms = $this->get_terms( $this->taxonomy_breed );
+	public function get_breed_dog(): array {
+		$terms = $this->get_terms( $this->taxonomy_breed_dog );
+
+		if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
+	}
+
+	public function get_breed_cat(): array {
+		$terms = $this->get_terms( $this->taxonomy_breed_cat );
 
 		if ( false !== is_wp_error( $terms ) ) {
 			return [];
