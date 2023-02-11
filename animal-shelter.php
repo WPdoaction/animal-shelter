@@ -60,8 +60,12 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 				define( 'ANIMALSHELTER_CPT_CAT', 'as_cat' ); //20 characters max.
 			}
 
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_BREED' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_BREED', 'as_breed' ); //20 characters max.
+			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_CAT_BREED' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_CAT_BREED', 'as_cat_breed' ); //20 characters max.
+			}
+
+			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_DOG_BREED' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_DOG_BREED', 'as_dog_breed' ); //20 characters max.
 			}
 		}
 

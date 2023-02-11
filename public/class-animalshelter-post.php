@@ -5,7 +5,7 @@ class Animalshelter_Post {
 	public string $cpt;
 	public int $id;
 
-	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED;
+	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_DOG_BREED;
 
 	public function __construct( $id = 0 ) {
 		if ( empty( $id ) ) {
