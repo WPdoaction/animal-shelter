@@ -5,7 +5,7 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 	public function __construct() {
 		parent::__construct();
 		$this->cpt         = ANIMALSHELTER_CPT_DOG;
-		$this->rewrite     = 'dog';
+		$this->rewrite     = __( 'dogs', 'animal-shelter' );
 		$this->label       = __( 'Dog', 'animal-shelter' );
 		$this->description = __( 'Animal: Dog', 'animal-shelter' );
 		$this->menu_icon   = 'dashicons-portfolio';
