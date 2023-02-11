@@ -1,11 +1,8 @@
 <?php
 
 class Animalshelter_Taxonomy_Breed_Dog extends Animalshelter_Taxonomy {
-	private Animalshelter_Labels_Breed $labels;
-
-	public function __construct( $labels ) {
+	public function __construct() {
 		parent::__construct();
-		$this->labels			= $labels;
 		$this->taxonomy         = ANIMALSHELTER_TAXONOMY_BREED_DOG;
 		$this->taxonomy_rewrite = 'breed-dog';
 	}
@@ -17,7 +14,7 @@ class Animalshelter_Taxonomy_Breed_Dog extends Animalshelter_Taxonomy {
 
 	public function taxonomy_register() {
 		$args           = $this->taxonomy_register_public_default_args();
-		$args['labels'] = $this->labels->get_labels();
+		$args['labels'] = $this->get_taxonomies_breed_labels();
 		
 		register_taxonomy( $this->taxonomy, array( $this->cpt_dog ), $args );
 	}
