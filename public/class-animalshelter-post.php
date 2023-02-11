@@ -6,6 +6,7 @@ class Animalshelter_Post {
 	public int $id;
 
 	public string $taxonomy_breed;
+	public string $taxonomy_status;
 
 	public function __construct( $id = 0 ) {
 		if ( empty( $id ) ) {
@@ -89,6 +90,16 @@ class Animalshelter_Post {
 
 	public function get_breed(): array {
 		$terms = $this->get_terms( $this->taxonomy_breed );
+
+		if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
+	}
+
+	public function get_status(): array {
+		$terms = $this->get_terms( $this->taxonomy_status );
 
 		if ( false !== is_wp_error( $terms ) ) {
 			return [];
