@@ -49,6 +49,7 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 			$this->show_title( __( 'Animals', 'animal-shelter' ) );
 			$this->show_description( __( 'Select which animals you will see in the admin panel.', 'animal-shelter' ) );
 			$this->table_start();
+			// TODO
 			// Input
 			$this->table_end();
 			$this->nonce();
@@ -58,6 +59,7 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 			$this->show_title( __( 'Breeds', 'animal-shelter' ) );
 			$this->show_description( __( 'Load default breeds.', 'animal-shelter' ) );
 			$this->table_start();
+			// TODO
 			// Input
 			$this->table_end();
 			$this->nonce();
@@ -67,8 +69,10 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 
 	public function save(): void {
 		if ( 'animals' === $this->tab ) {
+			// TODO
 			// Save input
 		} elseif ( 'breeds' === $this->tab ) {
+			// TODO
 			// Save input
 		}
 	}
