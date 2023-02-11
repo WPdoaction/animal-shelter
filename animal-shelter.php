@@ -83,6 +83,14 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_SIZE_CAT' ) ) {
 				define( 'ANIMALSHELTER_TAXONOMY_SIZE_CAT', 'as_size_cat' ); //20 characters max.
 			}
+
+			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_COLOR_DOG' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_COLOR_DOG', 'as_color_dog' ); //20 characters max.
+			}
+
+			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_COLOR_CAT' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_COLOR_CAT', 'as_color_cat' ); //20 characters max.
+			}
 		}
 
 		public function upgrader(): void {
@@ -130,6 +138,7 @@ function animalshelter_activate(): void {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-animalshelter-activator.php';
 	Animalshelter_Activator::activate();
 }
+
 register_activation_hook( __FILE__, 'animalshelter_activate' );
 
 /**
@@ -139,6 +148,7 @@ function animalshelter_deactivate() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-animalshelter-deactivator.php';
 	Animalshelter_Deactivator::deactivate();
 }
+
 register_deactivation_hook( __FILE__, 'animalshelter_deactivate' );
 
 /**
