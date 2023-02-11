@@ -22,6 +22,10 @@ class Animalshelter_Admin {
 		//Taxonomies register, and their configuration.
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed.php';
+
+		// Custom options page on backend
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-menupage.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-menupage-animalshelter.php';
 	}
 
 	private function inits(): void {
@@ -35,6 +39,9 @@ class Animalshelter_Admin {
 
 		$taxonomy_breed = new Animalshelter_Taxonomy_Breed();
 		$taxonomy_breed->initTaxonomy();
+
+		$options_page = new Animalshelter_Menupage_Animalshelter();
+		$options_page->init();
 	}
 
 	public function register_css( $hook ): void {
