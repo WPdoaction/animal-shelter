@@ -8,7 +8,7 @@ class Animalshelter_Cpt_Cat extends Animalshelter_Cpt {
 		$this->rewrite     = 'cat';
 		$this->label       = __( 'Cat', 'animal-shelter' );
 		$this->description = __( 'Animal: Cat', 'animal-shelter' );
-		$this->menu_icon   = 'data:image/svg+xml;base64,' . base64_encode( file_get_contents( ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'img/cat.svg' ) );
+		$this->menu_icon   = plugins_url( 'admin/img/cat.svg', ANIMALSHELTER_PLUGIN_FILE );
 	}
 
 	public function initCPT() {
