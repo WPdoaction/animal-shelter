@@ -28,6 +28,8 @@ class Animalshelter_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate(): void {
+		Animalshelter_Admin::unregister_custom_post_types();
+
 		flush_rewrite_rules();
 	}
 

@@ -3,6 +3,11 @@
 class Animalshelter_Admin {
 	public string $prefix = ANIMALSHELTER_PREFIX;
 
+	public static function unregister_custom_post_types() {
+		unregister_post_type( ANIMALSHELTER_CPT_DOG );
+		unregister_post_type( ANIMALSHELTER_CPT_CAT );
+	}
+
 	public function load() {
 		$this->constants();
 		$this->includes();
