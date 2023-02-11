@@ -8,7 +8,7 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 		$this->rewrite     = __( 'dogs', 'animal-shelter' );
 		$this->label       = __( 'Dog', 'animal-shelter' );
 		$this->description = __( 'Animal: Dog', 'animal-shelter' );
-		$this->menu_icon   = 'dashicons-portfolio';
+		$this->menu_icon   = 'data:image/svg+xml;base64,' . base64_encode( file_get_contents( ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'img/dog.svg' ) );
 	}
 
 	public function initCPT() {
