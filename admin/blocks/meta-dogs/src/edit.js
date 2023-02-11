@@ -21,12 +21,12 @@ export default function Edit() {
 		<div {...useBlockProps()}>
 			{subTitleValue || subTitleValue === '' ? (
 				<TextControl
-					label={__('Post Subtitle', 'metadata-block')}
+					label={__('Post Subtitle', 'animal-shelter')}
 					value={subTitleValue}
 					onChange={onSubtitleChange}
 				/>
 			) : (
-				__('Meta Field is Not Registered', 'metadata-block')
+				__('Meta Field is Not Registered', 'animal-shelter')
 			)}
 		</div>
 	);

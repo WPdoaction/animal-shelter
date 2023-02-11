@@ -38,18 +38,17 @@ function Edit() {
   }, []);
   const [meta, setMeta] = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_4__.useEntityProp)('postType', postType, 'meta');
   const subTitleValue = meta._blocks_course_post_subtitle;
-
   const onSubtitleChange = value => {
-    setMeta({ ...meta,
+    setMeta({
+      ...meta,
       _blocks_course_post_subtitle: value
     });
   };
-
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__.useBlockProps)(), subTitleValue || subTitleValue === '' ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Post Subtitle', 'metadata-block'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Post Subtitle', 'animal-shelter'),
     value: subTitleValue,
     onChange: onSubtitleChange
-  }) : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Field is Not Registered', 'metadata-block'));
+  }) : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Field is Not Registered', 'animal-shelter'));
 }
 
 /***/ }),
