@@ -9,7 +9,7 @@ class Animalshelter_Breed_Dog {
 	public function __construct() {
 		$this->breeds = array(
 			'unknown'                            => array( 'name' => __( 'Unknow', 'animal-shelter' ) ),
-			'mutt'                            => array( 'name' => __( 'Mutt', 'animal-shelter' ) ),
+			'mutt'                               => array( 'name' => __( 'Mutt', 'animal-shelter' ) ),
 			'afador'                             => array( 'name' => __( 'Afador', 'animal-shelter' ) ),
 			'affenhuahua'                        => array( 'name' => __( 'Affenhuahua', 'animal-shelter' ) ),
 			'affenpinscher'                      => array( 'name' => __( 'Affenpinscher', 'animal-shelter' ) ),
@@ -227,7 +227,7 @@ class Animalshelter_Breed_Dog {
 			'hanoverian-scenthound'              => array( 'name' => __( 'Hanoverian Scenthound', 'animal-shelter' ) ),
 			'harrier'                            => array( 'name' => __( 'Harrier', 'animal-shelter' ) ),
 			'havanese'                           => array( 'name' => __( 'Havanese', 'animal-shelter' ) ),
-			'havapoo'                           => array( 'name' => __( 'Havapoo', 'animal-shelter' ) ),
+			'havapoo'                            => array( 'name' => __( 'Havapoo', 'animal-shelter' ) ),
 			'hokkaido'                           => array( 'name' => __( 'Hokkaido', 'animal-shelter' ) ),
 			'horgi'                              => array( 'name' => __( 'Horgi', 'animal-shelter' ) ),
 			'hovawart'                           => array( 'name' => __( 'Hovawart', 'animal-shelter' ) ),
