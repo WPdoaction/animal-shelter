@@ -7,11 +7,12 @@ class Animalshelter_Cpt {
 	public string $label;
 	public string $description;
 	public string $menu_icon;
+	public string $title_post;
 
 	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED_DOG;
 
 	public function __construct() {
-
+		add_filter( 'enter_title_here', array( $this, 'custom_enter_title' ) );
 	}
 
 	public function cpt_register_public_default_args(): array {
@@ -41,6 +42,20 @@ class Animalshelter_Cpt {
 			'show_in_rest'        => true,
 			'menu_icon'           => $this->menu_icon,
 		);
+	}
+
+	/**
+	 * Custom title for CPT
+	 *
+	 * @param string $input Input title.
+	 * @return string
+	 */
+	public function custom_enter_title( $input ) {
+		if ( $this->cpt === get_post_type() ) {
+			return $this->title_post;
+		}
+
+		return $input;
 	}
 
 	public function get_archive_URL(): string {
