@@ -8,8 +8,8 @@ class Animalshelter_Breed_Dog {
 
 	public function __construct() {
 		$this->breeds = array(
-			'unknow' => array ( 'name' => __( 'Unknow', 'animal-shelter' ),
-			'unknow' => array ( 'name' => __( 'Mongrel', 'animal-shelter' ),
+			'unknown' => array ( 'name' => __( 'Unknow', 'animal-shelter' ),
+			'mongrel' => array ( 'name' => __( 'Mongrel', 'animal-shelter' ),
 			'afador' => array ( 'name' => __( 'Afador', 'animal-shelter' ),
 			'affenhuahua' => array ( 'name' => __( 'Affenhuahua', 'animal-shelter' ),
 			'affenpinscher' => array ( 'name' => __( 'Affenpinscher', 'animal-shelter' ),
