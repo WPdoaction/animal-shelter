@@ -50,7 +50,6 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 			$this->show_description( __( 'Select which animals you will see in the admin panel.', 'animal-shelter' ) );
 			$this->table_start();
 			// Input
-			// $this->showInput( 'g4co-notes', __( 'Notas', 'g4co' ), '', 'richeditor' );
 			$this->table_end();
 			$this->nonce();
 			submit_button();
@@ -60,7 +59,6 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 			$this->show_description( __( 'Load default breeds.', 'animal-shelter' ) );
 			$this->table_start();
 			// Input
-			// $this->showInput( 'g4co-notes', __( 'Notas', 'g4co' ), '', 'richeditor' );
 			$this->table_end();
 			$this->nonce();
 			submit_button();
@@ -69,9 +67,9 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 
 	public function save(): void {
 		if ( 'animals' === $this->tab ) {
-			//$this->saveInput( 'g4co-notes' );
+			// Save input
 		} elseif ( 'breeds' === $this->tab ) {
-			//$this->saveInput( 'g4co-analytics-ua', true );
+			// Save input
 		}
 	}
 
