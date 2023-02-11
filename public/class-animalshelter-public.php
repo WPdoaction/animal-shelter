@@ -27,6 +27,8 @@ class Animalshelter_Public {
 		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-status-cat.php';
 		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-size-dog.php';
 		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-size-cat.php';
+		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-energy-dog.php';
+		require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-term-energy-cat.php';
 	}
 
 	private function inits(): void {

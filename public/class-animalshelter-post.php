@@ -8,6 +8,7 @@ class Animalshelter_Post {
 	public string $taxonomy_breed;
 	public string $taxonomy_status;
 	public string $taxonomy_size;
+	public string $taxonomy_energy;
 
 	public function __construct( $id = 0 ) {
 		if ( empty( $id ) ) {
@@ -111,6 +112,16 @@ class Animalshelter_Post {
 
 	public function get_size(): array {
 		$terms = $this->get_terms( $this->taxonomy_size );
+
+		if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
+	}
+
+	public function get_energy(): array {
+		$terms = $this->get_terms( $this->taxonomy_energy );
 
 		if ( false !== is_wp_error( $terms ) ) {
 			return [];
