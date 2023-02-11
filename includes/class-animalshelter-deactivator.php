@@ -29,9 +29,7 @@ class Animalshelter_Deactivator {
 	 */
 	public static function deactivate(): void {
 		delete_option( 'ANIMALSHELTER_flush_rewrite_rules_flag' );
-
 		Animalshelter_Admin::unregister_custom_post_types();
-
 		flush_rewrite_rules();
 	}
 

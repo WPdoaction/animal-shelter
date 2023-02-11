@@ -3,12 +3,12 @@
 class Animalshelter_Admin {
 	public string $prefix = ANIMALSHELTER_PREFIX;
 
-	public static function unregister_custom_post_types() {
+	public static function unregister_custom_post_types(): void {
 		unregister_post_type( ANIMALSHELTER_CPT_DOG );
 		unregister_post_type( ANIMALSHELTER_CPT_CAT );
 	}
 
-	public function load() {
+	public function load(): void {
 		$this->constants();
 		$this->includes();
 		$this->inits();
@@ -38,7 +38,7 @@ class Animalshelter_Admin {
 		$cpt_dog->initCPT();
 		$cpt_cat = new Animalshelter_Cpt_Cat();
 		$cpt_cat->initCPT();
-		
+
 		$taxonomy_breed_dog = new Animalshelter_Taxonomy_Breed_Dog();
 		$taxonomy_breed_dog->initTaxonomy();
 
@@ -59,13 +59,10 @@ class Animalshelter_Admin {
 		wp_enqueue_script( $this->prefix . '-admin' );
 	}
 
-	public function flush_rewrite_rules() {
-
+	public function flush_rewrite_rules(): void {
 		// When flag is not set, flush rewrite rules
 		if ( get_option( 'ANIMALSHELTER_flush_rewrite_rules_flag' ) === false ) {
-
 			update_option( 'ANIMALSHELTER_flush_rewrite_rules_flag', 'no', true );
-
 			flush_rewrite_rules();
 		}
 	}
