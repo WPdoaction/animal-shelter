@@ -33,13 +33,19 @@ class Animalshelter_Taxonomy {
 	}
 
 	// Query helpers
-	public function get_terms( $hide_empty = true ): array|WP_Error|string {
-		return get_terms(
+	public function get_terms( $hide_empty = true ): array {
+		$terms = get_terms(
 			array(
 				'taxonomy'   => $this->taxonomy,
 				'hide_empty' => $hide_empty,
 			)
 		);
+
+		if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
 	}
 
 }

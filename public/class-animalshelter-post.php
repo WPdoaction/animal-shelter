@@ -19,8 +19,8 @@ class Animalshelter_Post {
 		return get_the_title( $this->id );
 	}
 
-	public function get_URI(): bool|string {
-		return get_the_permalink( $this->id );
+	public function get_URI(): string {
+		return (string)get_the_permalink( $this->id );
 	}
 
 	public function get_link( $title = '', $classes = array() ): string {
@@ -65,12 +65,12 @@ class Animalshelter_Post {
 		return false;
 	}
 
-	public function get_publication_date( $dateFormat = 'U' ): bool|int|string {
-		return get_the_time( $dateFormat, $this->id );
+	public function get_publication_date( $dateFormat = 'U' ): string {
+		return (string)get_the_time( $dateFormat, $this->id );
 	}
 
-	public function get_modification_date( $dateFormat = 'U' ): bool|int|string {
-		return get_the_modified_time( $dateFormat, $this->id );
+	public function get_modification_date( $dateFormat = 'U' ): string {
+		return (string)get_the_modified_time( $dateFormat, $this->id );
 	}
 
 	// Permissions
@@ -88,12 +88,24 @@ class Animalshelter_Post {
 	}
 
 	// Taxonomy
-	public function get_Breed(): WP_Error|array {
-		return $this->get_terms( $this->taxonomy_breed );
+	public function get_Breed(): array {
+		$terms = $this->get_terms( $this->taxonomy_breed );
+
+		if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
 	}
 
-	public function get_terms( $taxonomy ): WP_Error|array {
-		return wp_get_post_terms( $this->id, $taxonomy );
+	public function get_terms( $taxonomy ): array {
+		$taxonomy = wp_get_post_terms( $this->id, $taxonomy );
+
+		if ( false !== is_wp_error( $taxonomy ) ) {
+			return [];
+		}
+
+		return $taxonomy;
 	}
 
 	// Meta
@@ -107,20 +119,20 @@ class Animalshelter_Post {
 		return $values;
 	}
 
-	public function set_value( $key, $value ): bool|int {
+	public function set_value( $key, $value ): int {
 		if ( ! empty( $this->id ) ) {
-			return update_post_meta( $this->id, $key, $value );
+			return (int)update_post_meta( $this->id, $key, $value );
 		}
 
 		return 0;
 	}
 
-	public function remove_value( $key, $value = '' ): bool|int {
+	public function remove_value( $key, $value = '' ): int {
 		if ( ! empty( $this->id ) ) {
 			if ( empty( $value ) ) {
-				return delete_post_meta( $this->id, $key );
+				return (int)delete_post_meta( $this->id, $key );
 			} else {
-				return delete_post_meta( $this->id, $key, $value );
+				return (int)delete_post_meta( $this->id, $key, $value );
 			}
 		}
 

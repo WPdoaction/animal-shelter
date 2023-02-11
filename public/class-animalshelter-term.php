@@ -35,8 +35,14 @@ class Animalshelter_Term {
 		return $this->name;
 	}
 
-	public function get_URI(): WP_Term|WP_Error|bool|array|int|string|null {
-		return get_term_link( $this->id, $this->taxonomy );
+	public function get_URI(): string {
+		$link = get_term_link( $this->id, $this->taxonomy );
+
+		if ( false !== is_wp_error( $link ) ) {
+			return '';
+		}
+
+		return $link;
 	}
 
 	public function get_link( $title = '', $classes = array() ): string {
