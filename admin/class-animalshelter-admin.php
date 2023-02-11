@@ -23,6 +23,8 @@ class Animalshelter_Admin {
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed-dog.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed-cat.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-status-dog.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-status-cat.php';
 	}
 
 	private function inits(): void {
@@ -39,6 +41,12 @@ class Animalshelter_Admin {
 
 		$taxonomy_breed_cat = new Animalshelter_Taxonomy_Breed_Cat();
 		$taxonomy_breed_cat->initTaxonomy();
+
+		$taxonomy_status_dog = new Animalshelter_Taxonomy_Status_Dog();
+		$taxonomy_status_dog->initTaxonomy();
+
+		$taxonomy_status_cat = new Animalshelter_Taxonomy_Status_Cat();
+		$taxonomy_status_cat->initTaxonomy();
 	}
 
 	public function register_css( $hook ): void {
