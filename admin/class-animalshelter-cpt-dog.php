@@ -1,7 +1,23 @@
 <?php
+/**
+ * Defines the Dog CPT
+ *
+ * @package    WordPress
+ * @author     Fran Torres <frantorres@gmail.com>
+ * @copyright  2023 WordPress Granada
+ * @version    1.0
+ */
 
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Class for Animal Shelter Dog CPT.
+ */
 class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 
+	/**
+	 * Constructor
+	 */
 	public function __construct() {
 		parent::__construct();
 		$this->cpt         = ANIMALSHELTER_CPT_DOG;
@@ -11,11 +27,20 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 		$this->menu_icon   = 'dashicons-portfolio';
 	}
 
+	/**
+	 * Register the CPT
+	 */
 	public function initCPT() {
 		add_action( 'init', array( $this, 'cpt_register' ) );
-		//add_action( 'init', array( $this, 'add_cpt_metaboxes' ) );
+		
+		// Register Meta box for post type dog.
+		add_action( 'add_meta_boxes', array( $this, 'metabox_dog' ) );
+		add_action( 'save_post', array( $this, 'save_metaboxes_dog' ) );
 	}
 
+	/**
+	 * Register the CPT
+	 */
 	public function cpt_register() {
 		$args           = $this->cpt_register_public_default_args();
 		$args['labels'] = array(
@@ -49,6 +74,58 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 	public function add_cpt_metaboxes() {
 
 	}
+	/**
+	 * Adds metabox
+	 *
+	 * @return void
+	 */
+	public function metabox_dog() {
+		add_meta_box(
+			'animal_shetler_dog',
+			__( 'Dogs Meta', 'animal-shelter' ),
+			'metabox_show_dog',
+			'dog',
+			'normal'
+		);
+	}
 
+	/**
+	 * Metabox inputs for post type.
+	 *
+	 * @param object $post Post object.
+	 * @return void
+	 */
+	function metabox_show_dog( $post ) {
+		?>
+		<table>
+			<?php echo $this->meta_input_html( 'dog_year', 'text', 'Dog Key 1' ); ?>
+
+		</table>
+		<?php
+	}
+
+	/**
+	 * Save metaboxes
+	 *
+	 * @param int $post_id Post id.
+	 * @return void
+	 */
+	function save_metaboxes_dog( $post_id ) {
+		if ( isset( $_POST['dog_key1'] ) ) {
+			update_post_meta( $post_id, 'dog_key1', $_POST['dog_key1'] );
+		}
+		if ( isset( $_POST['dog_key2'] ) ) {
+			update_post_meta( $post_id, 'dog_key2', $_POST['dog_key2'] );
+		}
+		if ( isset( $_POST['dog_key3'] ) ) {
+			update_post_meta( $post_id, 'dog_key3', $_POST['dog_key3'] );
+		}
+		if ( isset( $_POST['dog_key4'] ) ) {
+			update_post_meta( $post_id, 'dog_key4', $_POST['dog_key4'] );
+		}
+		if ( isset( $_POST['dog_key5'] ) ) {
+			update_post_meta( $post_id, 'dog_key5', $_POST['dog_key5'] );
+		}
+	}
 
 }

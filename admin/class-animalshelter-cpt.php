@@ -169,4 +169,30 @@ class Animalshelter_Cpt {
 		return false;
 	}
 
+	/**
+	 * Creates function for meta fields
+	 *
+	 * @param string $key Key of the meta field.
+	 * @param string $type Type of the meta field.
+	 * @param string $title Title of the meta field.
+	 * @return html
+	 */
+	private function meta_input_html( $key, $type, $title ) {
+		switch ( $type ) {
+			case 'text':
+				$html  = '<tr><!-- TEXT ' . $key . '-->';
+				$html .= '<td>';
+				$html .= '<label for="' . $key . '">' . $title . '</label>';
+				$html .= '</td>';
+				$html .= '<td>';
+				$html .= '<input type="text" name="' . $key . '" value="' . esc_attr( get_post_meta( get_the_ID(), $key, true ) ) . '">';
+				$html .= '</td>';
+				$html .= '</tr><!-- //TEXT ' . $key . '-->';
+			default:
+				$html = '';
+		}
+
+		return $html;
+	}
+
 }
