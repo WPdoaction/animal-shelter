@@ -29,8 +29,6 @@ class Animalshelter_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate(): void {
-		//TODO Flush rewrite
-		//flush_rewrite_rules();
 	}
 
 }
