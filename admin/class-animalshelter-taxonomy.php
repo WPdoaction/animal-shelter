@@ -61,6 +61,31 @@ class Animalshelter_Taxonomy {
 		);
 	}
 
+	public function get_taxonomies_size_labels(): array {
+		return array(
+			'name'                       => _x( 'Sizes', 'Taxonomy General Name', 'animal-shelter' ),
+			'singular_name'              => _x( 'Size', 'Taxonomy Singular Name', 'animal-shelter' ),
+			'menu_name'                  => __( 'Size', 'animal-shelter' ),
+			'all_items'                  => __( 'All sizes', 'animal-shelter' ),
+			'parent_item'                => __( 'Parent size', 'animal-shelter' ),
+			'parent_item_colon'          => __( 'Parent size:', 'animal-shelter' ),
+			'new_item_name'              => __( 'New size bame', 'animal-shelter' ),
+			'add_new_item'               => __( 'Add new size', 'animal-shelter' ),
+			'edit_item'                  => __( 'Edit size', 'animal-shelter' ),
+			'update_item'                => __( 'Update size', 'animal-shelter' ),
+			'view_item'                  => __( 'View size', 'animal-shelter' ),
+			'separate_items_with_commas' => __( 'Separate sizes with commas', 'animal-shelter' ),
+			'add_or_remove_items'        => __( 'Add or remove sizes', 'animal-shelter' ),
+			'choose_from_most_used'      => __( 'Choose from the most used', 'animal-shelter' ),
+			'popular_items'              => __( 'Popular sizes', 'animal-shelter' ),
+			'search_items'               => __( 'Search sizes', 'animal-shelter' ),
+			'not_found'                  => __( 'Not Found', 'animal-shelter' ),
+			'no_terms'                   => __( 'No sizes', 'animal-shelter' ),
+			'items_list'                 => __( 'Sizes list', 'animal-shelter' ),
+			'items_list_navigation'      => __( 'Sizes list navigation', 'animal-shelter' ),
+		);
+	}
+
 	public function taxonomy_register_public_default_args(): array {
 		$rewrite = array(
 			'slug'         => $this->taxonomy_rewrite,
