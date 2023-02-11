@@ -1,0 +1,378 @@
+# Copyright (C) 2023 WordPress Granada Community
+# This file is distributed under the EUPL 1.2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Animal Shelter 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/animal-shelter\n"
+"POT-Creation-Date: 2023-02-05T18:18:32+00:00\n"
+"PO-Revision-Date: 2023-02-11 17:09+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Domain: animal-shelter\n"
+
+#. Plugin Name of the plugin
+#, fuzzy
+msgid "Animal Shelter"
+msgstr "Refugi d'animals"
+
+#. Plugin URI of the plugin
+#, fuzzy
+msgid "https://github.com/WPdoaction/animal-shelter/"
+msgstr "https://github.com/WPdoaction/animal-shelter/"
+
+#. Description of the plugin
+#, fuzzy
+msgid "Animal Shelter plugin for WordPress"
+msgstr "Connector refugi d'animals per a WordPress"
+
+#. Author of the plugin
+#, fuzzy
+msgid "WordPress Granada Community"
+msgstr "WordPress Comunitat Granada"
+
+#. Author URI of the plugin
+#, fuzzy
+msgid "https://wpgranada.es/"
+msgstr "https://wpgranada.es/"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:9
+#: admin/class-animalshelter-admin-cpt-cat.php:24
+#, fuzzy
+msgid "Cat"
+msgstr "Gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:10
+#, fuzzy
+msgid "Animal: Cat"
+msgstr "Animal: Gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:21
+#, fuzzy
+msgctxt "Post Type General Name"
+msgid "Cats"
+msgstr "Gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:22
+#, fuzzy
+msgctxt "Post Type Singular Name"
+msgid "Cat"
+msgstr "Gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:23
+#, fuzzy
+msgid "Cats"
+msgstr "Gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:25
+#, fuzzy
+msgid "Cat archives"
+msgstr "Arxius de gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:26
+#, fuzzy
+msgid "Cat attributes"
+msgstr "Atributs del gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:27
+#, fuzzy
+msgid "Parent cat:"
+msgstr "Gat pare:"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:28
+#, fuzzy
+msgid "All cats"
+msgstr "Tots els gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:29
+#, fuzzy
+msgid "Add new cat"
+msgstr "Afegir nou gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:30
+#: admin/class-animalshelter-admin-cpt-dog.php:30
+#, fuzzy
+msgid "Add new"
+msgstr "Afegir nou"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:31
+#, fuzzy
+msgid "New cat"
+msgstr "Gat nou"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:32
+#, fuzzy
+msgid "Edit cat"
+msgstr "Edita gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:33
+#, fuzzy
+msgid "Update cat"
+msgstr "Actualitzar gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:34
+#, fuzzy
+msgid "View cat"
+msgstr "Veure gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:35
+#, fuzzy
+msgid "View cats"
+msgstr "Veure gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:36
+#, fuzzy
+msgid "Search cat"
+msgstr "Cercar gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:37
+#: admin/class-animalshelter-admin-cpt-dog.php:37
+#, fuzzy
+msgid "Not found"
+msgstr "No trobat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:38
+#: admin/class-animalshelter-admin-cpt-dog.php:38
+#, fuzzy
+msgid "Not found in trash"
+msgstr "No es troba a les escombraries"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:39
+#, fuzzy
+msgid "Insert into cat"
+msgstr "Inserir en el gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:40
+#, fuzzy
+msgid "Uploaded to this cat"
+msgstr "Pujat a aquest gat"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:41
+#, fuzzy
+msgid "Cats list"
+msgstr "Llista de gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:42
+#, fuzzy
+msgid "Cats list navigation"
+msgstr "Navegació per la llista de gats"
+
+#: admin/class-animalshelter-admin-cpt-cat.php:43
+#, fuzzy
+msgid "Filter cats list"
+msgstr "Llista de gats filtrants"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:9
+#: admin/class-animalshelter-admin-cpt-dog.php:24
+#, fuzzy
+msgid "Dog"
+msgstr "Gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:10
+#, fuzzy
+msgid "Animal: Dog"
+msgstr "Animal: Gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:21
+#, fuzzy
+msgctxt "Post Type General Name"
+msgid "Dogs"
+msgstr "Gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:22
+#, fuzzy
+msgctxt "Post Type Singular Name"
+msgid "Dog"
+msgstr "Gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:23
+#, fuzzy
+msgid "Dogs"
+msgstr "Gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:25
+#, fuzzy
+msgid "Dog archives"
+msgstr "Arxius de gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:26
+#, fuzzy
+msgid "Dog attributes"
+msgstr "Atributs del gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:27
+#, fuzzy
+msgid "Parent dog:"
+msgstr "Gos pare:"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:28
+#, fuzzy
+msgid "All dogs"
+msgstr "Tots els gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:29
+#, fuzzy
+msgid "Add new dog"
+msgstr "Afegir nou gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:31
+#, fuzzy
+msgid "New dog"
+msgstr "Gos nou"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:32
+#, fuzzy
+msgid "Edit dog"
+msgstr "Edita gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:33
+#, fuzzy
+msgid "Update dog"
+msgstr "Actualitzar gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:34
+#, fuzzy
+msgid "View dog"
+msgstr "Veure gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:35
+#, fuzzy
+msgid "View dogs"
+msgstr "Veure gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:36
+#, fuzzy
+msgid "Search dog"
+msgstr "Buscar gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:39
+#, fuzzy
+msgid "Insert into dog"
+msgstr "Inserir en el gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:40
+#, fuzzy
+msgid "Uploaded to this dog"
+msgstr "Pujat a aquest gos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:41
+#, fuzzy
+msgid "Dogs list"
+msgstr "Llista de gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:42
+#, fuzzy
+msgid "Dogs list navigation"
+msgstr "Navegació per la llista de gossos"
+
+#: admin/class-animalshelter-admin-cpt-dog.php:43
+#, fuzzy
+msgid "Filter dogs list"
+msgstr "Llista de gossos filtrants"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:18
+#, fuzzy
+msgctxt "Taxonomy General Name"
+msgid "Breeds"
+msgstr "Races"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:19
+#, fuzzy
+msgctxt "Taxonomy Singular Name"
+msgid "Breed"
+msgstr "Raça"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:20
+#, fuzzy
+msgid "Breed"
+msgstr "Raça"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:21
+#, fuzzy
+msgid "All breeds"
+msgstr "Totes les races"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:22
+#, fuzzy
+msgid "Parent breed"
+msgstr "Raça pare"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:23
+#, fuzzy
+msgid "Parent breed:"
+msgstr "Raça pare:"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:24
+#, fuzzy
+msgid "New breed bame"
+msgstr "Nova raça bame"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:25
+#, fuzzy
+msgid "Add new breed"
+msgstr "Afegeix una nova raça"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:26
+#, fuzzy
+msgid "Edit breed"
+msgstr "Edita la raça"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:27
+#, fuzzy
+msgid "Update breed"
+msgstr "Actualitzar la raça"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:28
+#, fuzzy
+msgid "View breed"
+msgstr "Veure raça"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:29
+#, fuzzy
+msgid "Separate breeds with commas"
+msgstr "Races separades amb comes"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:30
+#, fuzzy
+msgid "Add or remove breeds"
+msgstr "Afegir o eliminar races"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:31
+#, fuzzy
+msgid "Choose from the most used"
+msgstr "Escollir entre els més utilitzats"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:32
+#, fuzzy
+msgid "Popular breeds"
+msgstr "Races populars"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:33
+#, fuzzy
+msgid "Search breeds"
+msgstr "Cercar races"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:34
+#, fuzzy
+msgid "Not Found"
+msgstr "No s'ha trobat"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:35
+#, fuzzy
+msgid "No breeds"
+msgstr "Sense races"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:36
+#, fuzzy
+msgid "Breeds list"
+msgstr "Llista de races"
+
+#: admin/class-animalshelter-admin-taxonomy-breed.php:37
+#, fuzzy
+msgid "Breeds list navigation"
+msgstr "Navegació per la llista de races"

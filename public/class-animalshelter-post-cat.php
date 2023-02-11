@@ -5,6 +5,7 @@ class Animalshelter_Post_Cat extends Animalshelter_Post {
 		$this->cpt = ANIMALSHELTER_CPT_CAT;
 		$this->taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED_CAT;
 		$this->taxonomy_status = ANIMALSHELTER_TAXONOMY_STATUS_CAT;
+		$this->taxonomy_size = ANIMALSHELTER_TAXONOMY_SIZE_CAT;
 		parent::__construct( $id );
 	}
 
