@@ -31,7 +31,6 @@ class Animalshelter_Menupage {
 	}
 
 	public function register_js( $hook ): void {
-		wp_enqueue_media();
 		wp_register_script( $this->class_prefix . '-menupage', plugins_url( '/js/options.js', __FILE__ ), array(), ANIMALSHELTER_VERSION, true );
 		wp_enqueue_script( $this->class_prefix . '-menupage' );
 	}
@@ -54,11 +53,15 @@ class Animalshelter_Menupage {
 	}
 
 	public function table_start(): void {
-		echo '<table class="form-table"><tbody>';
+		?>
+		<table class="form-table"><tbody>
+		<?php
 	}
 
 	public function table_end(): void {
-		echo '</tbody></table>';
+		?>
+		</tbody></table>
+		<?php
 	}
 
 	public function nonce(): void {
@@ -66,8 +69,10 @@ class Animalshelter_Menupage {
 	}
 
 	public function is_saving_data(): bool {
-		if ( ! empty( $this->get_page )
-			&& isset( $_POST[ $this->page ] ) && wp_verify_nonce( $_POST[ $this->page ], $this->page ) ) {
+		if ( ! empty( $this->get_page ) &&
+			 isset( $_POST[ $this->page ] ) &&
+			 wp_verify_nonce( $_POST[ $this->page ], $this->page )
+		) {
 			return true;
 		}
 
@@ -90,7 +95,10 @@ class Animalshelter_Menupage {
 		}
 
 		if ( count( $navtabs ) > 1 ) {
-			echo '<h2 class="nav-tab-wrapper">' . wp_kses(
+			?>
+			<h2 class="nav-tab-wrapper">
+			<?php
+			echo wp_kses(
 				implode( $navtabs ),
 				array(
 					'a' => array(
@@ -100,7 +108,10 @@ class Animalshelter_Menupage {
 						'href'  => true,
 					),
 				)
-			) . '</h2>';
+			);
+			?>
+			</h2>
+			<?php
 		}
 	}
 }
