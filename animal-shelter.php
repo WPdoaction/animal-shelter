@@ -76,6 +76,8 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 				return;
 			}
 
+			delete_option( 'ANIMALSHELTER_flush_rewrite_rules_flag' );
+
 			if ( $current_ver !== '0.0' ) {
 				// Upgrade code
 			}

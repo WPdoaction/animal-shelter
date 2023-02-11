@@ -28,8 +28,9 @@ class Animalshelter_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate(): void {
-		//TODO Flush rewrite
-		//flush_rewrite_rules();
+		delete_option( 'ANIMALSHELTER_flush_rewrite_rules_flag' );
+		Animalshelter_Admin::unregister_custom_post_types();
+		flush_rewrite_rules();
 	}
 
 }
