@@ -19,6 +19,9 @@ class Animalshelter_Admin {
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-cpt-dog.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-cpt-cat.php';
 
+		//Commons labels register.
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-labels-breed.php';
+
 		//Taxonomies register, and their configuration.
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed-dog.php';
@@ -34,10 +37,12 @@ class Animalshelter_Admin {
 		$cpt_cat = new Animalshelter_Cpt_Cat();
 		$cpt_cat->initCPT();
 
-		$taxonomy_breed_dog = new ANIMALSHELTER_TAXONOMY_DOG_BREED_Dog();
+		$labels_breed = new Animalshelter_Labels_Breed();
+
+		$taxonomy_breed_dog = new Animalshelter_Taxonomy_Breed_Dog( $labels_breed );
 		$taxonomy_breed_dog->initTaxonomy();
 
-		$taxonomy_breed_cat = new ANIMALSHELTER_TAXONOMY_DOG_BREED_Cat();
+		$taxonomy_breed_cat = new Animalshelter_Taxonomy_Breed_Cat( $labels_breed );
 		$taxonomy_breed_cat->initTaxonomy();
 	}
 
