@@ -8,6 +8,7 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 		$this->rewrite     = __( 'dogs', 'animal-shelter' );
 		$this->label       = __( 'Dog', 'animal-shelter' );
 		$this->description = __( 'Animal: Dog', 'animal-shelter' );
+		$this->title_post  = __( 'Name of the dog', 'animal-shelter' );
 		$this->menu_icon   = plugins_url( 'admin/img/dog.svg', ANIMALSHELTER_PLUGIN_FILE );
 	}
 
