@@ -22,6 +22,9 @@ class Animalshelter_Admin {
 		//Taxonomies register, and their configuration.
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed.php';
+
+		// Blocks.
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'blocks/meta-dogs/index.php';
 	}
 
 	private function inits(): void {

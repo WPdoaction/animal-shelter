@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "animal-shelter/meta-dogs",
+	"title": "Meta Dogs",
+	"category": "widgets",
+	"icon": "admin-settings",
+	"description": "Example of editing meta using blocks.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "animal-shelter",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
