@@ -28,6 +28,10 @@ class Animalshelter_Admin {
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed-dog.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-breed-cat.php';
+
+		// Custom options page on backend
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-menupage.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-menupage-animalshelter.php';
 	}
 
 	private function inits(): void {
@@ -44,6 +48,9 @@ class Animalshelter_Admin {
 
 		$taxonomy_breed_cat = new Animalshelter_Taxonomy_Breed_Cat();
 		$taxonomy_breed_cat->initTaxonomy();
+
+		$options_page = new Animalshelter_Menupage_Animalshelter();
+		$options_page->init();
 
 		// Flush rewrite rules in init, after CPTs and Taxonomies are registered
 		add_action( 'init', array( $this, 'flush_rewrite_rules' ), 999 );
