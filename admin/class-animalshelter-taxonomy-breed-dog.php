@@ -1,10 +1,10 @@
 <?php
 
-class Animalshelter_Taxonomy_Breed extends Animalshelter_Taxonomy {
+class ANIMALSHELTER_TAXONOMY_DOG_BREED_Dog extends Animalshelter_Taxonomy {
 	public function __construct() {
 		parent::__construct();
-		$this->taxonomy         = ANIMALSHELTER_TAXONOMY_BREED;
-		$this->taxonomy_rewrite = 'breed';
+		$this->taxonomy         = ANIMALSHELTER_TAXONOMY_DOG_BREED;
+		$this->taxonomy_rewrite = 'dog-breed';
 	}
 
 	public function initTaxonomy() {
@@ -36,7 +36,8 @@ class Animalshelter_Taxonomy_Breed extends Animalshelter_Taxonomy {
 			'items_list'                 => __( 'Breeds list', 'animal-shelter' ),
 			'items_list_navigation'      => __( 'Breeds list navigation', 'animal-shelter' ),
 		);
-		register_taxonomy( $this->taxonomy, array( $this->cpt_dog, $this->cpt_cat ), $args );
+		
+		register_taxonomy( $this->taxonomy, array( $this->cpt_dog ), $args );
 	}
 
 	public function add_taxonomy_metaboxes() {
