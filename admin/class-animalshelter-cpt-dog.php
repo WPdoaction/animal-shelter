@@ -9,6 +9,7 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 		$this->label       = __( 'Dog', 'animal-shelter' );
 		$this->description = __( 'Animal: Dog', 'animal-shelter' );
 		$this->menu_icon   = 'dashicons-portfolio';
+		$this->title_post  = __( 'Name of the dog', 'animal-shelter' );
 	}
 
 	public function initCPT() {
