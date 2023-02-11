@@ -8,8 +8,42 @@ class Animalshelter_Cpt_Dog extends Animalshelter_Cpt {
 		$this->rewrite     = 'dog';
 		$this->label       = __( 'Dog', 'animal-shelter' );
 		$this->description = __( 'Animal: Dog', 'animal-shelter' );
+<<<<<<< HEAD
 		$this->title_post  = __( 'Name of the dog', 'animal-shelter' );
 		$this->menu_icon   = plugins_url( 'admin/img/dog.svg', ANIMALSHELTER_PLUGIN_FILE );
+=======
+		$this->menu_icon   = 'dashicons-portfolio';
+		// Set Dog fields
+		$this->fields			 = array(
+			// Gender
+			array(
+				'key' => 'gender',
+				'label' => __('Gender', 'animal-shelter'),
+				'description' => __('', 'animal-shelter'),
+				'type' => 'array',
+				'values' => array(
+					array(
+						'value' => 'male',
+						'label' => __('Male', 'animal-shelter'),
+					),
+					array(
+						'value' => 'female',
+						'label' => __('Female', 'animal-shelter'),
+					),
+				),
+				'default' => 'male',
+				'auth_callback' => function( $value ){ return in_array( $value, array( 'male', 'female' ) ); },
+			),
+			// Birthdate
+			array(
+				'key' => 'birthdate',
+				'label' => __('Birthdate', 'animal-shelter'),
+				'description' => __('', 'animal-shelter'),
+				'type' => 'date',
+				'sanitize_callback' => function( $value ){ return date_i18n( 'Y-m-d', strtotime($value) ); },
+			),
+		);
+>>>>>>> 0fa58e2 (Sistema para añadir campos personalizados (custom post_meta) a los CPTs)
 	}
 
 	public function initCPT() {
