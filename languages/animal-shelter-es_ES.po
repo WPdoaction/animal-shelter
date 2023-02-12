@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Animal Shelter 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/animal-shelter\n"
-"POT-Creation-Date: 2023-02-12 11:22+0100\n"
-"PO-Revision-Date: 2023-02-12 11:22+0100\n"
+"POT-Creation-Date: 2023-02-12 11:28+0100\n"
+"PO-Revision-Date: 2023-02-12 11:45+0100\n"
 "Last-Translator: David <david@closemarketing.es>\n"
 "Language-Team: WordPress Granada\n"
 "Language: es\n"
@@ -262,10 +262,8 @@ msgid "Parent breed:"
 msgstr "Raza de la que depende:"
 
 #: admin/class-animalshelter-taxonomy.php:22
-#, fuzzy
-#| msgid "New breed bame"
 msgid "New breed name"
-msgstr "Nueva raza bame"
+msgstr "Nombre de la nueva raza"
 
 #: admin/class-animalshelter-taxonomy.php:23
 msgid "Add new breed"
@@ -297,7 +295,7 @@ msgstr "Añadir o eliminar razas"
 #: admin/class-animalshelter-taxonomy.php:104
 #: admin/class-animalshelter-taxonomy.php:129
 msgid "Choose from the most used"
-msgstr "Elija entre los más utilizados"
+msgstr "Elige entre los más utilizados"
 
 #: admin/class-animalshelter-taxonomy.php:30
 msgid "Popular breeds"
@@ -330,2727 +328,2669 @@ msgstr "Navegación por la lista de razas"
 #: admin/class-animalshelter-taxonomy.php:41
 msgctxt "Taxonomy General Name"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: admin/class-animalshelter-taxonomy.php:42
 msgctxt "Taxonomy Singular Name"
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: admin/class-animalshelter-taxonomy.php:43 admin/fields-general.php:50
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: admin/class-animalshelter-taxonomy.php:44
 msgid "All status"
-msgstr ""
+msgstr "Todos los estados"
 
 #: admin/class-animalshelter-taxonomy.php:45
 msgid "Parent status"
-msgstr ""
+msgstr "Estado del que depende"
 
 #: admin/class-animalshelter-taxonomy.php:46
 msgid "Parent status:"
-msgstr ""
+msgstr "Estado del que depende:"
 
 #: admin/class-animalshelter-taxonomy.php:47
-msgid "New status bame"
-msgstr ""
+msgid "New status name"
+msgstr "Nombre del nuevo estado"
 
 #: admin/class-animalshelter-taxonomy.php:48
 msgid "Add new status"
-msgstr ""
+msgstr "Añadir nuevo estado"
 
 #: admin/class-animalshelter-taxonomy.php:49
 msgid "Edit status"
-msgstr ""
+msgstr "Editar estado"
 
 #: admin/class-animalshelter-taxonomy.php:50
 msgid "Update status"
-msgstr ""
+msgstr "Actualizar estado"
 
 #: admin/class-animalshelter-taxonomy.php:51
 msgid "View status"
-msgstr ""
+msgstr "Ver estado"
 
 #: admin/class-animalshelter-taxonomy.php:52
 msgid "Separate status with commas"
-msgstr ""
+msgstr "Separar estados con comas"
 
 #: admin/class-animalshelter-taxonomy.php:53
 msgid "Add or remove status"
-msgstr ""
+msgstr "Añadir o quitar estado"
 
 #: admin/class-animalshelter-taxonomy.php:55
 msgid "Popular status"
-msgstr ""
+msgstr "Estado popular"
 
 #: admin/class-animalshelter-taxonomy.php:56
 msgid "Search status"
-msgstr ""
+msgstr "Buscar estado"
 
 #: admin/class-animalshelter-taxonomy.php:58
 msgid "No status"
-msgstr ""
+msgstr "Sin estado"
 
 #: admin/class-animalshelter-taxonomy.php:59
 msgid "Status list"
-msgstr ""
+msgstr "Lista de estados"
 
 #: admin/class-animalshelter-taxonomy.php:60
 msgid "Status list navigation"
-msgstr ""
+msgstr "Navegación por la lista de estados"
 
 #: admin/class-animalshelter-taxonomy.php:66
 msgctxt "Taxonomy General Name"
 msgid "Sizes"
-msgstr ""
+msgstr "Tamaños"
 
 #: admin/class-animalshelter-taxonomy.php:67
 msgctxt "Taxonomy Singular Name"
 msgid "Size"
-msgstr ""
+msgstr "Tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:68 admin/fields-general.php:25
 msgid "Size"
-msgstr ""
+msgstr "Tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:69
 msgid "All sizes"
-msgstr ""
+msgstr "Todos los tamaños"
 
 #: admin/class-animalshelter-taxonomy.php:70
 msgid "Parent size"
-msgstr ""
+msgstr "Tamaño del que depende"
 
 #: admin/class-animalshelter-taxonomy.php:71
 msgid "Parent size:"
-msgstr ""
+msgstr "Tamaño del que depende:"
 
 #: admin/class-animalshelter-taxonomy.php:72
-msgid "New size bame"
-msgstr ""
+msgid "New size name"
+msgstr "Nombre del nuevo tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:73
 msgid "Add new size"
-msgstr ""
+msgstr "Añadir Nuevo Tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:74
 msgid "Edit size"
-msgstr ""
+msgstr "Editar tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:75
 msgid "Update size"
-msgstr ""
+msgstr "Actualizar tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:76
 msgid "View size"
-msgstr ""
+msgstr "Ver tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:77
 msgid "Separate sizes with commas"
-msgstr ""
+msgstr "Separar los tamaños con comas"
 
 #: admin/class-animalshelter-taxonomy.php:78
 msgid "Add or remove sizes"
-msgstr ""
+msgstr "Añadir o quitar tamaños"
 
 #: admin/class-animalshelter-taxonomy.php:80
 msgid "Popular sizes"
-msgstr ""
+msgstr "Tamaños populares"
 
 #: admin/class-animalshelter-taxonomy.php:81
 msgid "Search sizes"
-msgstr ""
+msgstr "Buscar tamaños"
 
 #: admin/class-animalshelter-taxonomy.php:83
 msgid "No sizes"
-msgstr ""
+msgstr "Sin tamaño"
 
 #: admin/class-animalshelter-taxonomy.php:84
 msgid "Sizes list"
-msgstr ""
+msgstr "Lista de tamaños"
 
 #: admin/class-animalshelter-taxonomy.php:85
 msgid "Sizes list navigation"
-msgstr ""
+msgstr "Navegación por la lista de tamaños"
 
 #: admin/class-animalshelter-taxonomy.php:91
 msgctxt "Taxonomy General Name"
 msgid "Colors"
-msgstr ""
+msgstr "Colores"
 
 #: admin/class-animalshelter-taxonomy.php:92
 msgctxt "Taxonomy Singular Name"
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #: admin/class-animalshelter-taxonomy.php:93
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #: admin/class-animalshelter-taxonomy.php:94
-#, fuzzy
-#| msgid "All cats"
 msgid "All colors"
-msgstr "Todos los gatos"
+msgstr "Todos los colores"
 
 #: admin/class-animalshelter-taxonomy.php:95
-#, fuzzy
-#| msgid "Parent cat:"
 msgid "Parent color"
-msgstr "Gato del que depende:"
+msgstr "Color del que depende:"
 
 #: admin/class-animalshelter-taxonomy.php:96
-#, fuzzy
-#| msgid "Parent cat:"
 msgid "Parent color:"
-msgstr "Gato del que depende:"
+msgstr "Color del que depende:"
 
 #: admin/class-animalshelter-taxonomy.php:97
-#, fuzzy
-#| msgid "New breed bame"
-msgid "New color bame"
-msgstr "Nueva raza bame"
+msgid "New color name"
+msgstr "Nuevo nombre del color"
 
 #: admin/class-animalshelter-taxonomy.php:98
-#, fuzzy
-#| msgid "Add new cat"
 msgid "Add new color"
-msgstr "Añadir nuevo gato"
+msgstr "Añadir nuevo color"
 
 #: admin/class-animalshelter-taxonomy.php:99
-#, fuzzy
-#| msgid "Edit cat"
 msgid "Edit color"
-msgstr "Editar gato"
+msgstr "Editar color"
 
 #: admin/class-animalshelter-taxonomy.php:100
-#, fuzzy
-#| msgid "Update cat"
 msgid "Update color"
-msgstr "Actualizar gato"
+msgstr "Actualizar color"
 
 #: admin/class-animalshelter-taxonomy.php:101
-#, fuzzy
-#| msgid "View cat"
 msgid "View color"
-msgstr "Ver gato"
+msgstr "Ver color"
 
 #: admin/class-animalshelter-taxonomy.php:102
-#, fuzzy
-#| msgid "Separate breeds with commas"
 msgid "Separate colors with commas"
-msgstr "Separa las razas con comas"
+msgstr "Separa los colores con comas"
 
 #: admin/class-animalshelter-taxonomy.php:103
-#, fuzzy
-#| msgid "Add or remove breeds"
 msgid "Add or remove colors"
-msgstr "Añadir o eliminar razas"
+msgstr "Añadir o eliminar colores"
 
 #: admin/class-animalshelter-taxonomy.php:105
-#, fuzzy
-#| msgid "Popular breeds"
 msgid "Popular colors"
-msgstr "Razas populares"
+msgstr "Colores populares"
 
 #: admin/class-animalshelter-taxonomy.php:106
-#, fuzzy
-#| msgid "Search cat"
 msgid "Search colors"
-msgstr "Buscar gato"
+msgstr "Buscar color"
 
 #: admin/class-animalshelter-taxonomy.php:108
 msgid "No colors"
-msgstr ""
+msgstr "Sin colores"
 
 #: admin/class-animalshelter-taxonomy.php:109
-#, fuzzy
-#| msgid "Cats list"
 msgid "Colors list"
-msgstr "Lista de gatos"
+msgstr "Lista de colores"
 
 #: admin/class-animalshelter-taxonomy.php:110
-#, fuzzy
-#| msgid "Cats list navigation"
 msgid "Colors list navigation"
-msgstr "Navegación por la lista de gatos"
+msgstr "Navegación por la lista de colores"
 
 #: admin/class-animalshelter-taxonomy.php:116
 msgctxt "Taxonomy General Name"
 msgid "Energies"
-msgstr ""
+msgstr "Energías"
 
 #: admin/class-animalshelter-taxonomy.php:117
 msgctxt "Taxonomy Singular Name"
 msgid "Energy"
-msgstr ""
+msgstr "Energía"
 
 #: admin/class-animalshelter-taxonomy.php:118 admin/fields-general.php:40
 msgid "Energy"
-msgstr ""
+msgstr "Energía"
 
 #: admin/class-animalshelter-taxonomy.php:119
-#, fuzzy
-#| msgid "All breeds"
 msgid "All energies"
-msgstr "Todas las razas"
+msgstr "Todas las energías"
 
 #: admin/class-animalshelter-taxonomy.php:120
-#, fuzzy
-#| msgid "Parent breed"
 msgid "Parent energy"
-msgstr "Raza de la que depende"
+msgstr "Energía de la que depende"
 
 #: admin/class-animalshelter-taxonomy.php:121
-#, fuzzy
-#| msgid "Parent breed:"
 msgid "Parent energy:"
-msgstr "Raza de la que depende:"
+msgstr "Energía de la que depende:"
 
 #: admin/class-animalshelter-taxonomy.php:122
-#, fuzzy
-#| msgid "New breed bame"
-msgid "New energy bame"
-msgstr "Nueva raza bame"
+msgid "New energy name"
+msgstr "Nuevo nombre de energía"
 
 #: admin/class-animalshelter-taxonomy.php:123
-#, fuzzy
-#| msgid "Add new breed"
 msgid "Add new energy"
-msgstr "Añadir nueva raza"
+msgstr "Añadir nueva energía"
 
 #: admin/class-animalshelter-taxonomy.php:124
-#, fuzzy
-#| msgid "Edit breed"
 msgid "Edit energy"
-msgstr "Editar raza"
+msgstr "Editar energía"
 
 #: admin/class-animalshelter-taxonomy.php:125
-#, fuzzy
-#| msgid "Update breed"
 msgid "Update energy"
-msgstr "Actualizar raza"
+msgstr "Actualizar energía"
 
 #: admin/class-animalshelter-taxonomy.php:126
-#, fuzzy
-#| msgid "View breed"
 msgid "View energy"
-msgstr "Ver raza"
+msgstr "Ver energía"
 
 #: admin/class-animalshelter-taxonomy.php:127
-#, fuzzy
-#| msgid "Separate breeds with commas"
 msgid "Separate energies with commas"
-msgstr "Separa las razas con comas"
+msgstr "Separa las energías con comas"
 
 #: admin/class-animalshelter-taxonomy.php:128
-#, fuzzy
-#| msgid "Add or remove breeds"
 msgid "Add or remove energies"
-msgstr "Añadir o eliminar razas"
+msgstr "Añadir o eliminar energías"
 
 #: admin/class-animalshelter-taxonomy.php:130
-#, fuzzy
-#| msgid "Popular breeds"
 msgid "Popular energies"
-msgstr "Razas populares"
+msgstr "Energía populares"
 
 #: admin/class-animalshelter-taxonomy.php:131
-#, fuzzy
-#| msgid "Search breeds"
 msgid "Search energies"
-msgstr "Buscar razas"
+msgstr "Buscar energías"
 
 #: admin/class-animalshelter-taxonomy.php:133
 msgid "No energies"
-msgstr ""
+msgstr "Sin energías"
 
 #: admin/class-animalshelter-taxonomy.php:134
-#, fuzzy
-#| msgid "Breeds list"
 msgid "Energies list"
-msgstr "Lista de razas"
+msgstr "Lista de energías"
 
 #: admin/class-animalshelter-taxonomy.php:135
-#, fuzzy
-#| msgid "Breeds list navigation"
 msgid "Energies list navigation"
-msgstr "Navegación por la lista de razas"
+msgstr "Navegación por la lista de energías"
 
 #: admin/fields-general.php:10
 msgid "Excerpt"
-msgstr ""
+msgstr "Extracto"
 
 #: admin/fields-general.php:15
 msgid "Location"
-msgstr ""
+msgstr "Ubicación"
 
 #: admin/fields-general.php:20
 msgid "Birthday"
-msgstr ""
+msgstr "Fecha de nacimiento"
 
 #: admin/fields-general.php:30
 msgid "Colour"
-msgstr ""
+msgstr "Color"
 
 #: admin/fields-general.php:35
 msgid "Stirilized"
-msgstr ""
+msgstr "Estirilizado"
 
 #: admin/fields-general.php:45
 msgid "Chip?"
-msgstr ""
+msgstr "¿Chip?"
 
 #: includes/breed/class-animalshelter-breed-cat.php:11
 #: includes/breed/class-animalshelter-breed-dog.php:11
 #: includes/size/class-animalshelter-size-cat.php:11
 #: includes/size/class-animalshelter-size-dog.php:11
 msgid "Unknown"
-msgstr ""
+msgstr "Desconocido"
 
 #: includes/breed/class-animalshelter-breed-cat.php:12
 msgctxt "Breed of a cat"
 msgid "Mixed"
-msgstr ""
+msgstr "Mezclado"
 
 #: includes/breed/class-animalshelter-breed-cat.php:13
 msgctxt "Breed of a cat"
 msgid "Abyssinian"
-msgstr ""
+msgstr "Abisinio"
 
 #: includes/breed/class-animalshelter-breed-cat.php:14
 msgctxt "Breed of a cat"
 msgid "American Bobtail"
-msgstr ""
+msgstr "Bobtail americano"
 
 #: includes/breed/class-animalshelter-breed-cat.php:15
 msgctxt "Breed of a cat"
 msgid "American Curl"
-msgstr ""
+msgstr "Rizo americano"
 
 #: includes/breed/class-animalshelter-breed-cat.php:16
 msgctxt "Breed of a cat"
 msgid "American Shorthair"
-msgstr ""
+msgstr "American Shorthair"
 
 #: includes/breed/class-animalshelter-breed-cat.php:17
 msgctxt "Breed of a cat"
 msgid "American Wirehair"
-msgstr ""
+msgstr "Pelo de alambre americano"
 
 #: includes/breed/class-animalshelter-breed-cat.php:18
 msgctxt "Breed of a cat"
 msgid "Applehead Siamese"
-msgstr ""
+msgstr "Siamés Applehead"
 
 #: includes/breed/class-animalshelter-breed-cat.php:19
 msgctxt "Breed of a cat"
 msgid "Balinese"
-msgstr ""
+msgstr "Balinés"
 
 #: includes/breed/class-animalshelter-breed-cat.php:20
 msgctxt "Breed of a cat"
 msgid "Bengal"
-msgstr ""
+msgstr "Bengalí"
 
 #: includes/breed/class-animalshelter-breed-cat.php:21
 msgctxt "Breed of a cat"
 msgid "Birman"
-msgstr ""
+msgstr "Birmano"
 
 #: includes/breed/class-animalshelter-breed-cat.php:22
 msgctxt "Breed of a cat"
 msgid "Bombay"
-msgstr ""
+msgstr "Bombay"
 
 #: includes/breed/class-animalshelter-breed-cat.php:23
 msgctxt "Breed of a cat"
 msgid "British Shorthair"
-msgstr ""
+msgstr "British Shorthair"
 
 #: includes/breed/class-animalshelter-breed-cat.php:24
 msgctxt "Breed of a cat"
 msgid "Burmese"
-msgstr ""
+msgstr "Birmano"
 
 #: includes/breed/class-animalshelter-breed-cat.php:25
 msgctxt "Breed of a cat"
 msgid "Burmilla"
-msgstr ""
+msgstr "Burmilla"
 
 #: includes/breed/class-animalshelter-breed-cat.php:26
 msgctxt "Breed of a cat"
 msgid "Calico"
-msgstr ""
+msgstr "Calicó"
 
 #: includes/breed/class-animalshelter-breed-cat.php:27
 msgctxt "Breed of a cat"
 msgid "Canadian Hairless"
-msgstr ""
+msgstr "Canadiense sin pelo"
 
 #: includes/breed/class-animalshelter-breed-cat.php:28
 msgctxt "Breed of a cat"
 msgid "Chartreux"
-msgstr ""
+msgstr "Chartreux"
 
 #: includes/breed/class-animalshelter-breed-cat.php:29
 msgctxt "Breed of a cat"
 msgid "Chausie"
-msgstr ""
+msgstr "Chausie"
 
 #: includes/breed/class-animalshelter-breed-cat.php:30
 msgctxt "Breed of a cat"
 msgid "Chinchilla"
-msgstr ""
+msgstr "Chinchilla"
 
 #: includes/breed/class-animalshelter-breed-cat.php:31
 msgctxt "Breed of a cat"
 msgid "Cornish Rex"
-msgstr ""
+msgstr "Cornualles Rex"
 
 #: includes/breed/class-animalshelter-breed-cat.php:32
 msgctxt "Breed of a cat"
 msgid "Cymric"
-msgstr ""
+msgstr "Cymric"
 
 #: includes/breed/class-animalshelter-breed-cat.php:33
 msgctxt "Breed of a cat"
 msgid "Devon Rex"
-msgstr ""
+msgstr "Devon Rex"
 
 #: includes/breed/class-animalshelter-breed-cat.php:34
 msgctxt "Breed of a cat"
 msgid "Dilute Calico"
-msgstr ""
+msgstr "Calico diluido"
 
 #: includes/breed/class-animalshelter-breed-cat.php:35
 msgctxt "Breed of a cat"
 msgid "Dilute Tortoiseshell"
-msgstr ""
+msgstr "Carey diluido"
 
 #: includes/breed/class-animalshelter-breed-cat.php:36
 msgctxt "Breed of a cat"
 msgid "Domestic Long Hair"
-msgstr ""
+msgstr "Pelo largo doméstico"
 
 #: includes/breed/class-animalshelter-breed-cat.php:37
 msgctxt "Breed of a cat"
 msgid "Domestic Medium Hair"
-msgstr ""
+msgstr "Pelo medio doméstico"
 
 #: includes/breed/class-animalshelter-breed-cat.php:38
 msgctxt "Breed of a cat"
 msgid "Domestic Short Hair"
-msgstr ""
+msgstr "Pelo corto doméstico"
 
 #: includes/breed/class-animalshelter-breed-cat.php:39
 msgctxt "Breed of a cat"
 msgid "Egyptian Mau"
-msgstr ""
+msgstr "Mau egipcio"
 
 #: includes/breed/class-animalshelter-breed-cat.php:40
 msgctxt "Breed of a cat"
 msgid "Exotic Shorthair"
-msgstr ""
+msgstr "Exótico Shorthair"
 
 #: includes/breed/class-animalshelter-breed-cat.php:41
 msgctxt "Breed of a cat"
 msgid "Extra-Toes Cat - Hemingway Polydactyl"
-msgstr ""
+msgstr "Gato Extra-Dedos - Hemingway Polydactyl"
 
 #: includes/breed/class-animalshelter-breed-cat.php:42
 msgctxt "Breed of a cat"
 msgid "Havana"
-msgstr ""
+msgstr "Habana"
 
 #: includes/breed/class-animalshelter-breed-cat.php:43
 msgctxt "Breed of a cat"
 msgid "Himalayan"
-msgstr ""
+msgstr "Himalayo"
 
 #: includes/breed/class-animalshelter-breed-cat.php:44
 msgctxt "Breed of a cat"
 msgid "Japanese Bobtail"
-msgstr ""
+msgstr "Bobtail japonés"
 
 #: includes/breed/class-animalshelter-breed-cat.php:45
 msgctxt "Breed of a cat"
 msgid "Javanese"
-msgstr ""
+msgstr "Javanés"
 
 #: includes/breed/class-animalshelter-breed-cat.php:46
 msgctxt "Breed of a cat"
 msgid "Korat"
-msgstr ""
+msgstr "Korat"
 
 #: includes/breed/class-animalshelter-breed-cat.php:47
 msgctxt "Breed of a cat"
 msgid "LaPerm"
-msgstr ""
+msgstr "LaPerm"
 
 #: includes/breed/class-animalshelter-breed-cat.php:48
 msgctxt "Breed of a cat"
 msgid "Maine Coon"
-msgstr ""
+msgstr "Maine Coon"
 
 #: includes/breed/class-animalshelter-breed-cat.php:49
 msgctxt "Breed of a cat"
 msgid "Manx"
-msgstr ""
+msgstr "Manés"
 
 #: includes/breed/class-animalshelter-breed-cat.php:50
 msgctxt "Breed of a cat"
 msgid "Munchkin"
-msgstr ""
+msgstr "Munchkin"
 
 #: includes/breed/class-animalshelter-breed-cat.php:51
 msgctxt "Breed of a cat"
 msgid "Nebelung"
-msgstr ""
+msgstr "Nebelungo"
 
 #: includes/breed/class-animalshelter-breed-cat.php:52
 msgctxt "Breed of a cat"
 msgid "Norwegian Forest Cat"
-msgstr ""
+msgstr "Gato del bosque noruego"
 
 #: includes/breed/class-animalshelter-breed-cat.php:53
 msgctxt "Breed of a cat"
 msgid "Ocicat"
-msgstr ""
+msgstr "Ocicat"
 
 #: includes/breed/class-animalshelter-breed-cat.php:54
 msgctxt "Breed of a cat"
 msgid "Oriental Long Hair"
-msgstr ""
+msgstr "Pelo largo oriental"
 
 #: includes/breed/class-animalshelter-breed-cat.php:55
 msgctxt "Breed of a cat"
 msgid "Oriental Short Hair"
-msgstr ""
+msgstr "Pelo corto oriental"
 
 #: includes/breed/class-animalshelter-breed-cat.php:56
 msgctxt "Breed of a cat"
 msgid "Oriental Tabby"
-msgstr ""
+msgstr "Atigrado oriental"
 
 #: includes/breed/class-animalshelter-breed-cat.php:57
 msgctxt "Breed of a cat"
 msgid "Persian"
-msgstr ""
+msgstr "Persa"
 
 #: includes/breed/class-animalshelter-breed-cat.php:58
 msgctxt "Breed of a cat"
 msgid "Pixiebob"
-msgstr ""
+msgstr "Pixiebob"
 
 #: includes/breed/class-animalshelter-breed-cat.php:59
 msgctxt "Breed of a cat"
 msgid "Ragamuffin"
-msgstr ""
+msgstr "Pelagatos"
 
 #: includes/breed/class-animalshelter-breed-cat.php:60
 msgctxt "Breed of a cat"
 msgid "Ragdoll"
-msgstr ""
+msgstr "Muñeca de trapo"
 
 #: includes/breed/class-animalshelter-breed-cat.php:61
 msgctxt "Breed of a cat"
 msgid "Russian Blue"
-msgstr ""
+msgstr "Azul ruso"
 
 #: includes/breed/class-animalshelter-breed-cat.php:62
 msgctxt "Breed of a cat"
 msgid "Scottish Fold"
-msgstr ""
+msgstr "Redil escocés"
 
 #: includes/breed/class-animalshelter-breed-cat.php:63
 msgctxt "Breed of a cat"
 msgid "Selkirk Rex"
-msgstr ""
+msgstr "Selkirk Rex"
 
 #: includes/breed/class-animalshelter-breed-cat.php:64
 msgctxt "Breed of a cat"
 msgid "Siamese"
-msgstr ""
+msgstr "Siamés"
 
 #: includes/breed/class-animalshelter-breed-cat.php:65
 msgctxt "Breed of a cat"
 msgid "Siberian"
-msgstr ""
+msgstr "Siberiano"
 
 #: includes/breed/class-animalshelter-breed-cat.php:66
 msgctxt "Breed of a cat"
 msgid "Silver"
-msgstr ""
+msgstr "Plata"
 
 #: includes/breed/class-animalshelter-breed-cat.php:67
 msgctxt "Breed of a cat"
 msgid "Singapura"
-msgstr ""
+msgstr "Singapura"
 
 #: includes/breed/class-animalshelter-breed-cat.php:68
 msgctxt "Breed of a cat"
 msgid "Snowshoe"
-msgstr ""
+msgstr "Raqueta de nieve"
 
 #: includes/breed/class-animalshelter-breed-cat.php:69
 msgctxt "Breed of a cat"
 msgid "Somali"
-msgstr ""
+msgstr "Somalí"
 
 #: includes/breed/class-animalshelter-breed-cat.php:70
 msgctxt "Breed of a cat"
 msgid "Sphynx - Hairless Cat"
-msgstr ""
+msgstr "Sphynx - Gato sin pelo"
 
 #: includes/breed/class-animalshelter-breed-cat.php:71
 msgctxt "Breed of a cat"
 msgid "Tabby"
-msgstr ""
+msgstr "Atigrado"
 
 #: includes/breed/class-animalshelter-breed-cat.php:72
 msgctxt "Breed of a cat"
 msgid "Tiger"
-msgstr ""
+msgstr "Tigre"
 
 #: includes/breed/class-animalshelter-breed-cat.php:73
 msgctxt "Breed of a cat"
 msgid "Tonkinese"
-msgstr ""
+msgstr "Tonkinese"
 
 #: includes/breed/class-animalshelter-breed-cat.php:74
 msgctxt "Breed of a cat"
 msgid "Torbie"
-msgstr ""
+msgstr "Torbie"
 
 #: includes/breed/class-animalshelter-breed-cat.php:75
 msgctxt "Breed of a cat"
 msgid "Tortoiseshell"
-msgstr ""
+msgstr "Carey"
 
 #: includes/breed/class-animalshelter-breed-cat.php:76
 msgctxt "Breed of a cat"
 msgid "Turkish Angora"
-msgstr ""
+msgstr "Angora turca"
 
 #: includes/breed/class-animalshelter-breed-cat.php:77
 msgctxt "Breed of a cat"
 msgid "Turkish Van"
-msgstr ""
+msgstr "Van turca"
 
 #: includes/breed/class-animalshelter-breed-cat.php:78
 msgctxt "Breed of a cat"
 msgid "Tuxedo"
-msgstr ""
+msgstr "Esmoquin"
 
 #: includes/breed/class-animalshelter-breed-cat.php:79
 msgctxt "Breed of a cat"
 msgid "York Chocolate"
-msgstr ""
+msgstr "York Chocolate"
 
 #: includes/breed/class-animalshelter-breed-dog.php:12
 msgctxt "Breed of a dog"
 msgid "Mutt"
-msgstr ""
+msgstr "Perro callejero"
 
 #: includes/breed/class-animalshelter-breed-dog.php:13
 msgctxt "Breed of a dog"
 msgid "Afador"
-msgstr ""
+msgstr "Afador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:14
 msgctxt "Breed of a dog"
 msgid "Affenhuahua"
-msgstr ""
+msgstr "Affenhuahua"
 
 #: includes/breed/class-animalshelter-breed-dog.php:15
 msgctxt "Breed of a dog"
 msgid "Affenpinscher"
-msgstr ""
+msgstr "Affenpinscher"
 
 #: includes/breed/class-animalshelter-breed-dog.php:16
 msgctxt "Breed of a dog"
 msgid "Afghan Hound"
-msgstr ""
+msgstr "Lebrel afgano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:17
 msgctxt "Breed of a dog"
 msgid "Airedale Terrier"
-msgstr ""
+msgstr "Airedale terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:18
 msgctxt "Breed of a dog"
 msgid "Akbash"
-msgstr ""
+msgstr "Akbash"
 
 #: includes/breed/class-animalshelter-breed-dog.php:19
 msgctxt "Breed of a dog"
 msgid "Akita"
-msgstr ""
+msgstr "Akita"
 
 #: includes/breed/class-animalshelter-breed-dog.php:20
 msgctxt "Breed of a dog"
 msgid "Akita Chow"
-msgstr ""
+msgstr "Akita Chow"
 
 #: includes/breed/class-animalshelter-breed-dog.php:21
 msgctxt "Breed of a dog"
 msgid "Akita Pit"
-msgstr ""
+msgstr "Pozo Akita"
 
 #: includes/breed/class-animalshelter-breed-dog.php:22
-#, fuzzy
-#| msgid "Animal Shelter"
 msgctxt "Breed of a dog"
 msgid "Akita Shepherd"
-msgstr "Animal Shelter"
+msgstr "Pastor Akita"
 
 #: includes/breed/class-animalshelter-breed-dog.php:23
 msgctxt "Breed of a dog"
 msgid "Alaskan Klee Kai"
-msgstr ""
+msgstr "Alaskan Klee Kai"
 
 #: includes/breed/class-animalshelter-breed-dog.php:24
 msgctxt "Breed of a dog"
 msgid "Alaskan Malamute"
-msgstr ""
+msgstr "Malamute de Alaska"
 
 #: includes/breed/class-animalshelter-breed-dog.php:25
 msgctxt "Breed of a dog"
 msgid "American Bulldog"
-msgstr ""
+msgstr "Bulldog Americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:26
 msgctxt "Breed of a dog"
 msgid "American English Coonhound"
-msgstr ""
+msgstr "Coonhound inglés americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:27
 msgctxt "Breed of a dog"
 msgid "American Eskimo Dog"
-msgstr ""
+msgstr "Perro esquimal americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:28
 msgctxt "Breed of a dog"
 msgid "American Foxhound"
-msgstr ""
+msgstr "Foxhound americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:29
 msgctxt "Breed of a dog"
 msgid "American Hairless Terrier"
-msgstr ""
+msgstr "Terrier americano sin pelo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:30
 msgctxt "Breed of a dog"
 msgid "American Leopard Hound"
-msgstr ""
+msgstr "Sabueso leopardo americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:31
 msgctxt "Breed of a dog"
 msgid "American Pit Bull Terrier"
-msgstr ""
+msgstr "American Pit Bull Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:32
 msgctxt "Breed of a dog"
 msgid "American Pugabull"
-msgstr ""
+msgstr "Pugabull americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:33
 msgctxt "Breed of a dog"
 msgid "American Staffordshire Terrier"
-msgstr ""
+msgstr "American Staffordshire Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:34
 msgctxt "Breed of a dog"
 msgid "American Water Spaniel"
-msgstr ""
+msgstr "Spaniel de Agua Americano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:35
 msgctxt "Breed of a dog"
 msgid "Anatolian Shepherd Dog"
-msgstr ""
+msgstr "Perro pastor de Anatolia"
 
 #: includes/breed/class-animalshelter-breed-dog.php:36
 msgctxt "Breed of a dog"
 msgid "Appenzeller Sennenhunde"
-msgstr ""
+msgstr "Appenzeller Sennenhunde"
 
 #: includes/breed/class-animalshelter-breed-dog.php:37
 msgctxt "Breed of a dog"
 msgid "Auggie"
-msgstr ""
+msgstr "Auggie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:38
 msgctxt "Breed of a dog"
 msgid "Aussiedoodle"
-msgstr ""
+msgstr "Aussiedoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:39
 msgctxt "Breed of a dog"
 msgid "Aussiepom"
-msgstr ""
+msgstr "Aussiepom"
 
 #: includes/breed/class-animalshelter-breed-dog.php:40
 msgctxt "Breed of a dog"
 msgid "Australian Cattle Dog"
-msgstr ""
+msgstr "Perro de ganado australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:41
 msgctxt "Breed of a dog"
 msgid "Australian Kelpie"
-msgstr ""
+msgstr "Kelpie australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:42
 msgctxt "Breed of a dog"
 msgid "Australian Retriever"
-msgstr ""
+msgstr "Retriever australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:43
 msgctxt "Breed of a dog"
 msgid "Australian Shepherd"
-msgstr ""
+msgstr "Pastor australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:44
 msgctxt "Breed of a dog"
 msgid "Australian Shepherd Husky"
-msgstr ""
+msgstr "Husky pastor australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:45
 msgctxt "Breed of a dog"
 msgid "Australian Shepherd Lab Mix"
-msgstr ""
+msgstr "Mezcla de laboratorio de pastor australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:46
 msgctxt "Breed of a dog"
 msgid "Australian Shepherd Pit Bull Mix"
-msgstr ""
+msgstr "Pastor Australiano Pit Bull Mix"
 
 #: includes/breed/class-animalshelter-breed-dog.php:47
 msgctxt "Breed of a dog"
 msgid "Australian Stumpy Tail Cattle Dog"
-msgstr ""
+msgstr "Perro de ganado australiano de cola achaparrada"
 
 #: includes/breed/class-animalshelter-breed-dog.php:48
 msgctxt "Breed of a dog"
 msgid "Australian Terrier"
-msgstr ""
+msgstr "Terrier Australiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:49
 msgctxt "Breed of a dog"
 msgid "Azawakh"
-msgstr ""
+msgstr "Azawakh"
 
 #: includes/breed/class-animalshelter-breed-dog.php:50
 msgctxt "Breed of a dog"
 msgid "Barbet"
-msgstr ""
+msgstr "Barbet"
 
 #: includes/breed/class-animalshelter-breed-dog.php:51
 msgctxt "Breed of a dog"
 msgid "Basenji"
-msgstr ""
+msgstr "Basenji"
 
 #: includes/breed/class-animalshelter-breed-dog.php:52
 msgctxt "Breed of a dog"
 msgid "Bassador"
-msgstr ""
+msgstr "Bassador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:53
 msgctxt "Breed of a dog"
 msgid "Basset Fauve de Bretagne"
-msgstr ""
+msgstr "Basset Fauve de Bretagne"
 
 #: includes/breed/class-animalshelter-breed-dog.php:54
 msgctxt "Breed of a dog"
 msgid "Basset Hound"
-msgstr ""
+msgstr "Basset Hound"
 
 #: includes/breed/class-animalshelter-breed-dog.php:55
 msgctxt "Breed of a dog"
 msgid "Basset Retriever"
-msgstr ""
+msgstr "Basset Retriever"
 
 #: includes/breed/class-animalshelter-breed-dog.php:56
 msgctxt "Breed of a dog"
 msgid "Bavarian Mountain Scent Hound"
-msgstr ""
+msgstr "Sabueso de olor de montaña bávaro"
 
 #: includes/breed/class-animalshelter-breed-dog.php:57
 msgctxt "Breed of a dog"
 msgid "Beabull"
-msgstr ""
+msgstr "Beabull"
 
 #: includes/breed/class-animalshelter-breed-dog.php:58
 msgctxt "Breed of a dog"
 msgid "Beagle"
-msgstr ""
+msgstr "Beagle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:59
 msgctxt "Breed of a dog"
 msgid "Beaglier"
-msgstr ""
+msgstr "Beaglier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:60
 msgctxt "Breed of a dog"
 msgid "Bearded Collie"
-msgstr ""
+msgstr "Collie barbudo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:61
 msgctxt "Breed of a dog"
 msgid "Bedlington Terrier"
-msgstr ""
+msgstr "Bedlington Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:62
 msgctxt "Breed of a dog"
 msgid "Belgian Laekenois"
-msgstr ""
+msgstr "Laekenois belga"
 
 #: includes/breed/class-animalshelter-breed-dog.php:63
 msgctxt "Breed of a dog"
 msgid "Belgian Malinois"
-msgstr ""
+msgstr "Malinois belga"
 
 #: includes/breed/class-animalshelter-breed-dog.php:64
 msgctxt "Breed of a dog"
 msgid "Belgian Sheepdog"
-msgstr ""
+msgstr "Perro pastor belga"
 
 #: includes/breed/class-animalshelter-breed-dog.php:65
 msgctxt "Breed of a dog"
 msgid "Belgian Tervuren"
-msgstr ""
+msgstr "Tervuren belga"
 
 #: includes/breed/class-animalshelter-breed-dog.php:66
 msgctxt "Breed of a dog"
 msgid "Bergamasco Sheepdog"
-msgstr ""
+msgstr "Bergamasco Perro Pastor"
 
 #: includes/breed/class-animalshelter-breed-dog.php:67
 msgctxt "Breed of a dog"
 msgid "Berger Picard"
-msgstr ""
+msgstr "Berger Picard"
 
 #: includes/breed/class-animalshelter-breed-dog.php:68
 msgctxt "Breed of a dog"
 msgid "Bernedoodle"
-msgstr ""
+msgstr "Bernedoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:69
 msgctxt "Breed of a dog"
 msgid "Bernese Mountain Dog"
-msgstr ""
+msgstr "Boyero de Berna"
 
 #: includes/breed/class-animalshelter-breed-dog.php:70
 msgctxt "Breed of a dog"
 msgid "Bichon Frise"
-msgstr ""
+msgstr "Bichón Frisé"
 
 #: includes/breed/class-animalshelter-breed-dog.php:71
 msgctxt "Breed of a dog"
 msgid "Biewer Terrier"
-msgstr ""
+msgstr "Biewer Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:72
 msgctxt "Breed of a dog"
 msgid "Black and Tan Coonhound"
-msgstr ""
+msgstr "Coonhound negro y tostado"
 
 #: includes/breed/class-animalshelter-breed-dog.php:73
 msgctxt "Breed of a dog"
 msgid "Black Mouth Cur"
-msgstr ""
+msgstr "Boca Negra Cur"
 
 #: includes/breed/class-animalshelter-breed-dog.php:74
 msgctxt "Breed of a dog"
 msgid "Black Russian Terrier"
-msgstr ""
+msgstr "Terrier ruso negro"
 
 #: includes/breed/class-animalshelter-breed-dog.php:75
 msgctxt "Breed of a dog"
 msgid "Bloodhound"
-msgstr ""
+msgstr "Sabueso"
 
 #: includes/breed/class-animalshelter-breed-dog.php:76
 msgctxt "Breed of a dog"
 msgid "Blue Lacy"
-msgstr ""
+msgstr "Encaje azul"
 
 #: includes/breed/class-animalshelter-breed-dog.php:77
 msgctxt "Breed of a dog"
 msgid "Bluetick Coonhound"
-msgstr ""
+msgstr "Bluetick Coonhound"
 
 #: includes/breed/class-animalshelter-breed-dog.php:78
 msgctxt "Breed of a dog"
 msgid "Bocker"
-msgstr ""
+msgstr "Bocker"
 
 #: includes/breed/class-animalshelter-breed-dog.php:79
 msgctxt "Breed of a dog"
 msgid "Boerboel"
-msgstr ""
+msgstr "Boerboel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:80
 msgctxt "Breed of a dog"
 msgid "Boglen Terrier"
-msgstr ""
+msgstr "Boglen Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:81
 msgctxt "Breed of a dog"
 msgid "Bohemian Shepherd"
-msgstr ""
+msgstr "Pastor bohemio"
 
 #: includes/breed/class-animalshelter-breed-dog.php:82
 msgctxt "Breed of a dog"
 msgid "Bolognese"
-msgstr ""
+msgstr "Boloñesa"
 
 #: includes/breed/class-animalshelter-breed-dog.php:83
 msgctxt "Breed of a dog"
 msgid "Borador"
-msgstr ""
+msgstr "Borador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:84
 msgctxt "Breed of a dog"
 msgid "Border Collie"
-msgstr ""
+msgstr "Border Collie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:85
 msgctxt "Breed of a dog"
 msgid "Border Sheepdog"
-msgstr ""
+msgstr "Perro pastor fronterizo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:86
 msgctxt "Breed of a dog"
 msgid "Border Terrier"
-msgstr ""
+msgstr "Border Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:87
 msgctxt "Breed of a dog"
 msgid "Bordoodle"
-msgstr ""
+msgstr "Bordoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:88
 msgctxt "Breed of a dog"
 msgid "Borzoi"
-msgstr ""
+msgstr "Borzoi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:89
 msgctxt "Breed of a dog"
 msgid "BoShih"
-msgstr ""
+msgstr "BoShih"
 
 #: includes/breed/class-animalshelter-breed-dog.php:90
 msgctxt "Breed of a dog"
 msgid "Bossie"
-msgstr ""
+msgstr "Bossie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:91
 msgctxt "Breed of a dog"
 msgid "Boston Boxer"
-msgstr ""
+msgstr "Boxeador de Boston"
 
 #: includes/breed/class-animalshelter-breed-dog.php:92
 msgctxt "Breed of a dog"
 msgid "Boston Terrier"
-msgstr ""
+msgstr "Boston Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:93
 msgctxt "Breed of a dog"
 msgid "Boston Terrier Pekingese Mix"
-msgstr ""
+msgstr "Boston Terrier Pekinés Mezcla"
 
 #: includes/breed/class-animalshelter-breed-dog.php:94
 msgctxt "Breed of a dog"
 msgid "Bouvier des Flandres"
-msgstr ""
+msgstr "Boyero de Flandes"
 
 #: includes/breed/class-animalshelter-breed-dog.php:95
 msgctxt "Breed of a dog"
 msgid "Boxador"
-msgstr ""
+msgstr "Boxador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:96
 msgctxt "Breed of a dog"
 msgid "Boxer"
-msgstr ""
+msgstr "Bóxer"
 
 #: includes/breed/class-animalshelter-breed-dog.php:97
 msgctxt "Breed of a dog"
 msgid "Boxerdoodle"
-msgstr ""
+msgstr "Boxerdoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:98
 msgctxt "Breed of a dog"
 msgid "Boxmatian"
-msgstr ""
+msgstr "Boxmatian"
 
 #: includes/breed/class-animalshelter-breed-dog.php:99
 msgctxt "Breed of a dog"
 msgid "Boxweiler"
-msgstr ""
+msgstr "Boxweiler"
 
 #: includes/breed/class-animalshelter-breed-dog.php:100
 msgctxt "Breed of a dog"
 msgid "Boykin Spaniel"
-msgstr ""
+msgstr "Boykin Spaniel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:101
 msgctxt "Breed of a dog"
 msgid "Bracco Italiano"
-msgstr ""
+msgstr "Bracco Italiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:102
 msgctxt "Breed of a dog"
 msgid "Braque du Bourbonnais"
-msgstr ""
+msgstr "Braque du Bourbonnais"
 
 #: includes/breed/class-animalshelter-breed-dog.php:103
 msgctxt "Breed of a dog"
 msgid "Briard"
-msgstr ""
+msgstr "Briard"
 
 #: includes/breed/class-animalshelter-breed-dog.php:104
 msgctxt "Breed of a dog"
 msgid "Brittany"
-msgstr ""
+msgstr "Bretaña"
 
 #: includes/breed/class-animalshelter-breed-dog.php:105
 msgctxt "Breed of a dog"
 msgid "Broholmer"
-msgstr ""
+msgstr "Broholmer"
 
 #: includes/breed/class-animalshelter-breed-dog.php:106
 msgctxt "Breed of a dog"
 msgid "Brussels Griffon"
-msgstr ""
+msgstr "Grifón de Bruselas"
 
 #: includes/breed/class-animalshelter-breed-dog.php:107
 msgctxt "Breed of a dog"
 msgid "Bugg"
-msgstr ""
+msgstr "Bugg"
 
 #: includes/breed/class-animalshelter-breed-dog.php:108
 msgctxt "Breed of a dog"
 msgid "Bull Arab"
-msgstr ""
+msgstr "Toro árabe"
 
 #: includes/breed/class-animalshelter-breed-dog.php:109
 msgctxt "Breed of a dog"
 msgid "Bull Terrier"
-msgstr ""
+msgstr "Bull terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:110
 msgctxt "Breed of a dog"
 msgid "Bullador"
-msgstr ""
+msgstr "Bullador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:111
 msgctxt "Breed of a dog"
 msgid "Bullboxer Pit"
-msgstr ""
+msgstr "Bullboxer Pit"
 
 #: includes/breed/class-animalshelter-breed-dog.php:112
 msgctxt "Breed of a dog"
 msgid "Bulldog"
-msgstr ""
+msgstr "Buldog"
 
 #: includes/breed/class-animalshelter-breed-dog.php:113
 msgctxt "Breed of a dog"
 msgid "Bullmastiff"
-msgstr ""
+msgstr "Bullmastiff"
 
 #: includes/breed/class-animalshelter-breed-dog.php:114
 msgctxt "Breed of a dog"
 msgid "Bullmatian"
-msgstr ""
+msgstr "Bullmatian"
 
 #: includes/breed/class-animalshelter-breed-dog.php:115
 msgctxt "Breed of a dog"
 msgid "Bull-Pei"
-msgstr ""
+msgstr "Toro-Pei"
 
 #: includes/breed/class-animalshelter-breed-dog.php:116
 msgctxt "Breed of a dog"
 msgid "Cairn Terrier"
-msgstr ""
+msgstr "Cairn Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:117
 msgctxt "Breed of a dog"
 msgid "Canaan Dog"
-msgstr ""
+msgstr "Perro de Canaán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:118
 msgctxt "Breed of a dog"
 msgid "Cane Corso"
-msgstr ""
+msgstr "Cane Corso"
 
 #: includes/breed/class-animalshelter-breed-dog.php:119
 msgctxt "Breed of a dog"
 msgid "Cardigan Welsh Corgi"
-msgstr ""
+msgstr "Cardigan Corgi Galés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:120
 msgctxt "Breed of a dog"
 msgid "Carolina Dog"
-msgstr ""
+msgstr "Perro Carolina"
 
 #: includes/breed/class-animalshelter-breed-dog.php:121
 msgctxt "Breed of a dog"
 msgid "Catahoula Bulldog"
-msgstr ""
+msgstr "Catahoula Bulldog"
 
 #: includes/breed/class-animalshelter-breed-dog.php:122
 msgctxt "Breed of a dog"
 msgid "Catahoula Leopard Dog"
-msgstr ""
+msgstr "Catahoula Perro Leopardo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:123
 msgctxt "Breed of a dog"
 msgid "Caucasian Shepherd Dog"
-msgstr ""
+msgstr "Perro pastor caucásico"
 
 #: includes/breed/class-animalshelter-breed-dog.php:124
 msgctxt "Breed of a dog"
 msgid "Cavachon"
-msgstr ""
+msgstr "Cavachón"
 
 #: includes/breed/class-animalshelter-breed-dog.php:125
 msgctxt "Breed of a dog"
 msgid "Cavador"
-msgstr ""
+msgstr "Cavador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:126
 msgctxt "Breed of a dog"
 msgid "Cav-a-Jack"
-msgstr ""
+msgstr "Cav-a-Jack"
 
 #: includes/breed/class-animalshelter-breed-dog.php:127
 msgctxt "Breed of a dog"
 msgid "Cavalier King Charles Spaniel"
-msgstr ""
+msgstr "Cavalier King Charles spaniel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:128
 msgctxt "Breed of a dog"
 msgid "Cavapoo"
-msgstr ""
+msgstr "Cavapoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:129
 msgctxt "Breed of a dog"
 msgid "Central Asian Shepherd Dog"
-msgstr ""
+msgstr "Perro pastor de Asia Central"
 
 #: includes/breed/class-animalshelter-breed-dog.php:130
 msgctxt "Breed of a dog"
 msgid "Cesky Terrier"
-msgstr ""
+msgstr "Cesky Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:131
 msgctxt "Breed of a dog"
 msgid "Chabrador"
-msgstr ""
+msgstr "Chabrador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:132
 msgctxt "Breed of a dog"
 msgid "Cheagle"
-msgstr ""
+msgstr "Cheagle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:133
 msgctxt "Breed of a dog"
 msgid "Chesapeake Bay Retriever"
-msgstr ""
+msgstr "Retriever de Chesapeake"
 
 #: includes/breed/class-animalshelter-breed-dog.php:134
 msgctxt "Breed of a dog"
 msgid "Chi Chi"
-msgstr ""
+msgstr "Chi Chi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:135
 msgctxt "Breed of a dog"
 msgid "Chigi"
-msgstr ""
+msgstr "Chigi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:136
 msgctxt "Breed of a dog"
 msgid "Chihuahua"
-msgstr ""
+msgstr "Chihuahua"
 
 #: includes/breed/class-animalshelter-breed-dog.php:137
 msgctxt "Breed of a dog"
 msgid "Chilier"
-msgstr ""
+msgstr "Chilier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:138
 msgctxt "Breed of a dog"
 msgid "Chinese Crested"
-msgstr ""
+msgstr "Crestado chino"
 
 #: includes/breed/class-animalshelter-breed-dog.php:139
 msgctxt "Breed of a dog"
 msgid "Chinese Shar-Pei"
-msgstr ""
+msgstr "Shar-Pei chino"
 
 #: includes/breed/class-animalshelter-breed-dog.php:140
 msgctxt "Breed of a dog"
 msgid "Chinook"
-msgstr ""
+msgstr "Chinook"
 
 #: includes/breed/class-animalshelter-breed-dog.php:141
 msgctxt "Breed of a dog"
 msgid "Chion"
-msgstr ""
+msgstr "Chion"
 
 #: includes/breed/class-animalshelter-breed-dog.php:142
 msgctxt "Breed of a dog"
 msgid "Chipi"
-msgstr ""
+msgstr "Chipi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:143
 msgctxt "Breed of a dog"
 msgid "Chi-Poo"
-msgstr ""
+msgstr "Chi-Poo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:144
 msgctxt "Breed of a dog"
 msgid "Chiweenie"
-msgstr ""
+msgstr "Chiweenie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:145
 msgctxt "Breed of a dog"
 msgid "Chorkie"
-msgstr ""
+msgstr "Chorkie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:146
 msgctxt "Breed of a dog"
 msgid "Chow Chow"
-msgstr ""
+msgstr "Chow Chow"
 
 #: includes/breed/class-animalshelter-breed-dog.php:147
 msgctxt "Breed of a dog"
 msgid "Chow Shepherd"
-msgstr ""
+msgstr "Chow Pastor"
 
 #: includes/breed/class-animalshelter-breed-dog.php:148
 msgctxt "Breed of a dog"
 msgid "Chug"
-msgstr ""
+msgstr "Chug"
 
 #: includes/breed/class-animalshelter-breed-dog.php:149
 msgctxt "Breed of a dog"
 msgid "Chusky"
-msgstr ""
+msgstr "Chusky"
 
 #: includes/breed/class-animalshelter-breed-dog.php:150
 msgctxt "Breed of a dog"
 msgid "Cirneco dellâ'Etna"
-msgstr ""
+msgstr "Cirneco dellâ'Etna"
 
 #: includes/breed/class-animalshelter-breed-dog.php:151
 msgctxt "Breed of a dog"
 msgid "Clumber Spaniel"
-msgstr ""
+msgstr "Clumber Spaniel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:152
 msgctxt "Breed of a dog"
 msgid "Cockalier"
-msgstr ""
+msgstr "Cacatúa"
 
 #: includes/breed/class-animalshelter-breed-dog.php:153
 msgctxt "Breed of a dog"
 msgid "Cockapoo"
-msgstr ""
+msgstr "Cockapoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:154
 msgctxt "Breed of a dog"
 msgid "Cocker Spaniel"
-msgstr ""
+msgstr "Cocker spaniel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:155
 msgctxt "Breed of a dog"
 msgid "Collie"
-msgstr ""
+msgstr "Collie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:156
 msgctxt "Breed of a dog"
 msgid "Corgi Inu"
-msgstr ""
+msgstr "Corgi Inu"
 
 #: includes/breed/class-animalshelter-breed-dog.php:157
 msgctxt "Breed of a dog"
 msgid "Corgidor"
-msgstr ""
+msgstr "Corgidor"
 
 #: includes/breed/class-animalshelter-breed-dog.php:158
 msgctxt "Breed of a dog"
 msgid "Corman Shepherd"
-msgstr ""
+msgstr "Pastor Corman"
 
 #: includes/breed/class-animalshelter-breed-dog.php:159
 msgctxt "Breed of a dog"
 msgid "Coton de Tulear"
-msgstr ""
+msgstr "Cotón de Tulear"
 
 #: includes/breed/class-animalshelter-breed-dog.php:160
 msgctxt "Breed of a dog"
 msgid "Croatian Sheepdog"
-msgstr ""
+msgstr "Perro pastor croata"
 
 #: includes/breed/class-animalshelter-breed-dog.php:161
 msgctxt "Breed of a dog"
 msgid "Curly-Coated Retriever"
-msgstr ""
+msgstr "Retriever de pelaje rizado"
 
 #: includes/breed/class-animalshelter-breed-dog.php:162
 msgctxt "Breed of a dog"
 msgid "Dachsador"
-msgstr ""
+msgstr "Dachsador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:163
 msgctxt "Breed of a dog"
 msgid "Dachshund"
-msgstr ""
+msgstr "Teckel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:164
 msgctxt "Breed of a dog"
 msgid "Dalmatian"
-msgstr ""
+msgstr "Dálmata"
 
 #: includes/breed/class-animalshelter-breed-dog.php:165
 msgctxt "Breed of a dog"
 msgid "Dandie Dinmont Terrier"
-msgstr ""
+msgstr "Dandie Dinmont Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:166
 msgctxt "Breed of a dog"
 msgid "Daniff"
-msgstr ""
+msgstr "Daniff"
 
 #: includes/breed/class-animalshelter-breed-dog.php:167
 msgctxt "Breed of a dog"
 msgid "Danish-Swedish Farmdog"
-msgstr ""
+msgstr "Perro de granja danés-sueco"
 
 #: includes/breed/class-animalshelter-breed-dog.php:168
 msgctxt "Breed of a dog"
 msgid "Deutscher Wachtelhund"
-msgstr ""
+msgstr "Deutscher Wachtelhund"
 
 #: includes/breed/class-animalshelter-breed-dog.php:169
 msgctxt "Breed of a dog"
 msgid "Doberdor"
-msgstr ""
+msgstr "Doberdor"
 
 #: includes/breed/class-animalshelter-breed-dog.php:170
 msgctxt "Breed of a dog"
 msgid "Doberman Pinscher"
-msgstr ""
+msgstr "Doberman Pinscher"
 
 #: includes/breed/class-animalshelter-breed-dog.php:171
 msgctxt "Breed of a dog"
 msgid "Docker"
-msgstr ""
+msgstr "Estibador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:172
 msgctxt "Breed of a dog"
 msgid "Dogo Argentino"
-msgstr ""
+msgstr "Dogo Argentino"
 
 #: includes/breed/class-animalshelter-breed-dog.php:173
 msgctxt "Breed of a dog"
 msgid "Dogue de Bordeaux"
-msgstr ""
+msgstr "Dogo de Burdeos"
 
 #: includes/breed/class-animalshelter-breed-dog.php:174
 msgctxt "Breed of a dog"
 msgid "Dorgi"
-msgstr ""
+msgstr "Dorgi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:175
 msgctxt "Breed of a dog"
 msgid "Dorkie"
-msgstr ""
+msgstr "Dorkie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:176
 msgctxt "Breed of a dog"
 msgid "Doxiepoo"
-msgstr ""
+msgstr "Doxiepoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:177
 msgctxt "Breed of a dog"
 msgid "Doxle"
-msgstr ""
+msgstr "Doxle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:178
 msgctxt "Breed of a dog"
 msgid "Drentsche Patrijshond"
-msgstr ""
+msgstr "Drentsche Patrijshond"
 
 #: includes/breed/class-animalshelter-breed-dog.php:179
 msgctxt "Breed of a dog"
 msgid "Drever"
-msgstr ""
+msgstr "Drever"
 
 #: includes/breed/class-animalshelter-breed-dog.php:180
 msgctxt "Breed of a dog"
 msgid "Dutch Shepherd"
-msgstr ""
+msgstr "Pastor holandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:181
 msgctxt "Breed of a dog"
 msgid "English Cocker Spaniel"
-msgstr ""
+msgstr "Cocker Spaniel Inglés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:182
 msgctxt "Breed of a dog"
 msgid "English Foxhound"
-msgstr ""
+msgstr "Foxhound inglés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:183
 msgctxt "Breed of a dog"
 msgid "English Setter"
-msgstr ""
+msgstr "Setter inglés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:184
 msgctxt "Breed of a dog"
 msgid "English Springer Spaniel"
-msgstr ""
+msgstr "Springer Spaniel Inglés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:185
 msgctxt "Breed of a dog"
 msgid "English Toy Spaniel"
-msgstr ""
+msgstr "Spaniel de juguete inglés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:186
 msgctxt "Breed of a dog"
 msgid "Entlebucher Mountain Dog"
-msgstr ""
+msgstr "Perro de montaña Entlebucher"
 
 #: includes/breed/class-animalshelter-breed-dog.php:187
 msgctxt "Breed of a dog"
 msgid "Estrela Mountain Dog"
-msgstr ""
+msgstr "Perro de montaña Estrela"
 
 #: includes/breed/class-animalshelter-breed-dog.php:188
 msgctxt "Breed of a dog"
 msgid "Eurasier"
-msgstr ""
+msgstr "Eurasier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:189
 msgctxt "Breed of a dog"
 msgid "Field Spaniel"
-msgstr ""
+msgstr "Spaniel de Campo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:190
 msgctxt "Breed of a dog"
 msgid "Fila Brasileiro"
-msgstr ""
+msgstr "Fila Brasileiro"
 
 #: includes/breed/class-animalshelter-breed-dog.php:191
 msgctxt "Breed of a dog"
 msgid "Finnish Lapphund"
-msgstr ""
+msgstr "Lapphund finlandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:192
 msgctxt "Breed of a dog"
 msgid "Finnish Spitz"
-msgstr ""
+msgstr "Spitz finlandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:193
 msgctxt "Breed of a dog"
 msgid "Flat-Coated Retriever"
-msgstr ""
+msgstr "Recuperador de capa plana"
 
 #: includes/breed/class-animalshelter-breed-dog.php:194
 msgctxt "Breed of a dog"
 msgid "Fox Terrier"
-msgstr ""
+msgstr "Fox Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:195
 msgctxt "Breed of a dog"
 msgid "French Bulldog"
-msgstr ""
+msgstr "Bulldog francés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:196
 msgctxt "Breed of a dog"
 msgid "French Bullhuahua"
-msgstr ""
+msgstr "Bullhuahua francés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:197
 msgctxt "Breed of a dog"
 msgid "French Spaniel"
-msgstr ""
+msgstr "Spaniel francés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:198
 msgctxt "Breed of a dog"
 msgid "Frenchton"
-msgstr ""
+msgstr "Frenchton"
 
 #: includes/breed/class-animalshelter-breed-dog.php:199
 msgctxt "Breed of a dog"
 msgid "Frengle"
-msgstr ""
+msgstr "Frengle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:200
 msgctxt "Breed of a dog"
 msgid "German Longhaired Pointer"
-msgstr ""
+msgstr "Braco alemán de pelo largo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:201
 msgctxt "Breed of a dog"
 msgid "German Pinscher"
-msgstr ""
+msgstr "Pinscher alemán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:202
 msgctxt "Breed of a dog"
 msgid "German Shepherd Dog"
-msgstr ""
+msgstr "Perro pastor alemán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:203
 msgctxt "Breed of a dog"
 msgid "German Shepherd Pit Bull"
-msgstr ""
+msgstr "Pastor alemán Pit Bull"
 
 #: includes/breed/class-animalshelter-breed-dog.php:204
 msgctxt "Breed of a dog"
 msgid "German Shepherd Rottweiler Mix"
-msgstr ""
+msgstr "Mezcla de Rottweiler de pastor alemán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:205
 msgctxt "Breed of a dog"
 msgid "German Sheprador"
-msgstr ""
+msgstr "Pastor Alemán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:206
 msgctxt "Breed of a dog"
 msgid "German Shorthaired Pointer"
-msgstr ""
+msgstr "Braco alemán de pelo corto"
 
 #: includes/breed/class-animalshelter-breed-dog.php:207
 msgctxt "Breed of a dog"
 msgid "German Spitz"
-msgstr ""
+msgstr "Spitz alemán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:208
 msgctxt "Breed of a dog"
 msgid "German Wirehaired Pointer"
-msgstr ""
+msgstr "Braco alemán de pelo duro"
 
 #: includes/breed/class-animalshelter-breed-dog.php:209
 msgctxt "Breed of a dog"
 msgid "Giant Schnauzer"
-msgstr ""
+msgstr "Schnauzer gigante"
 
 #: includes/breed/class-animalshelter-breed-dog.php:210
 msgctxt "Breed of a dog"
 msgid "Glen of Imaal Terrier"
-msgstr ""
+msgstr "Glen de Imaal Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:211
 msgctxt "Breed of a dog"
 msgid "Goberian"
-msgstr ""
+msgstr "Goberian"
 
 #: includes/breed/class-animalshelter-breed-dog.php:212
 msgctxt "Breed of a dog"
 msgid "Goldador"
-msgstr ""
+msgstr "Goldador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:213
 msgctxt "Breed of a dog"
 msgid "Golden Cocker Retriever"
-msgstr ""
+msgstr "Golden Cocker Retriever"
 
 #: includes/breed/class-animalshelter-breed-dog.php:214
 msgctxt "Breed of a dog"
 msgid "Golden Mountain Dog"
-msgstr ""
+msgstr "Perro de montaña dorado"
 
 #: includes/breed/class-animalshelter-breed-dog.php:215
 msgctxt "Breed of a dog"
 msgid "Golden Retriever"
-msgstr ""
+msgstr "Golden Retriever"
 
 #: includes/breed/class-animalshelter-breed-dog.php:216
 msgctxt "Breed of a dog"
 msgid "Golden Retriever Corgi"
-msgstr ""
+msgstr "Golden Retriever Corgi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:217
 msgctxt "Breed of a dog"
 msgid "Golden Shepherd"
-msgstr ""
+msgstr "Pastor de Oro"
 
 #: includes/breed/class-animalshelter-breed-dog.php:218
 msgctxt "Breed of a dog"
 msgid "Goldendoodle"
-msgstr ""
+msgstr "Goldendoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:219
 msgctxt "Breed of a dog"
 msgid "Gollie"
-msgstr ""
+msgstr "Gollie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:220
 msgctxt "Breed of a dog"
 msgid "Gordon Setter"
-msgstr ""
+msgstr "Gordon Setter"
 
 #: includes/breed/class-animalshelter-breed-dog.php:221
 msgctxt "Breed of a dog"
 msgid "Great Dane"
-msgstr ""
+msgstr "Gran danés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:222
 msgctxt "Breed of a dog"
 msgid "Great Pyrenees"
-msgstr ""
+msgstr "Grandes Pirineos"
 
 #: includes/breed/class-animalshelter-breed-dog.php:223
 msgctxt "Breed of a dog"
 msgid "Greater Swiss Mountain Dog"
-msgstr ""
+msgstr "Gran perro de montaña suizo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:224
 msgctxt "Breed of a dog"
 msgid "Greyador"
-msgstr ""
+msgstr "Greyador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:225
 msgctxt "Breed of a dog"
 msgid "Greyhound"
-msgstr ""
+msgstr "Galgo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:226
 msgctxt "Breed of a dog"
 msgid "Hamiltonstovare"
-msgstr ""
+msgstr "Hamiltonstovare"
 
 #: includes/breed/class-animalshelter-breed-dog.php:227
 msgctxt "Breed of a dog"
 msgid "Hanoverian Scenthound"
-msgstr ""
+msgstr "Sabueso de Hannover"
 
 #: includes/breed/class-animalshelter-breed-dog.php:228
 msgctxt "Breed of a dog"
 msgid "Harrier"
-msgstr ""
+msgstr "Lebrel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:229
 msgctxt "Breed of a dog"
 msgid "Havanese"
-msgstr ""
+msgstr "Habanero"
 
 #: includes/breed/class-animalshelter-breed-dog.php:230
 msgctxt "Breed of a dog"
 msgid "Havapoo"
-msgstr ""
+msgstr "Havapoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:231
 msgctxt "Breed of a dog"
 msgid "Hokkaido"
-msgstr ""
+msgstr "Hokkaidō"
 
 #: includes/breed/class-animalshelter-breed-dog.php:232
 msgctxt "Breed of a dog"
 msgid "Horgi"
-msgstr ""
+msgstr "Horgi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:233
 msgctxt "Breed of a dog"
 msgid "Hovawart"
-msgstr ""
+msgstr "Hovawart"
 
 #: includes/breed/class-animalshelter-breed-dog.php:234
 msgctxt "Breed of a dog"
 msgid "Huskita"
-msgstr ""
+msgstr "Huskita"
 
 #: includes/breed/class-animalshelter-breed-dog.php:235
 msgctxt "Breed of a dog"
 msgid "Huskydoodle"
-msgstr ""
+msgstr "Huskydoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:236
 msgctxt "Breed of a dog"
 msgid "Ibizan Hound"
-msgstr ""
+msgstr "Podenco Ibicenco"
 
 #: includes/breed/class-animalshelter-breed-dog.php:237
 msgctxt "Breed of a dog"
 msgid "Icelandic Sheepdog"
-msgstr ""
+msgstr "Perro pastor islandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:238
 msgctxt "Breed of a dog"
 msgid "Irish Red And White Setter"
-msgstr ""
+msgstr "Setter irlandés rojo y blanco"
 
 #: includes/breed/class-animalshelter-breed-dog.php:239
 msgctxt "Breed of a dog"
 msgid "Irish Setter"
-msgstr ""
+msgstr "Setter irlandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:240
 msgctxt "Breed of a dog"
 msgid "Irish Terrier"
-msgstr ""
+msgstr "Terrier Irlandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:241
 msgctxt "Breed of a dog"
 msgid "Irish Water Spaniel"
-msgstr ""
+msgstr "Spaniel de agua irlandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:242
 msgctxt "Breed of a dog"
 msgid "Irish Wolfhound"
-msgstr ""
+msgstr "Lobero irlandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:243
 msgctxt "Breed of a dog"
 msgid "Italian Greyhound"
-msgstr ""
+msgstr "Galgo italiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:244
 msgctxt "Breed of a dog"
 msgid "Jack Chi"
-msgstr ""
+msgstr "Jack Chi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:245
 msgctxt "Breed of a dog"
 msgid "Jack Russell Terrier"
-msgstr ""
+msgstr "Jack Russell Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:246
 msgctxt "Breed of a dog"
 msgid "Jack-A-Poo"
-msgstr ""
+msgstr "Jack-A-Poo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:247
 msgctxt "Breed of a dog"
 msgid "Jackshund"
-msgstr ""
+msgstr "Jackshund"
 
 #: includes/breed/class-animalshelter-breed-dog.php:248
 msgctxt "Breed of a dog"
 msgid "Japanese Chin"
-msgstr ""
+msgstr "Barbilla japonesa"
 
 #: includes/breed/class-animalshelter-breed-dog.php:249
 msgctxt "Breed of a dog"
 msgid "Japanese Spitz"
-msgstr ""
+msgstr "Spitz japonés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:250
 msgctxt "Breed of a dog"
 msgid "Kai Ken"
-msgstr ""
+msgstr "Kai Ken"
 
 #: includes/breed/class-animalshelter-breed-dog.php:251
 msgctxt "Breed of a dog"
 msgid "Karelian Bear Dog"
-msgstr ""
+msgstr "Perro oso de Carelia"
 
 #: includes/breed/class-animalshelter-breed-dog.php:252
 msgctxt "Breed of a dog"
 msgid "Keeshond"
-msgstr ""
+msgstr "Keeshond"
 
 #: includes/breed/class-animalshelter-breed-dog.php:253
 msgctxt "Breed of a dog"
 msgid "Kerry Blue Terrier"
-msgstr ""
+msgstr "Kerry Blue Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:254
 msgctxt "Breed of a dog"
 msgid "King Shepherd"
-msgstr ""
+msgstr "Rey Pastor"
 
 #: includes/breed/class-animalshelter-breed-dog.php:255
 msgctxt "Breed of a dog"
 msgid "Kishu Ken"
-msgstr ""
+msgstr "Kishu Ken"
 
 #: includes/breed/class-animalshelter-breed-dog.php:256
 msgctxt "Breed of a dog"
 msgid "Komondor"
-msgstr ""
+msgstr "Komondor"
 
 #: includes/breed/class-animalshelter-breed-dog.php:257
 msgctxt "Breed of a dog"
 msgid "Kooikerhondje"
-msgstr ""
+msgstr "Kooikerhondje"
 
 #: includes/breed/class-animalshelter-breed-dog.php:258
 msgctxt "Breed of a dog"
 msgid "Korean Jindo Dog"
-msgstr ""
+msgstr "Perro Jindo Coreano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:259
 msgctxt "Breed of a dog"
 msgid "Kuvasz"
-msgstr ""
+msgstr "Kuvasz"
 
 #: includes/breed/class-animalshelter-breed-dog.php:260
 msgctxt "Breed of a dog"
 msgid "Kyi-Leo"
-msgstr ""
+msgstr "Kyi-Leo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:261
 msgctxt "Breed of a dog"
 msgid "Lab Pointer"
-msgstr ""
+msgstr "Lab Pointer"
 
 #: includes/breed/class-animalshelter-breed-dog.php:262
 msgctxt "Breed of a dog"
 msgid "Labernese"
-msgstr ""
+msgstr "Labernés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:263
 msgctxt "Breed of a dog"
 msgid "Labmaraner"
-msgstr ""
+msgstr "Labmaraner"
 
 #: includes/breed/class-animalshelter-breed-dog.php:264
 msgctxt "Breed of a dog"
 msgid "Labrabull"
-msgstr ""
+msgstr "Labrabull"
 
 #: includes/breed/class-animalshelter-breed-dog.php:265
 msgctxt "Breed of a dog"
 msgid "Labradane"
-msgstr ""
+msgstr "Labradane"
 
 #: includes/breed/class-animalshelter-breed-dog.php:266
 msgctxt "Breed of a dog"
 msgid "Labradoodle"
-msgstr ""
+msgstr "Labradoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:267
 msgctxt "Breed of a dog"
 msgid "Labrador Retriever"
-msgstr ""
+msgstr "Labrador Retriever"
 
 #: includes/breed/class-animalshelter-breed-dog.php:268
 msgctxt "Breed of a dog"
 msgid "Labrastaff"
-msgstr ""
+msgstr "Labrastaff"
 
 #: includes/breed/class-animalshelter-breed-dog.php:269
 msgctxt "Breed of a dog"
 msgid "Labsky"
-msgstr ""
+msgstr "Labsky"
 
 #: includes/breed/class-animalshelter-breed-dog.php:270
 msgctxt "Breed of a dog"
 msgid "Lagotto Romagnolo"
-msgstr ""
+msgstr "Lagotto Romagnolo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:271
 msgctxt "Breed of a dog"
 msgid "Lakeland Terrier"
-msgstr ""
+msgstr "Lakeland Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:272
 msgctxt "Breed of a dog"
 msgid "Lancashire Heeler"
-msgstr ""
+msgstr "Lancashire Heeler"
 
 #: includes/breed/class-animalshelter-breed-dog.php:273
 msgctxt "Breed of a dog"
 msgid "Leonberger"
-msgstr ""
+msgstr "Leonberger"
 
 #: includes/breed/class-animalshelter-breed-dog.php:274
 msgctxt "Breed of a dog"
 msgid "Lhasa Apso"
-msgstr ""
+msgstr "Lhasa Apso"
 
 #: includes/breed/class-animalshelter-breed-dog.php:275
 msgctxt "Breed of a dog"
 msgid "Lhasapoo"
-msgstr ""
+msgstr "Lhasapoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:276
 msgctxt "Breed of a dog"
 msgid "Lowchen"
-msgstr ""
+msgstr "Lowchen"
 
 #: includes/breed/class-animalshelter-breed-dog.php:277
 msgctxt "Breed of a dog"
 msgid "Maltese"
-msgstr ""
+msgstr "Maltés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:278
 msgctxt "Breed of a dog"
 msgid "Maltese Shih Tzu"
-msgstr ""
+msgstr "Shih Tzu maltés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:279
 msgctxt "Breed of a dog"
 msgid "Maltipoo"
-msgstr ""
+msgstr "Maltipoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:280
 msgctxt "Breed of a dog"
 msgid "Manchester Terrier"
-msgstr ""
+msgstr "Manchester Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:281
 msgctxt "Breed of a dog"
 msgid "Maremma Sheepdog"
-msgstr ""
+msgstr "Perro pastor de Maremma"
 
 #: includes/breed/class-animalshelter-breed-dog.php:282
 msgctxt "Breed of a dog"
 msgid "Mastador"
-msgstr ""
+msgstr "Mastador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:283
 msgctxt "Breed of a dog"
 msgid "Mastiff"
-msgstr ""
+msgstr "Mastín"
 
 #: includes/breed/class-animalshelter-breed-dog.php:284
 msgctxt "Breed of a dog"
 msgid "Miniature Pinscher"
-msgstr ""
+msgstr "Pinscher miniatura"
 
 #: includes/breed/class-animalshelter-breed-dog.php:285
 msgctxt "Breed of a dog"
 msgid "Miniature Schnauzer"
-msgstr ""
+msgstr "Schnauzer miniatura"
 
 #: includes/breed/class-animalshelter-breed-dog.php:286
 msgctxt "Breed of a dog"
 msgid "Morkie"
-msgstr ""
+msgstr "Morkie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:287
 msgctxt "Breed of a dog"
 msgid "Mountain Cur"
-msgstr ""
+msgstr "Montaña Cur"
 
 #: includes/breed/class-animalshelter-breed-dog.php:288
 msgctxt "Breed of a dog"
 msgid "Mountain Feist"
-msgstr ""
+msgstr "Feist de montaña"
 
 #: includes/breed/class-animalshelter-breed-dog.php:289
 msgctxt "Breed of a dog"
 msgid "Mudi"
-msgstr ""
+msgstr "Mudi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:290
 msgctxt "Breed of a dog"
 msgid "Neapolitan Mastiff"
-msgstr ""
+msgstr "Mastín napolitano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:291
 msgctxt "Breed of a dog"
 msgid "Newfoundland"
-msgstr ""
+msgstr "Terranova"
 
 #: includes/breed/class-animalshelter-breed-dog.php:292
 msgctxt "Breed of a dog"
 msgid "Norfolk Terrier"
-msgstr ""
+msgstr "Norfolk Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:293
 msgctxt "Breed of a dog"
 msgid "Northern Inuit Dog"
-msgstr ""
+msgstr "Perro inuit del norte"
 
 #: includes/breed/class-animalshelter-breed-dog.php:294
 msgctxt "Breed of a dog"
 msgid "Norwegian Buhund"
-msgstr ""
+msgstr "Buhund noruego"
 
 #: includes/breed/class-animalshelter-breed-dog.php:295
 msgctxt "Breed of a dog"
 msgid "Norwegian Elkhound"
-msgstr ""
+msgstr "Elkhound noruego"
 
 #: includes/breed/class-animalshelter-breed-dog.php:296
 msgctxt "Breed of a dog"
 msgid "Norwegian Lundehund"
-msgstr ""
+msgstr "Lundehund noruego"
 
 #: includes/breed/class-animalshelter-breed-dog.php:297
 msgctxt "Breed of a dog"
 msgid "Norwich Terrier"
-msgstr ""
+msgstr "Norwich Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:298
 msgctxt "Breed of a dog"
 msgid "Nova Scotia Duck Tolling Retriever"
-msgstr ""
+msgstr "Duck Tolling Retriever de Nueva Escocia"
 
 #: includes/breed/class-animalshelter-breed-dog.php:299
 msgctxt "Breed of a dog"
 msgid "Old English Sheepdog"
-msgstr ""
+msgstr "Antiguo perro pastor inglés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:300
 msgctxt "Breed of a dog"
 msgid "Otterhound"
-msgstr ""
+msgstr "Otterhound"
 
 #: includes/breed/class-animalshelter-breed-dog.php:301
 msgctxt "Breed of a dog"
 msgid "Papillon"
-msgstr ""
+msgstr "Papillon"
 
 #: includes/breed/class-animalshelter-breed-dog.php:302
 msgctxt "Breed of a dog"
 msgid "Papipoo"
-msgstr ""
+msgstr "Papipoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:303
 msgctxt "Breed of a dog"
 msgid "Patterdale Terrier"
-msgstr ""
+msgstr "Patterdale Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:304
 msgctxt "Breed of a dog"
 msgid "Peekapoo"
-msgstr ""
+msgstr "Peekapoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:305
 msgctxt "Breed of a dog"
 msgid "Pekingese"
-msgstr ""
+msgstr "Pekinés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:306
 msgctxt "Breed of a dog"
 msgid "Pembroke Welsh Corgi"
-msgstr ""
+msgstr "Corgi galés de Pembroke"
 
 #: includes/breed/class-animalshelter-breed-dog.php:307
 msgctxt "Breed of a dog"
 msgid "Petit Basset Griffon Vend'en"
-msgstr ""
+msgstr "Petit Basset Grifón Vend'en"
 
 #: includes/breed/class-animalshelter-breed-dog.php:308
 msgctxt "Breed of a dog"
 msgid "Pharaoh Hound"
-msgstr ""
+msgstr "Sabueso Faraón"
 
 #: includes/breed/class-animalshelter-breed-dog.php:309
 msgctxt "Breed of a dog"
 msgid "Pitsky"
-msgstr ""
+msgstr "Pitsky"
 
 #: includes/breed/class-animalshelter-breed-dog.php:310
 msgctxt "Breed of a dog"
 msgid "Plott"
-msgstr ""
+msgstr "Parcela"
 
 #: includes/breed/class-animalshelter-breed-dog.php:311
 msgctxt "Breed of a dog"
 msgid "Pocket Beagle"
-msgstr ""
+msgstr "Beagle de bolsillo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:312
 msgctxt "Breed of a dog"
 msgid "Pointer"
-msgstr ""
+msgstr "Pointer"
 
 #: includes/breed/class-animalshelter-breed-dog.php:313
 msgctxt "Breed of a dog"
 msgid "Polish Lowland Sheepdog"
-msgstr ""
+msgstr "Perro pastor polaco de tierras bajas"
 
 #: includes/breed/class-animalshelter-breed-dog.php:314
 msgctxt "Breed of a dog"
 msgid "Pomapoo"
-msgstr ""
+msgstr "Pomapoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:315
 msgctxt "Breed of a dog"
 msgid "Pomchi"
-msgstr ""
+msgstr "Pomchi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:316
 msgctxt "Breed of a dog"
 msgid "Pomeagle"
-msgstr ""
+msgstr "Cailón"
 
 #: includes/breed/class-animalshelter-breed-dog.php:317
 msgctxt "Breed of a dog"
 msgid "Pomeranian"
-msgstr ""
+msgstr "Pomerano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:318
 msgctxt "Breed of a dog"
 msgid "Pomsky"
-msgstr ""
+msgstr "Pomsky"
 
 #: includes/breed/class-animalshelter-breed-dog.php:319
 msgctxt "Breed of a dog"
 msgid "Poochon"
-msgstr ""
+msgstr "Poochon"
 
 #: includes/breed/class-animalshelter-breed-dog.php:320
 msgctxt "Breed of a dog"
 msgid "Poodle"
-msgstr ""
+msgstr "Caniche"
 
 #: includes/breed/class-animalshelter-breed-dog.php:321
 msgctxt "Breed of a dog"
 msgid "Portuguese Podengo Pequeno"
-msgstr ""
+msgstr "Podengo Pequeno portugués"
 
 #: includes/breed/class-animalshelter-breed-dog.php:322
 msgctxt "Breed of a dog"
 msgid "Portuguese Pointer"
-msgstr ""
+msgstr "Portuguese Pointer"
 
 #: includes/breed/class-animalshelter-breed-dog.php:323
 msgctxt "Breed of a dog"
 msgid "Portuguese Sheepdog"
-msgstr ""
+msgstr "Perro pastor portugués"
 
 #: includes/breed/class-animalshelter-breed-dog.php:324
 msgctxt "Breed of a dog"
 msgid "Portuguese Water Dog"
-msgstr ""
+msgstr "Perro de Agua Portugués"
 
 #: includes/breed/class-animalshelter-breed-dog.php:325
 msgctxt "Breed of a dog"
 msgid "Pudelpointer"
-msgstr ""
+msgstr "Pudelpointer"
 
 #: includes/breed/class-animalshelter-breed-dog.php:326
 msgctxt "Breed of a dog"
 msgid "Pug"
-msgstr ""
+msgstr "Doguillo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:327
 msgctxt "Breed of a dog"
 msgid "Pugalier"
-msgstr ""
+msgstr "Pugalier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:328
 msgctxt "Breed of a dog"
 msgid "Puggle"
-msgstr ""
+msgstr "Puggle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:329
 msgctxt "Breed of a dog"
 msgid "Puginese"
-msgstr ""
+msgstr "Puginese"
 
 #: includes/breed/class-animalshelter-breed-dog.php:330
 msgctxt "Breed of a dog"
 msgid "Puli"
-msgstr ""
+msgstr "Puli"
 
 #: includes/breed/class-animalshelter-breed-dog.php:331
 msgctxt "Breed of a dog"
 msgid "Pyredoodle"
-msgstr ""
+msgstr "Pyredoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:332
 msgctxt "Breed of a dog"
 msgid "Pyrenean Mastiff"
-msgstr ""
+msgstr "Mastín de los Pirineos"
 
 #: includes/breed/class-animalshelter-breed-dog.php:333
 msgctxt "Breed of a dog"
 msgid "Pyrenean Shepherd"
-msgstr ""
+msgstr "Pastor pirenaico"
 
 #: includes/breed/class-animalshelter-breed-dog.php:334
 msgctxt "Breed of a dog"
 msgid "Rat Terrier"
-msgstr ""
+msgstr "Rata Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:335
 msgctxt "Breed of a dog"
 msgid "Redbone Coonhound"
-msgstr ""
+msgstr "Redbone Coonhound"
 
 #: includes/breed/class-animalshelter-breed-dog.php:336
 msgctxt "Breed of a dog"
 msgid "Rhodesian Ridgeback"
-msgstr ""
+msgstr "Rhodesian Ridgeback"
 
 #: includes/breed/class-animalshelter-breed-dog.php:337
 msgctxt "Breed of a dog"
 msgid "Rottador"
-msgstr ""
+msgstr "Rottador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:338
 msgctxt "Breed of a dog"
 msgid "Rottle"
-msgstr ""
+msgstr "Rottle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:339
 msgctxt "Breed of a dog"
 msgid "Rottweiler"
-msgstr ""
+msgstr "Rottweiler"
 
 #: includes/breed/class-animalshelter-breed-dog.php:340
 msgctxt "Breed of a dog"
 msgid "Saint Berdoodle"
-msgstr ""
+msgstr "San Berdoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:341
 msgctxt "Breed of a dog"
 msgid "Saint Bernard"
-msgstr ""
+msgstr "San Bernardo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:342
 msgctxt "Breed of a dog"
 msgid "Saluki"
-msgstr ""
+msgstr "Saluki"
 
 #: includes/breed/class-animalshelter-breed-dog.php:343
 msgctxt "Breed of a dog"
 msgid "Samoyed"
-msgstr ""
+msgstr "Samoyedo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:344
 msgctxt "Breed of a dog"
 msgid "Samusky"
-msgstr ""
+msgstr "Samusky"
 
 #: includes/breed/class-animalshelter-breed-dog.php:345
 msgctxt "Breed of a dog"
 msgid "Schipperke"
-msgstr ""
+msgstr "Schipperke"
 
 #: includes/breed/class-animalshelter-breed-dog.php:346
 msgctxt "Breed of a dog"
 msgid "Schnoodle"
-msgstr ""
+msgstr "Schnoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:347
 msgctxt "Breed of a dog"
 msgid "Scottish Deerhound"
-msgstr ""
+msgstr "Sabueso escocés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:348
 msgctxt "Breed of a dog"
 msgid "Scottish Terrier"
-msgstr ""
+msgstr "Terrier escocés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:349
 msgctxt "Breed of a dog"
 msgid "Sealyham Terrier"
-msgstr ""
+msgstr "Sealyham Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:350
 msgctxt "Breed of a dog"
 msgid "Sheepadoodle"
-msgstr ""
+msgstr "Sheepadoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:351
 msgctxt "Breed of a dog"
 msgid "Shepsky"
-msgstr ""
+msgstr "Shepsky"
 
 #: includes/breed/class-animalshelter-breed-dog.php:352
 msgctxt "Breed of a dog"
 msgid "Shetland Sheepdog"
-msgstr ""
+msgstr "Perro pastor de Shetland"
 
 #: includes/breed/class-animalshelter-breed-dog.php:353
 msgctxt "Breed of a dog"
 msgid "Shiba Inu"
-msgstr ""
+msgstr "Shiba Inu"
 
 #: includes/breed/class-animalshelter-breed-dog.php:354
 msgctxt "Breed of a dog"
 msgid "Shichon"
-msgstr ""
+msgstr "Shichon"
 
 #: includes/breed/class-animalshelter-breed-dog.php:355
 msgctxt "Breed of a dog"
 msgid "Shih Tzu"
-msgstr ""
+msgstr "Shih Tzu"
 
 #: includes/breed/class-animalshelter-breed-dog.php:356
 msgctxt "Breed of a dog"
 msgid "Shih-Poo"
-msgstr ""
+msgstr "Shih-Poo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:357
 msgctxt "Breed of a dog"
 msgid "Shikoku"
-msgstr ""
+msgstr "Shikoku"
 
 #: includes/breed/class-animalshelter-breed-dog.php:358
 msgctxt "Breed of a dog"
 msgid "Shiloh Shepherd"
-msgstr ""
+msgstr "Pastor de Shiloh"
 
 #: includes/breed/class-animalshelter-breed-dog.php:359
 msgctxt "Breed of a dog"
 msgid "Shiranian"
-msgstr ""
+msgstr "Shiranian"
 
 #: includes/breed/class-animalshelter-breed-dog.php:360
 msgctxt "Breed of a dog"
 msgid "Shollie"
-msgstr ""
+msgstr "Shollie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:361
 msgctxt "Breed of a dog"
 msgid "Shorkie"
-msgstr ""
+msgstr "Shorkie"
 
 #: includes/breed/class-animalshelter-breed-dog.php:362
 msgctxt "Breed of a dog"
 msgid "Siberian Husky"
-msgstr ""
+msgstr "Husky siberiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:363
 msgctxt "Breed of a dog"
 msgid "Silken Windhound"
-msgstr ""
+msgstr "Silken Windhound"
 
 #: includes/breed/class-animalshelter-breed-dog.php:364
 msgctxt "Breed of a dog"
 msgid "Silky Terrier"
-msgstr ""
+msgstr "Terrier sedoso"
 
 #: includes/breed/class-animalshelter-breed-dog.php:365
 msgctxt "Breed of a dog"
 msgid "Skye Terrier"
-msgstr ""
+msgstr "Skye Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:366
 msgctxt "Breed of a dog"
 msgid "Sloughi"
-msgstr ""
+msgstr "Sloughi"
 
 #: includes/breed/class-animalshelter-breed-dog.php:367
 msgctxt "Breed of a dog"
 msgid "Small Munsterlander Pointer"
-msgstr ""
+msgstr "Pequeño Pointer Munsterlander"
 
 #: includes/breed/class-animalshelter-breed-dog.php:368
 msgctxt "Breed of a dog"
 msgid "Soft Coated Wheaten Terrier"
-msgstr ""
+msgstr "Terrier de trigo de pelaje suave"
 
 #: includes/breed/class-animalshelter-breed-dog.php:369
 msgctxt "Breed of a dog"
 msgid "Spanish Mastiff"
-msgstr ""
+msgstr "Mastín Español"
 
 #: includes/breed/class-animalshelter-breed-dog.php:370
 msgctxt "Breed of a dog"
 msgid "Spinone Italiano"
-msgstr ""
+msgstr "Espinón Italiano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:371
 msgctxt "Breed of a dog"
 msgid "Springador"
-msgstr ""
+msgstr "Springador"
 
 #: includes/breed/class-animalshelter-breed-dog.php:372
 msgctxt "Breed of a dog"
 msgid "Stabyhoun"
-msgstr ""
+msgstr "Stabyhoun"
 
 #: includes/breed/class-animalshelter-breed-dog.php:373
 msgctxt "Breed of a dog"
 msgid "Staffordshire Bull Terrier"
-msgstr ""
+msgstr "Staffordshire Bull Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:374
 msgctxt "Breed of a dog"
 msgid "Staffy Bull Bullmastiff"
-msgstr ""
+msgstr "Staffy Bull Bullmastiff"
 
 #: includes/breed/class-animalshelter-breed-dog.php:375
 msgctxt "Breed of a dog"
 msgid "Standard Schnauzer"
-msgstr ""
+msgstr "Schnauzer estándar"
 
 #: includes/breed/class-animalshelter-breed-dog.php:376
 msgctxt "Breed of a dog"
 msgid "Sussex Spaniel"
-msgstr ""
+msgstr "Sussex Spaniel"
 
 #: includes/breed/class-animalshelter-breed-dog.php:377
 msgctxt "Breed of a dog"
 msgid "Swedish Lapphund"
-msgstr ""
+msgstr "Lapphund sueco"
 
 #: includes/breed/class-animalshelter-breed-dog.php:378
 msgctxt "Breed of a dog"
 msgid "Swedish Vallhund"
-msgstr ""
+msgstr "Vallhund sueco"
 
 #: includes/breed/class-animalshelter-breed-dog.php:379
 msgctxt "Breed of a dog"
 msgid "Taiwan Dog"
-msgstr ""
+msgstr "Perro de Taiwán"
 
 #: includes/breed/class-animalshelter-breed-dog.php:380
 msgctxt "Breed of a dog"
 msgid "Terripoo"
-msgstr ""
+msgstr "Terripoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:381
 msgctxt "Breed of a dog"
 msgid "Texas Heeler"
-msgstr ""
+msgstr "Tacón de Texas"
 
 #: includes/breed/class-animalshelter-breed-dog.php:382
 msgctxt "Breed of a dog"
 msgid "Thai Ridgeback"
-msgstr ""
+msgstr "Ridgeback tailandés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:383
 msgctxt "Breed of a dog"
 msgid "Tibetan Mastiff"
-msgstr ""
+msgstr "Mastín Tibetano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:384
 msgctxt "Breed of a dog"
 msgid "Tibetan Spaniel"
-msgstr ""
+msgstr "Spaniel Tibetano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:385
 msgctxt "Breed of a dog"
 msgid "Tibetan Terrier"
-msgstr ""
+msgstr "Terrier Tibetano"
 
 #: includes/breed/class-animalshelter-breed-dog.php:386
 msgctxt "Breed of a dog"
 msgid "Toy Fox Terrier"
-msgstr ""
+msgstr "Fox Terrier de juguete"
 
 #: includes/breed/class-animalshelter-breed-dog.php:387
 msgctxt "Breed of a dog"
 msgid "Transylvanian Hound"
-msgstr ""
+msgstr "Sabueso de Transilvania"
 
 #: includes/breed/class-animalshelter-breed-dog.php:388
 msgctxt "Breed of a dog"
 msgid "Treeing Tennessee Brindle"
-msgstr ""
+msgstr "Treeing Tennessee Brindle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:389
 msgctxt "Breed of a dog"
 msgid "Treeing Walker Coonhound"
-msgstr ""
+msgstr "Treeing Walker Coonhound"
 
 #: includes/breed/class-animalshelter-breed-dog.php:390
 msgctxt "Breed of a dog"
 msgid "Valley Bulldog"
-msgstr ""
+msgstr "Bulldog del Valle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:391
 msgctxt "Breed of a dog"
 msgid "Vizsla"
-msgstr ""
+msgstr "Vizsla"
 
 #: includes/breed/class-animalshelter-breed-dog.php:392
 msgctxt "Breed of a dog"
 msgid "Weimaraner"
-msgstr ""
+msgstr "Braco de Weimar"
 
 #: includes/breed/class-animalshelter-breed-dog.php:393
 msgctxt "Breed of a dog"
 msgid "Welsh Springer Spaniel"
-msgstr ""
+msgstr "Springer Spaniel Galés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:394
 msgctxt "Breed of a dog"
 msgid "Welsh Terrier"
-msgstr ""
+msgstr "Terrier Galés"
 
 #: includes/breed/class-animalshelter-breed-dog.php:395
 msgctxt "Breed of a dog"
 msgid "West Highland White Terrier"
-msgstr ""
+msgstr "West Highland White Terrier"
 
 #: includes/breed/class-animalshelter-breed-dog.php:396
 msgctxt "Breed of a dog"
 msgid "Westiepoo"
-msgstr ""
+msgstr "Westiepoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:397
 msgctxt "Breed of a dog"
 msgid "Whippet"
-msgstr ""
+msgstr "Whippet"
 
 #: includes/breed/class-animalshelter-breed-dog.php:398
 msgctxt "Breed of a dog"
 msgid "Whoodle"
-msgstr ""
+msgstr "Whoodle"
 
 #: includes/breed/class-animalshelter-breed-dog.php:399
 msgctxt "Breed of a dog"
 msgid "Wirehaired Pointing Griffon"
-msgstr ""
+msgstr "Grifón Apuntador de Pelo Duro"
 
 #: includes/breed/class-animalshelter-breed-dog.php:400
 msgctxt "Breed of a dog"
 msgid "Xoloitzcuintli"
-msgstr ""
+msgstr "Xoloitzcuintli"
 
 #: includes/breed/class-animalshelter-breed-dog.php:401
 msgctxt "Breed of a dog"
 msgid "Yakutian Laika"
-msgstr ""
+msgstr "Yakutian Laika"
 
 #: includes/breed/class-animalshelter-breed-dog.php:402
 msgctxt "Breed of a dog"
 msgid "Yorkipoo"
-msgstr ""
+msgstr "Yorkipoo"
 
 #: includes/breed/class-animalshelter-breed-dog.php:403
 msgctxt "Breed of a dog"
 msgid "Yorkshire Terrier"
-msgstr ""
+msgstr "Yorkshire Terrier"
 
 #: includes/size/class-animalshelter-size-cat.php:12
 msgctxt "Size of a cat"
 msgid "Small (< 2kg/5lbs)"
-msgstr ""
+msgstr "Pequeño (< 2kg/5lbs)"
 
 #: includes/size/class-animalshelter-size-cat.php:13
 msgctxt "Size of a cat"
 msgid "Medium (2kg/5lbs - 4kg/8lbs)"
-msgstr ""
+msgstr "Mediano (2kg/5lbs - 4kg/8lbs)"
 
 #: includes/size/class-animalshelter-size-cat.php:14
 msgctxt "Size of a cat"
 msgid "Large (> 4kg/8lbs)"
-msgstr ""
+msgstr "Grande (> 4kg/8lbs)"
 
 #: includes/size/class-animalshelter-size-dog.php:12
 msgctxt "Size of a dog"
 msgid "Mini (< 3kg/6lbs)"
-msgstr ""
+msgstr "Mini (< 3kg/6lbs)"
 
 #: includes/size/class-animalshelter-size-dog.php:13
 msgctxt "Size of a dog"
 msgid "Small (3kg/6lbs - 10kg/22lbs)"
-msgstr ""
+msgstr "Pequeño (3kg/6lbs - 10kg/22lbs)"
 
 #: includes/size/class-animalshelter-size-dog.php:14
 msgctxt "Size of a dog"
 msgid "Medium (10kg/22lbs - 25kg/55lbs)"
-msgstr ""
+msgstr "Mediano (10kg/22lbs - 25kg/55lbs)"
 
 #: includes/size/class-animalshelter-size-dog.php:15
 msgctxt "Size of a dog"
 msgid "Large (25kg/55lbs - 50kg/110lbs)"
-msgstr ""
+msgstr "Grande (25kg/55lbs - 50kg/110lbs)"
 
 #: includes/size/class-animalshelter-size-dog.php:16
 msgctxt "Size of a dog"
 msgid "Giant (> 50kg/110lbs)"
-msgstr ""
+msgstr "Gigante (> 50kg/110lbs)"
 
 #. Plugin Name of the plugin/theme
 msgid "Animal Shelter"
@@ -3066,7 +3006,7 @@ msgstr "Plugin Protectora de Animales para WordPress"
 
 #. Author of the plugin/theme
 msgid "WordPress Granada Community"
-msgstr "WordPress Granada Community"
+msgstr "Comunidad WordPress Granada"
 
 #. Author URI of the plugin/theme
 msgid "https://wpgranada.es/"
