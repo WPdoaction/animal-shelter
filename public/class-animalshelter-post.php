@@ -9,6 +9,7 @@ class Animalshelter_Post {
 	public string $taxonomy_status;
 	public string $taxonomy_size;
 	public string $taxonomy_color;
+	public string $taxonomy_energy;
 
 	public function __construct( $id = 0 ) {
 		if ( empty( $id ) ) {
@@ -136,6 +137,26 @@ class Animalshelter_Post {
 
 	public function get_color(): array {
 		$terms = $this->get_terms( $this->taxonomy_color );
+
+    if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
+	}
+
+  public function get_energy(): array {
+		$terms = $this->get_terms( $this->taxonomy_energy );
+
+		if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
+	}
+
+	public function get_terms( $taxonomy ): array {
+		$taxonomy = wp_get_post_terms( $this->id, $taxonomy );
 
 		if ( false !== is_wp_error( $terms ) ) {
 			return [];

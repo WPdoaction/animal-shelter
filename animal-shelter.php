@@ -91,6 +91,14 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_COLOR_CAT' ) ) {
 				define( 'ANIMALSHELTER_TAXONOMY_COLOR_CAT', 'as_color_cat' ); //20 characters max.
 			}
+
+      if ( ! defined( 'ANIMALSHELTER_TAXONOMY_ENERGY_DOG' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_ENERGY_DOG', 'as_energy_dog' ); //20 characters max.
+			}
+
+			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_ENERGY_CAT' ) ) {
+				define( 'ANIMALSHELTER_TAXONOMY_ENERGY_CAT', 'as_energy_cat' ); //20 characters max.
+			}
 		}
 
 		public function upgrader(): void {

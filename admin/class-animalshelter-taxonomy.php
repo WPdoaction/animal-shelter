@@ -19,7 +19,7 @@ class Animalshelter_Taxonomy {
 			'all_items'                  => __( 'All breeds', 'animal-shelter' ),
 			'parent_item'                => __( 'Parent breed', 'animal-shelter' ),
 			'parent_item_colon'          => __( 'Parent breed:', 'animal-shelter' ),
-			'new_item_name'              => __( 'New breed bame', 'animal-shelter' ),
+			'new_item_name'              => __( 'New breed name', 'animal-shelter' ),
 			'add_new_item'               => __( 'Add new breed', 'animal-shelter' ),
 			'edit_item'                  => __( 'Edit breed', 'animal-shelter' ),
 			'update_item'                => __( 'Update breed', 'animal-shelter' ),
@@ -108,6 +108,31 @@ class Animalshelter_Taxonomy {
 			'no_terms'                   => __( 'No colors', 'animal-shelter' ),
 			'items_list'                 => __( 'Colors list', 'animal-shelter' ),
 			'items_list_navigation'      => __( 'Colors list navigation', 'animal-shelter' ),
+		);
+	}
+
+  public function get_taxonomies_energy_labels(): array {
+		return array(
+			'name'                       => _x( 'Energies', 'Taxonomy General Name', 'animal-shelter' ),
+			'singular_name'              => _x( 'Energy', 'Taxonomy Singular Name', 'animal-shelter' ),
+			'menu_name'                  => __( 'Energy', 'animal-shelter' ),
+			'all_items'                  => __( 'All energies', 'animal-shelter' ),
+			'parent_item'                => __( 'Parent energy', 'animal-shelter' ),
+			'parent_item_colon'          => __( 'Parent energy:', 'animal-shelter' ),
+			'new_item_name'              => __( 'New energy bame', 'animal-shelter' ),
+			'add_new_item'               => __( 'Add new energy', 'animal-shelter' ),
+			'edit_item'                  => __( 'Edit energy', 'animal-shelter' ),
+			'update_item'                => __( 'Update energy', 'animal-shelter' ),
+			'view_item'                  => __( 'View energy', 'animal-shelter' ),
+			'separate_items_with_commas' => __( 'Separate energies with commas', 'animal-shelter' ),
+			'add_or_remove_items'        => __( 'Add or remove energies', 'animal-shelter' ),
+			'choose_from_most_used'      => __( 'Choose from the most used', 'animal-shelter' ),
+			'popular_items'              => __( 'Popular energies', 'animal-shelter' ),
+			'search_items'               => __( 'Search energies', 'animal-shelter' ),
+			'not_found'                  => __( 'Not Found', 'animal-shelter' ),
+			'no_terms'                   => __( 'No energies', 'animal-shelter' ),
+			'items_list'                 => __( 'Energies list', 'animal-shelter' ),
+			'items_list_navigation'      => __( 'Energies list navigation', 'animal-shelter' ),
 		);
 	}
 
