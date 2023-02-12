@@ -8,6 +8,7 @@ class Animalshelter_Post {
 	public string $taxonomy_breed;
 	public string $taxonomy_status;
 	public string $taxonomy_size;
+	public string $taxonomy_color;
 	public string $taxonomy_energy;
 
 	public function __construct( $id = 0 ) {
@@ -18,13 +19,6 @@ class Animalshelter_Post {
 	}
 
 	// Get basic data
-	public function get_title(): string {
-		return get_the_title( $this->id );
-	}
-
-	public function get_URI(): string {
-		return (string)get_the_permalink( $this->id );
-	}
 
 	public function get_link( $title = '', $classes = array() ): string {
 		if ( empty( $title ) ) {
@@ -38,27 +32,33 @@ class Animalshelter_Post {
 		return '<a href="' . esc_url( $this->get_URI() ) . '"' . $class . '>' . esc_html( $title ) . '</a>';
 	}
 
-	public function get_edit_URI(): ?string {
-		return get_edit_post_link( $this->id );
+	public function get_title(): string {
+		return get_the_title( $this->id );
 	}
 
-	public function get_excerpt(): string {
-		return get_the_excerpt( $this->id );
+	public function get_URI(): string {
+		return (string) get_the_permalink( $this->id );
+	}
+
+	public function get_edit_URI(): ?string {
+		return get_edit_post_link( $this->id );
 	}
 
 	public function get_excerpt_limited( $limit ): string {
 		return wp_trim_words( $this->get_excerpt(), $limit );
 	}
 
-	// Author info
-	public function get_author_id(): int {
-		return (int) get_post_field( 'post_author', $this->id );
+	public function get_excerpt(): string {
+		return get_the_excerpt( $this->id );
 	}
 
-	// Publication info
+	// Author info
+
 	public function is_published(): bool {
 		return ( get_post_status( $this->id ) === 'publish' );
 	}
+
+	// Publication info
 
 	public function is_child(): bool {
 		if ( wp_get_post_parent_id( $this->id ) ) {
@@ -69,25 +69,30 @@ class Animalshelter_Post {
 	}
 
 	public function get_publication_date( $dateFormat = 'U' ): string {
-		return (string)get_the_time( $dateFormat, $this->id );
+		return (string) get_the_time( $dateFormat, $this->id );
 	}
 
 	public function get_modification_date( $dateFormat = 'U' ): string {
-		return (string)get_the_modified_time( $dateFormat, $this->id );
+		return (string) get_the_modified_time( $dateFormat, $this->id );
 	}
 
-	// Permissions
 	public function isUserAllowed() {
 		if ( get_post_type( $this->id ) === $this->cpt &&
-			 (
-				 current_user_can( 'edit_others_posts', $this->id ) ||
-				 $this->get_author_id() === get_current_user_id()
-			 )
+		     (
+			     current_user_can( 'edit_others_posts', $this->id ) ||
+			     $this->get_author_id() === get_current_user_id()
+		     )
 		) {
 			return true;
 		}
 
 		return false;
+	}
+
+	// Permissions
+
+	public function get_author_id(): int {
+		return (int) get_post_field( 'post_author', $this->id );
 	}
 
 	public function get_breed(): array {
@@ -98,6 +103,16 @@ class Animalshelter_Post {
 		}
 
 		return $terms;
+	}
+
+	public function get_terms( $taxonomy ): array {
+		$taxonomy = wp_get_post_terms( $this->id, $taxonomy );
+
+		if ( false !== is_wp_error( $taxonomy ) ) {
+			return [];
+		}
+
+		return $taxonomy;
 	}
 
 	public function get_status(): array {
@@ -120,7 +135,17 @@ class Animalshelter_Post {
 		return $terms;
 	}
 
-	public function get_energy(): array {
+	public function get_color(): array {
+		$terms = $this->get_terms( $this->taxonomy_color );
+
+    if ( false !== is_wp_error( $terms ) ) {
+			return [];
+		}
+
+		return $terms;
+	}
+
+  public function get_energy(): array {
 		$terms = $this->get_terms( $this->taxonomy_energy );
 
 		if ( false !== is_wp_error( $terms ) ) {
@@ -133,14 +158,15 @@ class Animalshelter_Post {
 	public function get_terms( $taxonomy ): array {
 		$taxonomy = wp_get_post_terms( $this->id, $taxonomy );
 
-		if ( false !== is_wp_error( $taxonomy ) ) {
+		if ( false !== is_wp_error( $terms ) ) {
 			return [];
 		}
 
-		return $taxonomy;
+		return $terms;
 	}
 
 	// Meta
+
 	public function get_value( $key ) {
 		$values = '';
 		if ( ! empty( $this->id ) ) {
@@ -153,7 +179,7 @@ class Animalshelter_Post {
 
 	public function set_value( $key, $value ): int {
 		if ( ! empty( $this->id ) ) {
-			return (int)update_post_meta( $this->id, $key, $value );
+			return (int) update_post_meta( $this->id, $key, $value );
 		}
 
 		return 0;
@@ -162,9 +188,9 @@ class Animalshelter_Post {
 	public function remove_value( $key, $value = '' ): int {
 		if ( ! empty( $this->id ) ) {
 			if ( empty( $value ) ) {
-				return (int)delete_post_meta( $this->id, $key );
+				return (int) delete_post_meta( $this->id, $key );
 			} else {
-				return (int)delete_post_meta( $this->id, $key, $value );
+				return (int) delete_post_meta( $this->id, $key, $value );
 			}
 		}
 
