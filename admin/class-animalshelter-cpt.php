@@ -8,11 +8,18 @@ class Animalshelter_Cpt {
 	public string $description;
 	public string $menu_icon;
 	public string $title_post;
+	protected array $fields;
 
 	public string $taxonomy_breed = ANIMALSHELTER_TAXONOMY_BREED_DOG;
 
 	public function __construct() {
+		$this->fields = array();
+
 		add_filter( 'enter_title_here', array( $this, 'custom_enter_title' ) );
+		
+		// Register meta fields
+		add_action( 'init', array( $this, 'register_meta') );
+
 	}
 
 	public function cpt_register_public_default_args(): array {
@@ -112,6 +119,64 @@ class Animalshelter_Cpt {
 			}
 		}
 		return false;
+	}
+
+	/**
+	 * Get CPT fields
+	 *
+	 * @return void
+	 */
+	function get_fields(){
+		return $this->fields;
+	}
+
+	/**
+	 * Register meta fields
+	 *
+	 * @return void
+	 */
+	public function register_meta(): void {
+
+		if( !empty($this->fields) ){
+			foreach( $this->get_fields() as $field ){
+
+				if( empty($field['key']) )
+					continue;
+
+				$field = wp_parse_args( $field, [
+					'object_subtype' => '',
+					'type' => '',
+					'description' => '',
+					'single' => true,
+					'default' => '',
+					'sanitize_callback' => 'sanitize_text_field',
+					//'auth_callback' => NULL,
+					'show_in_rest' => true,
+				]);
+
+				$args = array(
+					'object_subtype' => $this->cpt,
+					'type' => sanitize_title( $field['type'] ),
+					'description' => sanitize_text_field( $field['description'] ),
+					'single' => (bool) $field['single'],
+					'default' => sanitize_text_field( $field['default'] ),
+					'sanitize_callback' => $field['sanitize_callback'],
+					'show_in_rest' => (bool) $field['show_in_rest'],
+				);
+
+				if( !empty($field['auth_callback']) && is_callable('auth_callback') ){
+					$args['auth_callback'] = $field['auth_callback'];
+				}
+
+				register_meta( 
+					'post', 
+					"{$this->cpt}_{$field['key']}", 
+					$args
+				);
+
+			}
+		}
+
 	}
 
 	// Time
