@@ -19,7 +19,7 @@ class Animalshelter_Taxonomy {
 			'all_items'                  => __( 'All breeds', 'animal-shelter' ),
 			'parent_item'                => __( 'Parent breed', 'animal-shelter' ),
 			'parent_item_colon'          => __( 'Parent breed:', 'animal-shelter' ),
-			'new_item_name'              => __( 'New breed bame', 'animal-shelter' ),
+			'new_item_name'              => __( 'New breed name', 'animal-shelter' ),
 			'add_new_item'               => __( 'Add new breed', 'animal-shelter' ),
 			'edit_item'                  => __( 'Edit breed', 'animal-shelter' ),
 			'update_item'                => __( 'Update breed', 'animal-shelter' ),
