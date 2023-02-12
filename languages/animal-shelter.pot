@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Animal Shelter\n"
-"POT-Creation-Date: 2023-02-12 11:22+0100\n"
+"POT-Creation-Date: 2023-02-12 11:28+0100\n"
 "PO-Revision-Date: 2023-02-12 11:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -359,7 +359,7 @@ msgid "Parent status:"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:47
-msgid "New status bame"
+msgid "New status name"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:48
@@ -433,7 +433,7 @@ msgid "Parent size:"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:72
-msgid "New size bame"
+msgid "New size name"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:73
@@ -507,7 +507,7 @@ msgid "Parent color:"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:97
-msgid "New color bame"
+msgid "New color name"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:98
@@ -581,7 +581,7 @@ msgid "Parent energy:"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:122
-msgid "New energy bame"
+msgid "New energy name"
 msgstr ""
 
 #: admin/class-animalshelter-taxonomy.php:123
