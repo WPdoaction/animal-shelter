@@ -32,6 +32,8 @@ class Animalshelter_Admin {
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-status-cat.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-size-dog.php';
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-size-cat.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-energy-dog.php';
+		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-taxonomy-energy-cat.php';
     
 		// Custom options page on backend
 		require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-menupage.php';
@@ -70,6 +72,12 @@ class Animalshelter_Admin {
 
 		$taxonomy_size_cat = new Animalshelter_Taxonomy_Size_Cat();
 		$taxonomy_size_cat->initTaxonomy();
+
+		$taxonomy_energy_dog = new Animalshelter_Taxonomy_Energy_Dog();
+		$taxonomy_energy_dog->initTaxonomy();
+
+		$taxonomy_energy_cat = new Animalshelter_Taxonomy_Energy_Cat();
+		$taxonomy_energy_cat->initTaxonomy();
 	}
 
 	public function register_css( $hook ): void {
