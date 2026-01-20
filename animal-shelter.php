@@ -42,11 +42,11 @@ if ( ! class_exists( 'Animalshelter' ) ) {
 
 			//Init environment
 			add_action( 'admin_init', array( $this, 'upgrader' ) );
-			add_action( 'plugins_loaded', array( $this, 'languages' ) );
+			add_action( 'init', array( $this, 'languages' ), 1 );
 
 			//Load and execute
 			$this->includes();
-			add_action( 'plugins_loaded', array( $this, 'init' ) );
+			add_action( 'init', array( $this, 'init' ), 10 );
 		}
 
 		public function contentConstants(): void {
