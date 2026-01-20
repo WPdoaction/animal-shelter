@@ -99,6 +99,20 @@ Development dependencies include:
 - PHPCompatibility checkers
 - eduardovillao/wp-since for @since tag validation
 
+### Release
+
+Create a distributable ZIP file:
+```bash
+./bin/release.sh <version>
+```
+
+Example:
+```bash
+./bin/release.sh 1.0.0
+```
+
+This creates `animal-shelter-<version>.zip` in the parent directory (wp-content/plugins/), excluding all development files listed in `.distignore` plus `.claude/`, `.codex/`, and `CLAUDE.md`.
+
 ## Translation
 
 - Text Domain: `animal-shelter`
