@@ -149,11 +149,28 @@ The `Animalshelter->upgrader()` method handles version migrations:
 
 ## WordPress Compatibility
 
-- Requires WordPress: 6.1+
+- Requires WordPress: 6.6+
+- Tested up to: 6.9
 - Requires PHP: 7.4+
-- Tested with WordPress: 6.1
-- Tested with PHP: 8.1
 - All CPTs and taxonomies support Block Editor (Gutenberg) via `show_in_rest => true`
+
+## PHP Compatibility Notes
+
+The plugin uses **typed properties** (PHP 7.4+ feature) throughout the codebase:
+- `public string $property`
+- `private array $data`
+
+This means PHP 7.4 is the minimum supported version. For details on compatibility and potential downgrades to PHP 7.2, see `docs/COMPATIBILITY.md`.
+
+## Documentation
+
+Additional technical documentation is available in the `docs/` folder:
+- **ARCHITECTURE.md**: Detailed architecture, design patterns, initialization flow
+- **COMPATIBILITY.md**: PHP/WordPress compatibility analysis
+- **TESTING.md**: Testing procedures and quality assurance
+- **VERSIONING.md**: Version control policy and changelog
+
+The `docs/` folder is excluded from production releases.
 
 ## Project Context
 

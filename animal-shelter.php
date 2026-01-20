@@ -4,10 +4,8 @@
  * Plugin URI: https://github.com/WPdoaction/animal-shelter/
  * Description: Animal Shelter plugin for WordPress
  * Version: 1.0.0
- * Requires at least: 6.1
- * Tested: 6.1
+ * Requires at least: 6.6
  * Requires PHP: 7.4
- * Tested PHP: 8.1
  * Author: WordPress Granada Community
  * Author URI: https://wpgranada.es/
  * License: EUPL 1.2

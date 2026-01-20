@@ -20,6 +20,7 @@ bin
 composer.json
 composer.lock
 dependencies.yml
+docs
 Gruntfile.js
 package.json
 package-lock.json

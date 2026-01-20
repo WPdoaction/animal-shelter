@@ -74,6 +74,7 @@ rsync -a \
     --exclude=".claude/" \
     --exclude=".codex/" \
     --exclude="CLAUDE.md" \
+    --exclude="docs/" \
     "${PLUGIN_DIR}/" \
     "${BUILD_DIR}/"
 
