@@ -17,8 +17,6 @@ behat.yml
 bitbucket-pipelines.yml
 bin
 .circleci/config.yml
-composer.json
-composer.lock
 dependencies.yml
 docs
 Gruntfile.js
@@ -37,8 +35,21 @@ webpack.config.js
 wp-cli.local.yml
 yarn.lock
 tests
-vendor
 node_modules
 *.sql
 *.tar.gz
 *.zip
+
+# Composer - Keep composer.json, composer.lock and vendor/ for autoloader
+# But exclude development dependencies within vendor
+vendor/bin/
+vendor/phpstan/
+vendor/dealerdirect/
+vendor/wp-coding-standards/
+vendor/phpcsstandards/
+vendor/squizlabs/
+
+# Old architecture directories (replaced by src/ with namespaces)
+admin/
+public/
+includes/

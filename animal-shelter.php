@@ -30,119 +30,27 @@ if ( ! defined( 'ANIMALSHELTER_VERSION' ) ) {
 }
 animalshelter_constants();
 
-if ( ! class_exists( 'Animalshelter' ) ) {
-	final class Animalshelter {
-
-		public function __construct() {
-		}
-
-		public function load(): void {
-			//Load constants
-			$this->contentConstants();
-
-			//Init environment
-			add_action( 'admin_init', array( $this, 'upgrader' ) );
-			add_action( 'init', array( $this, 'languages' ), 1 );
-
-			//Load and execute
-			$this->includes();
-			add_action( 'init', array( $this, 'init' ), 10 );
-		}
-
-		public function contentConstants(): void {
-			if ( ! defined( 'ANIMALSHELTER_CPT_DOG' ) ) {
-				define( 'ANIMALSHELTER_CPT_DOG', 'as_dog' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_CPT_CAT' ) ) {
-				define( 'ANIMALSHELTER_CPT_CAT', 'as_cat' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_BREED_CAT' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_BREED_CAT', 'as_breed_cat' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_BREED_DOG' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_BREED_DOG', 'as_breed_dog' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_STATUS_DOG' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_STATUS_DOG', 'as_status_dog' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_STATUS_CAT' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_STATUS_CAT', 'as_status_cat' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_SIZE_DOG' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_SIZE_DOG', 'as_size_dog' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_SIZE_CAT' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_SIZE_CAT', 'as_size_cat' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_COLOR_DOG' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_COLOR_DOG', 'as_color_dog' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_COLOR_CAT' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_COLOR_CAT', 'as_color_cat' ); //20 characters max.
-			}
-
-      if ( ! defined( 'ANIMALSHELTER_TAXONOMY_ENERGY_DOG' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_ENERGY_DOG', 'as_energy_dog' ); //20 characters max.
-			}
-
-			if ( ! defined( 'ANIMALSHELTER_TAXONOMY_ENERGY_CAT' ) ) {
-				define( 'ANIMALSHELTER_TAXONOMY_ENERGY_CAT', 'as_energy_cat' ); //20 characters max.
-			}
-		}
-
-		public function upgrader(): void {
-			$current_ver = get_option( 'ANIMALSHELTER_version', '0.0' );
-
-			if ( version_compare( $current_ver, ANIMALSHELTER_VERSION, '==' ) ) {
-				return;
-			}
-
-			delete_option( 'ANIMALSHELTER_flush_rewrite_rules_flag' );
-
-			if ( $current_ver !== '0.0' ) {
-				// Upgrade code
-			}
-
-			update_option( 'ANIMALSHELTER_version', ANIMALSHELTER_VERSION, true );
-		}
-
-		public function languages(): void {
-			load_plugin_textdomain( 'animal-shelter', false, ANIMALSHELTER_PLUGIN_LANGUAGES_DIR );
-		}
-
-		private function includes(): void {
-			require_once ANIMALSHELTER_PLUGIN_ADMIN_DIR . 'class-animalshelter-admin.php';
-			require_once ANIMALSHELTER_PLUGIN_PUBLIC_DIR . 'class-animalshelter-public.php';
-		}
-
-		public function init(): void {
-			$animalshelter_admin = new Animalshelter_Admin();
-			$animalshelter_admin->load();
-
-			$animalshelter_public = new Animalshelter_Public();
-			$animalshelter_public->load();
-		}
-	}
-
-	$animalshelter = new Animalshelter();
-	$animalshelter->load();
+// Load Composer autoloader
+if ( file_exists( ANIMALSHELTER_PLUGIN_DIR . 'vendor/autoload.php' ) ) {
+	require_once ANIMALSHELTER_PLUGIN_DIR . 'vendor/autoload.php';
+} else {
+	add_action( 'admin_notices', function() {
+		echo '<div class="error"><p>';
+		echo esc_html__( 'Animal Shelter: Run "composer install" to generate autoloader.', 'animal-shelter' );
+		echo '</p></div>';
+	} );
+	return;
 }
+
+// Initialize plugin
+$animalshelter = new \AnimalShelter\Core\Animalshelter();
+$animalshelter->load();
 
 /**
  * The code that runs during plugin activation.
  */
 function animalshelter_activate(): void {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-animalshelter-activator.php';
-	Animalshelter_Activator::activate();
+	\AnimalShelter\Core\Activator::activate();
 }
 
 register_activation_hook( __FILE__, 'animalshelter_activate' );
@@ -151,8 +59,7 @@ register_activation_hook( __FILE__, 'animalshelter_activate' );
  * The code that runs during plugin deactivation.
  */
 function animalshelter_deactivate() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-animalshelter-deactivator.php';
-	Animalshelter_Deactivator::deactivate();
+	\AnimalShelter\Core\Deactivator::deactivate();
 }
 
 register_deactivation_hook( __FILE__, 'animalshelter_deactivate' );

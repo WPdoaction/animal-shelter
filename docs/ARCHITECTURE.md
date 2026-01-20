@@ -4,17 +4,24 @@ Este documento proporciona una visión detallada de la arquitectura del plugin A
 
 ## Visión General
 
-Animal Shelter es un plugin de WordPress diseñado con una arquitectura modular y extensible que sigue las mejores prácticas de desarrollo de WordPress.
+Animal Shelter es un plugin de WordPress diseñado con una arquitectura modular y extensible que sigue las mejores prácticas de desarrollo de WordPress y estándares modernos de PHP.
+
+**A partir de v1.0.0**, el plugin utiliza **namespaces PSR-4** con **Composer autoloading**.
 
 ```
 animal-shelter/
-├── admin/              # Backend/Admin functionality
-├── public/             # Frontend functionality
-├── includes/           # Shared utilities and data
+├── src/                # Todo el código con namespaces PSR-4
+│   ├── Core/          # Core plugin functionality
+│   ├── Admin/         # Backend/Admin functionality
+│   ├── PublicFacing/  # Frontend functionality
+│   └── Data/          # Shared utilities and predefined data
+├── vendor/             # Composer autoloader (incluido en releases)
 ├── languages/          # Translations
 ├── bin/                # Build scripts
 └── docs/               # Documentation
 ```
+
+**Ver también**: [`NAMESPACES.md`](NAMESPACES.md) para documentación detallada sobre la arquitectura de namespaces.
 
 ## Patrón de Diseño
 
@@ -23,33 +30,39 @@ animal-shelter/
 El plugin principal usa un patrón singleton modificado:
 
 ```php
+namespace AnimalShelter\Core;
+
 final class Animalshelter {
-    public function load() {
+    public function load(): void {
         $this->contentConstants();
         add_action('admin_init', array($this, 'upgrader'));
-        add_action('plugins_loaded', array($this, 'languages'));
+        add_action('init', array($this, 'languages'), 1);
         $this->includes();
-        add_action('plugins_loaded', array($this, 'init'));
+        add_action('init', array($this, 'init'), 10);
     }
 }
 
-$animalshelter = new Animalshelter();
+// En animal-shelter.php
+$animalshelter = new \AnimalShelter\Core\Animalshelter();
 $animalshelter->load();
 ```
 
-### Class Inheritance
+### Class Inheritance con Namespaces
 
 - **Base Classes**: Proporcionan funcionalidad común
-  - `Animalshelter_Cpt`: Base para Custom Post Types
-  - `Animalshelter_Taxonomy`: Base para Taxonomías
-  - `Animalshelter_Menupage`: Base para páginas de admin
-  - `Animalshelter_Post`: Base para funcionalidad pública de posts
-  - `Animalshelter_Term`: Base para funcionalidad pública de términos
+  - `AnimalShelter\Admin\CPT\Cpt`: Base para Custom Post Types
+  - `AnimalShelter\Admin\Taxonomy\Taxonomy`: Base para Taxonomías
+  - `AnimalShelter\Admin\Menupage\Menupage`: Base para páginas de admin
+  - `AnimalShelter\PublicFacing\Post\Post`: Base para funcionalidad pública de posts
+  - `AnimalShelter\PublicFacing\Term\Term`: Base para funcionalidad pública de términos
 
 - **Child Classes**: Extienden las bases con configuración específica
-  - `Animalshelter_Cpt_Dog` extends `Animalshelter_Cpt`
-  - `Animalshelter_Cpt_Cat` extends `Animalshelter_Cpt`
+  - `AnimalShelter\Admin\CPT\Dog` extends `Cpt`
+  - `AnimalShelter\Admin\CPT\Cat` extends `Cpt`
+  - `AnimalShelter\Admin\Taxonomy\Dog\Breed` extends `Taxonomy`
   - etc.
+
+**Nota**: Las clases hijas usan nombres cortos (sin prefijos) gracias a los namespaces.
 
 ## Flujo de Inicialización
 
@@ -65,33 +78,36 @@ $animalshelter->load();
 ### 2. Load Sequence
 
 ```
-1. contentConstants() - Define constantes de contenido (CPTs, Taxonomías)
-2. admin_init → upgrader() - Maneja actualizaciones de versión
-3. plugins_loaded → languages() - Carga traducciones
-4. includes() - Require archivos de clases
-5. plugins_loaded → init() - Inicializa componentes
+1. Composer autoloader loaded (vendor/autoload.php)
+2. contentConstants() - Define constantes de contenido (CPTs, Taxonomías)
+3. admin_init → upgrader() - Maneja actualizaciones de versión
+4. init → languages() (priority 1) - Carga traducciones
+5. includes() - No requiere require_once, solo para lógica custom
+6. init → init() (priority 10) - Inicializa componentes
 ```
 
 ### 3. Initialization Order
 
-**Admin (admin/class-animalshelter-admin.php)**:
+**Admin (`src/Admin/Admin.php`)**:
 ```
 1. Constants
-2. Includes (CPT, Taxonomy, Menu classes)
+2. Includes - No longer needed (Composer autoloader)
 3. Inits:
-   - CPT Dog/Cat registration
+   - CPT Dog/Cat registration (via new DogCPT(), new CatCPT())
    - Taxonomy registration (Breed, Status, Size, Color, Energy)
-   - Admin pages
+   - Admin pages (new AnimalShelterMenupage())
    - Flush rewrite rules (once)
 ```
 
-**Public (public/class-animalshelter-public.php)**:
+**Public (`src/PublicFacing/PublicMain.php`)**:
 ```
 1. Constants
-2. Includes (Post, Term classes)
+2. Includes - No longer needed (Composer autoloader)
 3. Inits:
    - Enqueue scripts/styles (commented)
 ```
+
+**Nota**: Ya no se requieren métodos `includes()` con `require_once`. Composer maneja el autoloading automáticamente.
 
 ## Sistema de Constants
 
@@ -217,18 +233,18 @@ La flag se elimina en:
 
 ### Activation
 ```php
-function animalshelter_activate() {
-    require_once plugin_dir_path(__FILE__) . 'includes/class-animalshelter-activator.php';
-    Animalshelter_Activator::activate();
+function animalshelter_activate(): void {
+    \AnimalShelter\Core\Activator::activate();
 }
 register_activation_hook(__FILE__, 'animalshelter_activate');
 ```
 
+**Nota**: No se requiere `require_once`. La clase se carga via Composer autoloader.
+
 ### Deactivation
 ```php
-function animalshelter_deactivate() {
-    require_once plugin_dir_path(__FILE__) . 'includes/class-animalshelter-deactivator.php';
-    Animalshelter_Deactivator::deactivate();
+function animalshelter_deactivate(): void {
+    \AnimalShelter\Core\Deactivator::deactivate();
 }
 register_deactivation_hook(__FILE__, 'animalshelter_deactivate');
 ```
@@ -261,20 +277,22 @@ public function upgrader(): void {
 
 ### Predefined Data
 
-Almacenado en `includes/`:
+Almacenado en `src/Data/`:
 
-**Breeds** (includes/breed/):
-- `class-animalshelter-breed-dog.php`: ~900+ razas de perros
-- `class-animalshelter-breed-cat.php`: Razas de gatos
+**Breeds** (`src/Data/Breed/`):
+- `Dog.php`: ~900+ razas de perros (namespace: `AnimalShelter\Data\Breed\Dog`)
+- `Cat.php`: Razas de gatos (namespace: `AnimalShelter\Data\Breed\Cat`)
 
-**Sizes** (includes/size/):
-- `class-animalshelter-size-dog.php`: Tallas de perros
-- `class-animalshelter-size-cat.php`: Tallas de gatos
+**Sizes** (`src/Data/Size/`):
+- `Dog.php`: Tallas de perros (namespace: `AnimalShelter\Data\Size\Dog`)
+- `Cat.php`: Tallas de gatos (namespace: `AnimalShelter\Data\Size\Cat`)
 
 ### Formato
 
 ```php
-class Animalshelter_Breed_Dog {
+namespace AnimalShelter\Data\Breed;
+
+class Dog {
     private array $breeds;
 
     public function __construct() {
@@ -338,13 +356,63 @@ Para futuras versiones:
 
 ### Añadir Nuevo Tipo de Animal
 
-1. Definir constantes en `contentConstants()`
-2. Crear clase CPT extendiendo `Animalshelter_Cpt`
-3. Crear clases de taxonomías extendiendo `Animalshelter_Taxonomy`
-4. Incluir en `Animalshelter_Admin->includes()`
-5. Inicializar en `Animalshelter_Admin->inits()`
-6. Crear clases public correspondientes
-7. Añadir datos predefinidos en includes/
+**Ejemplo**: Añadir soporte para "Birds" (Pájaros)
+
+1. **Definir constantes** en `src/Core/Animalshelter.php` → `contentConstants()`:
+   ```php
+   if (!defined('ANIMALSHELTER_CPT_BIRD')) {
+       define('ANIMALSHELTER_CPT_BIRD', 'as_bird');
+   }
+   if (!defined('ANIMALSHELTER_TAXONOMY_BREED_BIRD')) {
+       define('ANIMALSHELTER_TAXONOMY_BREED_BIRD', 'as_breed_bird');
+   }
+   // ... más taxonomías
+   ```
+
+2. **Crear clase CPT** en `src/Admin/CPT/Bird.php`:
+   ```php
+   namespace AnimalShelter\Admin\CPT;
+
+   class Bird extends Cpt {
+       public function __construct() {
+           parent::__construct();
+           $this->cpt = ANIMALSHELTER_CPT_BIRD;
+           $this->rewrite = 'bird';
+           // ... configuración
+       }
+   }
+   ```
+
+3. **Crear clases de taxonomías** en `src/Admin/Taxonomy/Bird/`:
+   - `Breed.php`, `Status.php`, `Size.php`, etc.
+   - Todas extendiendo `Taxonomy` base class
+
+4. **Registrar en Admin** en `src/Admin/Admin.php` → `inits()`:
+   ```php
+   use AnimalShelter\Admin\CPT\Bird as BirdCPT;
+   use AnimalShelter\Admin\Taxonomy\Bird\Breed as BirdBreed;
+
+   $cpt_bird = new BirdCPT();
+   $cpt_bird->initCPT();
+
+   $taxonomy_breed_bird = new BirdBreed();
+   $taxonomy_breed_bird->initTaxonomy();
+   ```
+
+5. **Crear clases public** en `src/PublicFacing/`:
+   - `Post/Bird.php`
+   - `Term/Bird/Breed.php`, etc.
+
+6. **Añadir datos predefinidos** en `src/Data/`:
+   - `Breed/Bird.php`
+   - `Size/Bird.php`
+
+7. **Regenerar autoloader**:
+   ```bash
+   composer dump-autoload
+   ```
+
+**Nota**: No se requieren `require_once`. Composer detecta las nuevas clases automáticamente.
 
 ## Performance Considerations
 

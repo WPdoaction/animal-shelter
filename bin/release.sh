@@ -55,10 +55,31 @@ ZIP_PATH="${PARENT_DIR}/${ZIP_NAME}"
 info "Creando release del plugin Animal Shelter v${VERSION}"
 echo ""
 
+# Verificar que existe composer
+if ! command -v composer &> /dev/null; then
+    error "Composer no está instalado. Instala Composer primero."
+fi
+
 # Verificar que existe .distignore
 if [ ! -f "${PLUGIN_DIR}/.distignore" ]; then
     error "No se encuentra el archivo .distignore"
 fi
+
+# Verificar que existe composer.json
+if [ ! -f "${PLUGIN_DIR}/composer.json" ]; then
+    error "No se encuentra el archivo composer.json"
+fi
+
+# Ejecutar composer install para producción
+info "Instalando dependencias de Composer (producción)..."
+cd "$PLUGIN_DIR"
+composer install --no-dev --optimize-autoloader --quiet
+
+if [ ! -f "${PLUGIN_DIR}/vendor/autoload.php" ]; then
+    error "No se generó el autoloader de Composer"
+fi
+
+success "Dependencias de Composer instaladas"
 
 # Crear directorio temporal
 info "Creando directorio temporal..."
@@ -75,8 +96,16 @@ rsync -a \
     --exclude=".codex/" \
     --exclude="CLAUDE.md" \
     --exclude="docs/" \
+    --exclude="admin/" \
+    --exclude="public/" \
+    --exclude="includes/" \
     "${PLUGIN_DIR}/" \
     "${BUILD_DIR}/"
+
+# Verificar que vendor/autoload.php existe en el build
+if [ ! -f "${BUILD_DIR}/vendor/autoload.php" ]; then
+    error "El autoloader de Composer no se copió al build"
+fi
 
 # Verificar que se copiaron archivos
 if [ ! -f "${BUILD_DIR}/animal-shelter.php" ]; then
