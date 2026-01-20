@@ -1,4 +1,14 @@
 <?php
+/**
+ * Custom Post Type base class
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Cpt {
 	public string $class_prefix = ANIMALSHELTER_PREFIX;

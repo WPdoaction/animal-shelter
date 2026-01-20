@@ -1,4 +1,14 @@
 <?php
+/**
+ * Term helper class
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Term {
 	public string $prefix = ANIMALSHELTER_PREFIX;

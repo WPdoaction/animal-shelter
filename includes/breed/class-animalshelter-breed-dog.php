@@ -1,4 +1,14 @@
 <?php
+/**
+ * Dog breeds data
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Breed_Dog {
 	/**

@@ -1,4 +1,14 @@
 <?php
+/**
+ * Dog Breed term helper
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Term_Breed_Dog extends Animalshelter_Term {
 	public function __construct( $id = 0 ) {

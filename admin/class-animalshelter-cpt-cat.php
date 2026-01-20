@@ -1,4 +1,14 @@
 <?php
+/**
+ * Cat Custom Post Type
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Cpt_Cat extends Animalshelter_Cpt {
 

@@ -1,4 +1,14 @@
 <?php
+/**
+ * Taxonomy base class
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Taxonomy {
 	public string $taxonomy;

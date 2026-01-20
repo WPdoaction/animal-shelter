@@ -1,4 +1,14 @@
 <?php
+/**
+ * Dog post helper class
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Post_Dog extends Animalshelter_Post {
 	public function __construct( $id = 0 ) {

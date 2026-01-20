@@ -1,4 +1,15 @@
 <?php
+/**
+ * General fields definition
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 // to be merged in class-animalshelter-cpt.php
 $this->fields = array(
 	array(

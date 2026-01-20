@@ -1,4 +1,14 @@
 <?php
+/**
+ * Cat Color term helper
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Term_Color_Cat extends Animalshelter_Term {
 	public function __construct( $id = 0 ) {

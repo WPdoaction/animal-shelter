@@ -1,4 +1,14 @@
 <?php
+/**
+ * Post helper class
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Post {
 	public string $prefix = ANIMALSHELTER_PREFIX;
@@ -24,12 +34,15 @@ class Animalshelter_Post {
 		if ( empty( $title ) ) {
 			$title = $this->get_title();
 		}
-		$class = '';
+
+		$class_attr = '';
 		if ( ! empty( $classes ) && is_array( $classes ) ) {
-			$class = ' class="' . implode( ' ', $classes ) . '"';
+			// Sanitize each class name.
+			$classes    = array_map( 'sanitize_html_class', $classes );
+			$class_attr = ' class="' . esc_attr( implode( ' ', $classes ) ) . '"';
 		}
 
-		return '<a href="' . esc_url( $this->get_URI() ) . '"' . $class . '>' . esc_html( $title ) . '</a>';
+		return '<a href="' . esc_url( $this->get_URI() ) . '"' . $class_attr . '>' . esc_html( $title ) . '</a>';
 	}
 
 	public function get_title(): string {
@@ -155,16 +168,6 @@ class Animalshelter_Post {
 		return $terms;
 	}
 
-	public function get_terms( $taxonomy ): array {
-		$taxonomy = wp_get_post_terms( $this->id, $taxonomy );
-
-		if ( false !== is_wp_error( $terms ) ) {
-			return [];
-		}
-
-		return $terms;
-	}
-
 	// Meta
 
 	public function get_value( $key ) {
@@ -179,6 +182,15 @@ class Animalshelter_Post {
 
 	public function set_value( $key, $value ): int {
 		if ( ! empty( $this->id ) ) {
+			// Verify user has permission to edit this post.
+			if ( ! current_user_can( 'edit_post', $this->id ) ) {
+				return 0;
+			}
+
+			// Sanitize key and value.
+			$key   = sanitize_key( $key );
+			$value = sanitize_text_field( $value );
+
 			return (int) update_post_meta( $this->id, $key, $value );
 		}
 
@@ -187,9 +199,18 @@ class Animalshelter_Post {
 
 	public function remove_value( $key, $value = '' ): int {
 		if ( ! empty( $this->id ) ) {
+			// Verify user has permission to edit this post.
+			if ( ! current_user_can( 'edit_post', $this->id ) ) {
+				return 0;
+			}
+
+			// Sanitize key.
+			$key = sanitize_key( $key );
+
 			if ( empty( $value ) ) {
 				return (int) delete_post_meta( $this->id, $key );
 			} else {
+				$value = sanitize_text_field( $value );
 				return (int) delete_post_meta( $this->id, $key, $value );
 			}
 		}

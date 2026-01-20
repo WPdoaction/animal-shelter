@@ -1,4 +1,14 @@
 <?php
+/**
+ * Animal Shelter settings page
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 
@@ -68,12 +78,25 @@ class Animalshelter_Menupage_Animalshelter extends Animalshelter_Menupage {
 	}
 
 	public function save(): void {
+		// Verify user has permission to save settings.
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die(
+				esc_html__( 'You do not have permission to perform this action.', 'animal-shelter' ),
+				esc_html__( 'Permission Denied', 'animal-shelter' ),
+				array( 'response' => 403 )
+			);
+		}
+
 		if ( 'animals' === $this->tab ) {
-			// TODO
-			// Save input
+			// TODO: Implement saving logic.
+			// Remember to sanitize all inputs with appropriate functions:
+			// - sanitize_text_field() for text
+			// - sanitize_email() for emails
+			// - absint() for positive integers
+			// - sanitize_key() for option keys
 		} elseif ( 'breeds' === $this->tab ) {
-			// TODO
-			// Save input
+			// TODO: Implement saving logic.
+			// Remember to sanitize all inputs.
 		}
 	}
 

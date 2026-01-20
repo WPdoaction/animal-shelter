@@ -1,4 +1,14 @@
 <?php
+/**
+ * Cat Status term helper
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Term_Status_Cat extends Animalshelter_Term {
 	public function __construct( $id = 0 ) {

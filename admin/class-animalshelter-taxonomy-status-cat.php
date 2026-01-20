@@ -1,4 +1,14 @@
 <?php
+/**
+ * Cat Status Taxonomy
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Taxonomy_Status_Cat extends Animalshelter_Taxonomy {
     public function __construct() {

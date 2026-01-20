@@ -1,4 +1,14 @@
 <?php
+/**
+ * Cat sizes data
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Size_Cat {
 	/**

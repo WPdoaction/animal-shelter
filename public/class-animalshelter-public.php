@@ -1,4 +1,14 @@
 <?php
+/**
+ * Public-facing functionality
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Public {
 	public string $prefix = ANIMALSHELTER_PREFIX;

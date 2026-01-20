@@ -1,4 +1,14 @@
 <?php
+/**
+ * Admin menu page base class
+ *
+ * @package AnimalShelter
+ */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 class Animalshelter_Menupage {
 	public string $class_prefix = ANIMALSHELTER_PREFIX;
@@ -9,16 +19,23 @@ class Animalshelter_Menupage {
 	public string $get_page;
 
 	public function __construct() {
-		// Security: GET is being verified against local variables.
-		// phpcs:ignore WordPress.Security.NonceVerification
-		if ( ! empty( $_GET['page'] ) && $this->page === $_GET['page'] ) {
-			$this->get_page = $this->page;
+		// Security: GET is being verified against local variables and sanitized.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( ! empty( $_GET['page'] ) ) {
+			$page = sanitize_key( wp_unslash( $_GET['page'] ) );
+			if ( $this->page === $page ) {
+				$this->get_page = $this->page;
+			}
 		}
 
-		// phpcs:ignore WordPress.Security.NonceVerification
-		if ( ! empty( $_GET['tab'] ) && ! empty( $this->available_tabs ) && array_key_exists( esc_attr( $_GET['tab'] ), $this->available_tabs ) ) {
-			// phpcs:ignore WordPress.Security.NonceVerification
-			$this->tab = esc_attr( $_GET['tab'] );
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( ! empty( $_GET['tab'] ) && ! empty( $this->available_tabs ) ) {
+			$tab = sanitize_key( wp_unslash( $_GET['tab'] ) );
+			if ( array_key_exists( $tab, $this->available_tabs ) ) {
+				$this->tab = $tab;
+			} else {
+				$this->tab = $this->default_tab;
+			}
 		} else {
 			$this->tab = $this->default_tab;
 		}
@@ -71,7 +88,7 @@ class Animalshelter_Menupage {
 	public function is_saving_data(): bool {
 		if ( ! empty( $this->get_page ) &&
 			 isset( $_POST[ $this->page ] ) &&
-			 wp_verify_nonce( $_POST[ $this->page ], $this->page )
+			 wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST[ $this->page ] ) ), $this->page )
 		) {
 			return true;
 		}
@@ -80,7 +97,7 @@ class Animalshelter_Menupage {
 	}
 
 	public function tabs(): void {
-		$prefix = admin_url( 'admin.php' );
+		$navtabs = array();
 
 		if ( ! empty( $this->available_tabs ) ) {
 			foreach ( $this->available_tabs as $key => $tab ) {
@@ -89,8 +106,17 @@ class Animalshelter_Menupage {
 				} else {
 					$active_class = '';
 				}
-				$uri       = $prefix . '?page=' . $this->page . '&tab=' . $key;
-				$navtabs[] = '<a id="' . esc_attr( $key ) . '-tab" class="nav-tab ' . esc_attr( $active_class ) . '" title="' . esc_attr( $tab ) . '" href="' . esc_attr( $uri ) . '">' . esc_html( $tab ) . '</a>';
+
+				// Use add_query_arg for proper URL building.
+				$uri = add_query_arg(
+					array(
+						'page' => $this->page,
+						'tab'  => $key,
+					),
+					admin_url( 'admin.php' )
+				);
+
+				$navtabs[] = '<a id="' . esc_attr( $key ) . '-tab" class="nav-tab ' . esc_attr( $active_class ) . '" title="' . esc_attr( $tab ) . '" href="' . esc_url( $uri ) . '">' . esc_html( $tab ) . '</a>';
 			}
 		}
 
